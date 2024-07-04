@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on CTF Journey</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on CTF Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
+    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdown</title>
+      <link>https://example.org/tags/markdown/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://example.org/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guide</title>
+      <link>https://example.org/tags/guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://example.org/tags/guide/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
