@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/post/</loc>
+    <loc>https://ctf-journey.github.io/post/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://ctf-journey.github.io/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/markdown/</loc>
+    <loc>https://ctf-journey.github.io/tags/markdown/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://ctf-journey.github.io/tags/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/2024/catch-it-if-you-can-2024/</loc>
+    <loc>https://ctf-journey.github.io/post/2024/catch-it-if-you-can-2024/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/notes/blockchain/</loc>
+    <loc>https://ctf-journey.github.io/notes/blockchain/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://ctf-journey.github.io/categories/</loc>
   </url><url>
-    <loc>https://example.org/notes/cryptography/</loc>
+    <loc>https://ctf-journey.github.io/notes/cryptography/</loc>
   </url><url>
-    <loc>https://example.org/notes/forensics/</loc>
+    <loc>https://ctf-journey.github.io/notes/forensics/</loc>
   </url><url>
-    <loc>https://example.org/tags/guide/</loc>
+    <loc>https://ctf-journey.github.io/tags/guide/</loc>
   </url><url>
-    <loc>https://example.org/notes/</loc>
+    <loc>https://ctf-journey.github.io/notes/</loc>
   </url><url>
-    <loc>https://example.org/notes/hardware/</loc>
+    <loc>https://ctf-journey.github.io/notes/hardware/</loc>
   </url><url>
-    <loc>https://example.org/notes/osint/</loc>
+    <loc>https://ctf-journey.github.io/notes/osint/</loc>
   </url><url>
-    <loc>https://example.org/notes/pwn/</loc>
+    <loc>https://ctf-journey.github.io/notes/pwn/</loc>
   </url><url>
-    <loc>https://example.org/notes/reverse-engeineering/</loc>
+    <loc>https://ctf-journey.github.io/notes/reverse-engeineering/</loc>
   </url><url>
-    <loc>https://example.org/notes/web/</loc>
+    <loc>https://ctf-journey.github.io/notes/web/</loc>
   </url>
 </urlset>

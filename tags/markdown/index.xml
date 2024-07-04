@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>markdown on CTF Journey</title>
-    <link>https://example.org/tags/markdown/</link>
+    <link>https://ctf-journey.github.io/tags/markdown/</link>
     <description>Recent content in markdown on CTF Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is Markdown ?</title>
-      <link>https://example.org/post/2024/catch-it-if-you-can-2024/</link>
+      <link>https://ctf-journey.github.io/post/2024/catch-it-if-you-can-2024/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://example.org/post/2024/catch-it-if-you-can-2024/</guid>
+      <guid>https://ctf-journey.github.io/post/2024/catch-it-if-you-can-2024/</guid>
       <description></description>
     </item>
     
