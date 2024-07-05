@@ -19,6 +19,16 @@
     </item>
     
     <item>
+      <title>Binary Exploitation</title>
+      <link>https://ctf-journey.github.io/notes/binary-exploitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/binary-exploitation/</guid>
+      <description>What is binary exploitation? introduction website website Exploitation Exploit Database Website Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Privilege escalation Check binaries for SUID permission bit Kernel bugs Binary exploitation tools pwntools GitHub pwndbg GitHub GEF GitHub Types of binary exploitation Usually caused by buffer overflow/format string vulnerabilities
+Stack based Overwrite return address on stack to redirect code execution (Only for x86 binaries)</description>
+    </item>
+    
+    <item>
       <title>Blockchain</title>
       <link>https://ctf-journey.github.io/notes/blockchain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -65,13 +75,13 @@ base2 also known as binary, it has a range from 0-1 base8 also known as octal.</
     </item>
     
     <item>
-      <title>Pwn</title>
-      <link>https://ctf-journey.github.io/notes/pwn/</link>
+      <title>Penetration Testing</title>
+      <link>https://ctf-journey.github.io/notes/attack-defence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/pwn/</guid>
-      <description>What is binary exploitation? introduction website website Exploitation Exploit Database Website Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Privilege escalation Check binaries for SUID permission bit Kernel bugs Binary exploitation tools pwntools GitHub pwndbg GitHub GEF GitHub Types of binary exploitation Usually caused by buffer overflow/format string vulnerabilities
-Stack based Overwrite return address on stack to redirect code execution (Only for x86 binaries)</description>
+      <guid>https://ctf-journey.github.io/notes/attack-defence/</guid>
+      <description>Trying to HackTheBox or break into machines??
+Enumeration Gaining access Privillege escallation </description>
     </item>
     
     <item>

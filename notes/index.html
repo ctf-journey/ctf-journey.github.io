@@ -222,6 +222,110 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Binary Exploitation</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/binary-exploitation/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="what-is-binary-exploitation">What is binary exploitation?</h2>
+<ul>
+<li>introduction <a href="https://guyinatuxedo.github.io/00-intro/index.html">website</a> <a href="https://vickieli.dev/binary%20exploitation/intro-to-reverse-engineering/">website</a></li>
+</ul>
+<h2 id="exploitation">Exploitation</h2>
+<ul>
+<li>Exploit Database <a href="https://www.exploit-db.com/">Website</a></li>
+</ul>
+<h2 id="restricted-shell">Restricted shell</h2>
+<ul>
+<li>Usually done with rbash</li>
+<li>Look for binaries you can execute and check its functionalities to see if you can take advantage of anything</li>
+</ul>
+<h2 id="privilege-escalation">Privilege escalation</h2>
+<ul>
+<li>Check binaries for SUID permission bit</li>
+<li>Kernel bugs</li>
+</ul>
+<h2 id="binary-exploitation-tools">Binary exploitation tools</h2>
+<ul>
+<li>pwntools <a href="https://github.com/Gallopsled/pwntools">GitHub</a></li>
+<li>pwndbg <a href="https://github.com/pwndbg/pwndbg">GitHub</a></li>
+<li>GEF <a href="https://github.com/hugsy/gef">GitHub</a></li>
+</ul>
+<h2 id="types-of-binary-exploitation">Types of binary exploitation</h2>
+<p>Usually caused by buffer overflow/format string vulnerabilities</p>
+<ul>
+<li>Stack based</li>
+</ul>
+<blockquote>
+<p>Overwrite return address on stack to redirect code execution (Only for x86 binaries)</p>
+</blockquote>
+<ul>
+<li>Heap based</li>
+</ul>
+<blockquote>
+<p>Use after free</p>
+</blockquote>
+<h3 id="format-string-vulnerability">Format string vulnerability</h3>
+<blockquote>
+<p>Putting user input into functions that can take in format specifiers can potentially be exploited</p>
+</blockquote>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Blockchain</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -678,10 +782,10 @@ consider running it through a reverse email checker (I haven&rsquo;t found one t
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
-                    <h3 class="fw-bold post-title">Pwn</h3>
+                    <h3 class="fw-bold post-title">Penetration Testing</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/pwn/">
+                    <a href="https://ctf-journey.github.io/notes/attack-defence/">
                         <button type="button" class="btn btn-outline-dark">
                             Link
                         </button>
@@ -712,48 +816,10 @@ consider running it through a reverse email checker (I haven&rsquo;t found one t
             <div class="post-entry">
 
                 
-                <h2 id="what-is-binary-exploitation">What is binary exploitation?</h2>
-<ul>
-<li>introduction <a href="https://guyinatuxedo.github.io/00-intro/index.html">website</a> <a href="https://vickieli.dev/binary%20exploitation/intro-to-reverse-engineering/">website</a></li>
-</ul>
-<h2 id="exploitation">Exploitation</h2>
-<ul>
-<li>Exploit Database <a href="https://www.exploit-db.com/">Website</a></li>
-</ul>
-<h2 id="restricted-shell">Restricted shell</h2>
-<ul>
-<li>Usually done with rbash</li>
-<li>Look for binaries you can execute and check its functionalities to see if you can take advantage of anything</li>
-</ul>
-<h2 id="privilege-escalation">Privilege escalation</h2>
-<ul>
-<li>Check binaries for SUID permission bit</li>
-<li>Kernel bugs</li>
-</ul>
-<h2 id="binary-exploitation-tools">Binary exploitation tools</h2>
-<ul>
-<li>pwntools <a href="https://github.com/Gallopsled/pwntools">GitHub</a></li>
-<li>pwndbg <a href="https://github.com/pwndbg/pwndbg">GitHub</a></li>
-<li>GEF <a href="https://github.com/hugsy/gef">GitHub</a></li>
-</ul>
-<h2 id="types-of-binary-exploitation">Types of binary exploitation</h2>
-<p>Usually caused by buffer overflow/format string vulnerabilities</p>
-<ul>
-<li>Stack based</li>
-</ul>
-<blockquote>
-<p>Overwrite return address on stack to redirect code execution (Only for x86 binaries)</p>
-</blockquote>
-<ul>
-<li>Heap based</li>
-</ul>
-<blockquote>
-<p>Use after free</p>
-</blockquote>
-<h3 id="format-string-vulnerability">Format string vulnerability</h3>
-<blockquote>
-<p>Putting user input into functions that can take in format specifiers can potentially be exploited</p>
-</blockquote>
+                <p>Trying to HackTheBox or break into machines??</p>
+<h1 id="enumeration">Enumeration</h1>
+<h1 id="gaining-access">Gaining access</h1>
+<h1 id="privillege-escallation">Privillege escallation</h1>
 
                 
             </div>
