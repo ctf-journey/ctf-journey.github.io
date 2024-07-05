@@ -76,10 +76,10 @@ base2 also known as binary, it has a range from 0-1 base8 also known as octal.</
     
     <item>
       <title>Penetration Testing</title>
-      <link>https://ctf-journey.github.io/notes/attack-defence/</link>
+      <link>https://ctf-journey.github.io/notes/penetration-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/attack-defence/</guid>
+      <guid>https://ctf-journey.github.io/notes/penetration-testing/</guid>
       <description>Trying to HackTheBox or break into machines??
 Enumeration Gaining access Privillege escallation </description>
     </item>
