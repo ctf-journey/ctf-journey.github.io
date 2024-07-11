@@ -60,7 +60,7 @@
   "headline": "Cryptography",
   "description" : "math.",
   "inLanguage" : "en",
-  "wordCount":  217 ,
+  "wordCount":  179 ,
   "datePublished" : "0001-01-01T00:00:00",
   "dateModified" : "0001-01-01T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
@@ -273,60 +273,76 @@
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h1 id="tools">Tools</h1>
+        <h2 id="introduction">Introduction</h2>
+<h2 id="related-tools">Related Tools</h2>
 <ul>
-<li>RsaCTFTool <a href="https://github.com/Ganapati/RsaCtfTool">GitHub</a></li>
-<li>XORtool <a href="https://github.com/hellman/xortool">GitHub</a></li>
-<li>hash_extender <a href="https://github.com/iagox86/hash_extender">GitHub</a></li>
-<li>FeatherDuster <a href="https://github.com/nccgroup/featherduster">GitHub</a></li>
+<li>Online
+<ul>
 <li>CyberChef (View Strings) <a href="https://gchq.github.io/CyberChef/">Online Tool</a></li>
 <li>dCode (Cipher Identifier) <a href="https://www.dcode.fr/cipher-identifier">Online Tool</a></li>
 <li>fernet (Type of encryption) <a href="https://asecuritysite.com/encryption/ferdecode">Online Tool</a></li>
+</ul>
+</li>
+<li>Hash-related
+<ul>
+<li>hash_extender <a href="https://github.com/iagox86/hash_extender">GitHub</a></li>
+<li>FeatherDuster <a href="https://github.com/nccgroup/featherduster">GitHub</a></li>
 <li>Hashcat <a href="https://github.com/hashcat/hashcat">GitHub</a></li>
 <li>John the Ripper <a href="https://github.com/openwall/john">GitHub</a></li>
+</ul>
+</li>
+<li>Encryption/Algorithms
+<ul>
+<li>RsaCTFTool <a href="https://github.com/Ganapati/RsaCtfTool">GitHub</a></li>
+<li>XORtool <a href="https://github.com/hellman/xortool">GitHub</a></li>
 <li>randcrack (predict Python <code>random</code> numbers) <a href="https://pypi.org/project/randcrack/">PyPi</a></li>
 <li>Orphcrack</li>
 </ul>
-<h1 id="different-encryption-methods-covered-here">Different encryption methods covered here</h1>
-<ul>
-<li>change of base</li>
-<li>URL encoding</li>
-<li>XOR</li>
-<li>block ciphers</li>
-<li>DES</li>
-<li>RSA</li>
+</li>
 </ul>
-<h2 id="base">base</h2>
-<p>there are many types of bases,
-base2, base8, base10, base16, base64 and more!</p>
+<h2 id="key-concepts">Key Concepts</h2>
 <ul>
+<li>
+<p>change of base</p>
+<ul>
+<li>there are many types of bases,</li>
+<li>base2, base8, base10, base16, base64 and more!</li>
 <li><code>base2</code> also known as binary, it has a range from 0-1</li>
 <li><code>base8</code> also known as octal.</li>
 <li><code>base10</code> is what we are used to, it has a range from 1-9</li>
 <li><code>base16</code> also known as hexadecimal, can be found in bits of two</li>
-<li><code>base64</code> is easily spotted through having equal signs at the end
-[note: may not be seen all the time]</li>
+<li><code>base64</code> is easily spotted through having equal signs at the end</li>
+<li>[note: may not be seen all the time]</li>
 </ul>
-<h2 id="url-encoding">URL encoding</h2>
-<p>can be indentified easily.
-Starts with % and two values following it
-e.g.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>A: <span style="color:#f92672">%</span><span style="color:#ae81ff">41</span>
-</span></span><span style="display:flex;"><span>B: <span style="color:#f92672">%</span><span style="color:#ae81ff">42</span>
-</span></span><span style="display:flex;"><span>C: <span style="color:#f92672">%</span><span style="color:#ae81ff">43</span>
-</span></span></code></pre></div><p>as you can see, it follows the ascii value system.
-URL encoding <a href="https://onlineasciitools.com/url-encode-ascii">website</a></p>
-<h2 id="xor-cyphers">XOR cyphers</h2>
-<p>XOR cyphers are intresting</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X <span style="color:#f92672">^</span> Y <span style="color:#f92672">=</span> z
-</span></span><span style="display:flex;"><span>X <span style="color:#f92672">^</span> z <span style="color:#f92672">=</span> Y
-</span></span><span style="display:flex;"><span>Y <span style="color:#f92672">^</span> z <span style="color:#f92672">=</span> X
-</span></span></code></pre></div><p>therefore, if you have two of the XOR values, you are able to find the last unknown value</p>
-<h2 id="block-ciphers">block ciphers</h2>
-<h2 id="des">DES</h2>
-<h2 id="rsa">RSA</h2>
-<p>Typically, simpler challenges can be solved with RsaCTFTool <a href="https://github.com/Ganapati/RsaCtfTool">GitHub</a></p>
-<h2 id="one-time-pad-otp">One Time Pad (OTP)</h2>
+</li>
+<li>
+<p>URL encoding</p>
+<ul>
+<li>Can be indentified easily. Starts with % and two values following it</li>
+<li>As you can see, it follows the ascii value system.</li>
+<li>URL encoding <a href="https://onlineasciitools.com/url-encode-ascii">website</a></li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ul>
+<li>XOR
+<ul>
+<li>XOR cyphers are intresting</li>
+<li>Therefore, if you have two of the XOR values, you are able to find the last unknown value</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ul>
+<li>Block Ciphers</li>
+<li>DES</li>
+<li>RSA</li>
+<li>One Time Pad</li>
+</ul>
+<h2 id="heading">.</h2>
 
       </article>
     </div>
@@ -458,7 +474,7 @@ URL encoding <a href="https://onlineasciitools.com/url-encode-ascii">website</a>
 
           &nbsp;&bull;&nbsp;&copy;
           
-          2020
+          0001
           
 
           

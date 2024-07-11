@@ -7,25 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
-    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What is Markdown ?</title>
-      <link>https://ctf-journey.github.io/post/2024/catch-it-if-you-can-2024/</link>
-      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/post/2024/catch-it-if-you-can-2024/</guid>
-      <description></description>
-    </item>
-    
+    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binary Exploitation</title>
       <link>https://ctf-journey.github.io/notes/binary-exploitation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/binary-exploitation/</guid>
-      <description>What is binary exploitation? introduction website website Exploitation Exploit Database Website Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Privilege escalation Check binaries for SUID permission bit Kernel bugs Binary exploitation tools pwntools GitHub pwndbg GitHub GEF GitHub Types of binary exploitation Usually caused by buffer overflow/format string vulnerabilities
-Stack based Overwrite return address on stack to redirect code execution (Only for x86 binaries)</description>
+      <description>Introduction website website Related Tools Static/Dynamic analysis pwntools GitHub pwndbg GitHub GEF GitHub Key Concepts Stack based Overwrite return address on stack to redirect code execution (Only for x86 binaries) Heap based Use after free Format string vulnerability Putting user input into functions that can take in format specifiers can potentially be exploited . </description>
     </item>
     
     <item>
@@ -34,7 +23,7 @@ Stack based Overwrite return address on stack to redirect code execution (Only f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/blockchain/</guid>
-      <description>Resources Curated list Github </description>
+      <description>Introduction Related Tools Curated list Github Key Concepts . </description>
     </item>
     
     <item>
@@ -43,8 +32,8 @@ Stack based Overwrite return address on stack to redirect code execution (Only f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cryptography/</guid>
-      <description>Tools RsaCTFTool GitHub XORtool GitHub hash_extender GitHub FeatherDuster GitHub CyberChef (View Strings) Online Tool dCode (Cipher Identifier) Online Tool fernet (Type of encryption) Online Tool Hashcat GitHub John the Ripper GitHub randcrack (predict Python random numbers) PyPi Orphcrack Different encryption methods covered here change of base URL encoding XOR block ciphers DES RSA base there are many types of bases, base2, base8, base10, base16, base64 and more!
-base2 also known as binary, it has a range from 0-1 base8 also known as octal.</description>
+      <description>Introduction Related Tools Online CyberChef (View Strings) Online Tool dCode (Cipher Identifier) Online Tool fernet (Type of encryption) Online Tool Hash-related hash_extender GitHub FeatherDuster GitHub Hashcat GitHub John the Ripper GitHub Encryption/Algorithms RsaCTFTool GitHub XORtool GitHub randcrack (predict Python random numbers) PyPi Orphcrack Key Concepts change of base
+there are many types of bases, base2, base8, base10, base16, base64 and more! base2 also known as binary, it has a range from 0-1 base8 also known as octal.</description>
     </item>
     
     <item>
@@ -53,7 +42,7 @@ base2 also known as binary, it has a range from 0-1 base8 also known as octal.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/forensics/</guid>
-      <description>Stegnography Steghide Website Pelock Online Tool Aperisolve Online Tool Strings(CLI tool) Exiftool GitHub binwalk (CLI tool) GitHub stegonline-check bit planes for hidden data Website fotoforensics Online Tool olevba for extracting vba from windows document GitHub Network protocol analysis Wireshark Website GitHub Disk image analysis FTK Imager Website The Sleuth Kit (TSK) Website GitHub Autospy (GUI version) Website GitHub Memory analysis Volatility, supports Windows, MacOS and Linux memory dumps Website GitHub Some useful commands mmls: displays the layout of the partitions in a volume system fls: list file and directory names in a disk image icat: output the contents of a file based on its inode number QR code recovery Bruteforce Website </description>
+      <description>Introduction Related Tools Stegnography Steghide Website Pelock Online Tool Aperisolve Online Tool Strings(CLI tool) Exiftool GitHub binwalk (CLI tool) GitHub stegonline-check bit planes for hidden data Website fotoforensics Online Tool olevba for extracting vba from windows document GitHub Network protocol analysis Wireshark Website GitHub Disk image analysis FTK Imager Website The Sleuth Kit (TSK) Website GitHub Autospy (GUI version) Website GitHub Memory analysis Volatility, supports Windows, MacOS and Linux memory dumps Website GitHub QR code recovery Bruteforce Website Key Concepts Linux memory commands mmls: displays the layout of the partitions in a volume system fls: list file and directory names in a disk image icat: output the contents of a file based on its inode number .</description>
     </item>
     
     <item>
@@ -62,7 +51,7 @@ base2 also known as binary, it has a range from 0-1 base8 also known as octal.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/hardware/</guid>
-      <description>Resources Logic Analyser for .sal files Download Site </description>
+      <description>Introduction Related Tools Logic Analyser for .sal files Download Site Key Concepts . </description>
     </item>
     
     <item>
@@ -71,7 +60,7 @@ base2 also known as binary, it has a range from 0-1 base8 also known as octal.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/osint/</guid>
-      <description>OSINT Tools OSINT framework Sherlock GitHub python3 sherlock [username] Search engines (Using dorks) Google Bing you can use any search engines of your choice tineye, a reverse image search engine (Website) epieos, osint tool for email and phone number (Website) Google Images, Google Lens Shodan The Wayback Machine theHarvester (Kali docs) (github) OSINT telegram bot https://t.me/UniversalSearchBot to search by: Email Image Phone Location Telegram ID Domain VK ID IP Address To find: GAIA ID Activity on google services (map reviews, calendar, google+, etc.</description>
+      <description>Introduction Related Tools Social Media Sherlock GitHub python3 sherlock [username] OSINT telegram bot https://t.me/UniversalSearchBot to search by: Email, Image, Phone, Location, Telegram ID, Domain, VK ID, IP Address To find: GAIA ID, Activity on google services (map reviews, calendar, google+, etc.), Instagram, Myspace, Leaks Reverse Search Search engines (Using dorks) Google Bing you can use any search engines of your choice tineye, a reverse image search engine (Website) Google Images, Google Lens The Wayback Machine Personal Details epieos, osint tool for email and phone number (Website) theHarvester (Kali docs) (github) Guerillamail (create throwaway emails to send &amp;amp; recieve) &amp;lt;www.</description>
     </item>
     
     <item>
@@ -80,8 +69,7 @@ base2 also known as binary, it has a range from 0-1 base8 also known as octal.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/penetration-testing/</guid>
-      <description>Trying to HackTheBox or break into machines??
-Enumeration Gaining access Privillege escallation </description>
+      <description>Introduction Related tools Nmap Metasploit Exploit Database Website Key concepts Enumeration Gaining access Privillege escalation Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Permission Check binaries for SUID permission bit Kernel explits . </description>
     </item>
     
     <item>
@@ -90,8 +78,7 @@ Enumeration Gaining access Privillege escallation </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/reverse-engeineering/</guid>
-      <description>NOTE: Tools may appear more then once if they offer different functionalities.
-Debuggers binary ninja (free/paid) Website Cheat Engine (free) Website GitHub GDB (GNU Project Debugger) (free) Website Ghidra (free) Website GitHub IDA pro (paid) Website Immunity debugger (free) Website OllyDbg (free) Website radare2 (free) GitHub iaito (radare2 frontend) (free) GitHub rizin (fork of radare2) (free) GitHub Cutter (rizin frontend) (free) Website GitHub x64dbg (free) Website GitHub Disassemblers binary ninja (free/paid) Website Cheat Engine (free) Website GitHub Ghidra (free) Website GitHub IDA (free version) Website IDA pro (paid) Website radare2 (free) GitHub iaito (radare2 frontend) (free) GitHub rizin (fork of radare2) (free) GitHub Cutter (rizin frontend) (free) Website GitHub Decompilers Uncompyle6 (for python bytecode) GitHub Dogbolt (online decompiler tool) Website </description>
+      <description>Introduction Related Tools NOTE: Tools may appear more then once if they offer different functionalities Debuggers binary ninja (free/paid) Website Cheat Engine (free) Website GitHub GDB (GNU Project Debugger) (free) Website Ghidra (free) Website GitHub IDA pro (paid) Website Immunity debugger (free) Website OllyDbg (free) Website radare2 (free) GitHub iaito (radare2 frontend) (free) GitHub rizin (fork of radare2) (free) GitHub Cutter (rizin frontend) (free) Website GitHub x64dbg (free) Website GitHub Disassemblers binary ninja (free/paid) Website Cheat Engine (free) Website GitHub Ghidra (free) Website GitHub IDA (free version) Website IDA pro (paid) Website radare2 (free) GitHub iaito (radare2 frontend) (free) GitHub rizin (fork of radare2) (free) GitHub Cutter (rizin frontend) (free) Website GitHub Decompilers Uncompyle6 (for python bytecode) GitHub Dogbolt (online decompiler tool) Website Key Concepts .</description>
     </item>
     
     <item>
@@ -100,7 +87,7 @@ Debuggers binary ninja (free/paid) Website Cheat Engine (free) Website GitHub GD
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/web/</guid>
-      <description>Resources PayloadAllTheThings Github API Testing Postman Insomia Web directory bruteforcers dirb (run dirb on terminal) dirbuster (requires GUI) gobuster (similar tool) dirsearch(faster alternative to dirb) GitHub Web crawlers dirhunt GitHub Packet utils Burp Suite (requires GUI) Website wget XXE (XML external entity) injection Happens when an application parses uses data from XML files which can be modified to be malicious Website LFI (Local File Inclusion) Commonly found in PHP web application (maybe through Wordpress plugins etc) Vulnerable websites can allow you to access local files through directory traversal Look out for ways where you can supply a file path and it is served as a download/printed to the page XSS Stored XSS Website uses external resources that contains malicious code If an SVG with XSS payload is in an iframe or embed of a website, it can be executed</description>
+      <description>Introduction Related Tools Resources PayloadAllTheThings Github API Testing Postman Insomia Web directory bruteforcers dirb (run dirb on terminal) dirbuster (requires GUI) gobuster (similar tool) dirsearch(faster alternative to dirb) GitHub Web crawlers dirhunt GitHub Packet utils Burp Suite (requires GUI) Website wget Key Concepts XXE (XML external entity) injection Happens when an application parses uses data from XML files which can be modified to be malicious Website LFI (Local File Inclusion) Commonly found in PHP web application (maybe through Wordpress plugins etc) Vulnerable websites can allow you to access local files through directory traversal Look out for ways where you can supply a file path and it is served as a download/printed to the page XSS Stored XSS Website uses external resources that contains malicious code If an SVG with XSS payload is in an iframe or embed of a website, it can be executed Reflected XSS When queries to a website is handled and returned in an unsafe way DOM based XSS Client side attack, browser executes payload that didn&amp;rsquo;t came from the server SQL Injection Testing Try using one (single or double) quote for the input and see if there is any errors If an error is returned, the website might be vulnerable Types of attack Union based attack Application displays the output of the query, allowing you to steal information from the database Error based attack Application returns an error with details about the query, helping you to craft queries to bypass checks Resources Sqlmap GitHub Learn and try using SQL Website Query Selector Injection In MongoDB + NodeJS web apps Query for login details Malicious input {&amp;quot;$gt&amp;quot;: &amp;ldquo;&amp;rdquo;} will result in true, $gt is a query selector which compares with &amp;quot;&amp;quot; Mitigation Make sure input gets sanitised as string Remove $ and .</description>
     </item>
     
   </channel>
