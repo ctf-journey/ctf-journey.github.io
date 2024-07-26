@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>writeup on CTF Journey</title>
+    <link>https://ctf-journey.github.io/tags/writeup/</link>
+    <description>Recent content in writeup on CTF Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
+    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NYP HTB WSS Training</title>
+      <link>https://ctf-journey.github.io/notes/writeups/2024-nyp-htb-wss-training-ctf/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/2024-nyp-htb-wss-training-ctf/</guid>
+      <description>Here is the Notion link, I&amp;rsquo;m lazy to transfer everything over
+https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8
+.</description>
+    </item>
+    
+    <item>
+      <title>NYP CGC Qualifiers</title>
+      <link>https://ctf-journey.github.io/notes/writeups/2022-nyp-cgc-qualifiers-ctf/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/2022-nyp-cgc-qualifiers-ctf/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>HTB Cyber Apocalypse</title>
+      <link>https://ctf-journey.github.io/notes/writeups/2022-htb-ca-ctf/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/2022-htb-ca-ctf/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>NYP InfoSec May</title>
+      <link>https://ctf-journey.github.io/notes/writeups/2022-nyp-infosec-may-ctf/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/2022-nyp-infosec-may-ctf/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>Lag N Crash 2.0</title>
+      <link>https://ctf-journey.github.io/notes/writeups/2022-lnc-v2-ctf/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/2022-lnc-v2-ctf/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/edit
+.</description>
+    </item>
+    
+  </channel>
+</rss>
