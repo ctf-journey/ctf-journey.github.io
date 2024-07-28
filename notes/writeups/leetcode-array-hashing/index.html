@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>OSINT - CTF Journey</title>
-<meta name="description" content="guess the flag">
+<title>Arrays &amp; Hashing - CTF Journey</title>
+<meta name="description" content="grinding leetcode">
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -45,8 +45,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/ctf-journey.github.io\/notes\/guides\/osint\/",
-          "name": "OSI nt"
+          "@id": "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-array-hashing\/",
+          "name": "Arrays \u0026 hashing"
         }
     }]
 }
@@ -57,15 +57,15 @@
   "author": {
     "name" : "GitHub Contributor Team"
   },
-  "headline": "OSINT",
-  "description" : "guess the flag",
+  "headline": "Arrays \u0026 Hashing",
+  "description" : "grinding leetcode",
   "inLanguage" : "en",
-  "wordCount":  176 ,
-  "datePublished" : "2024-07-01T00:00:00",
-  "dateModified" : "2024-07-01T00:00:00",
+  "wordCount":  71 ,
+  "datePublished" : "2024-06-01T00:00:00",
+  "dateModified" : "2024-06-01T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
-  "keywords" : [ "guide" ],
-  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/guides\/osint\/",
+  "keywords" : [ "writeup" ],
+  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-array-hashing\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/ctf-journey.github.io\/",
@@ -79,9 +79,9 @@
 }
 </script>
 
-<meta property="og:title" content="OSINT" />
-<meta property="og:description" content="guess the flag">
-<meta property="og:url" content="https://ctf-journey.github.io/notes/guides/osint/" />
+<meta property="og:title" content="Arrays &amp; Hashing" />
+<meta property="og:description" content="grinding leetcode">
+<meta property="og:url" content="https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
 <link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
@@ -259,7 +259,7 @@ if (!doNotTrack) {
 
               
               <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                OSINT
+                Arrays &amp; Hashing
                 
               </h1>
               
@@ -300,61 +300,25 @@ if (!doNotTrack) {
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h2 id="introduction">Introduction</h2>
-<h2 id="related-tools">Related Tools</h2>
+        <h2 id="what-are-arrays">What are Arrays?</h2>
 <ul>
-<li>Social Media
+<li>Ordered collection of elements</li>
+<li>Each element has an index, starting from 0</li>
+<li><code>[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</code> - key for <code>a</code> is <code>0</code>, <code>b</code> is <code>1</code> etc</li>
+</ul>
+<h2 id="what-are-hashes">What are Hashes?</h2>
 <ul>
-<li>Sherlock <a href="https://github.com/sherlock-project/sherlock">GitHub</a>
+<li>Unordered collection of key-value pairs</li>
+<li>Each value is retrieved from their corresponding keys</li>
+<li>Implemented with dictionaries or maps</li>
+<li><code>{ name: &quot;Alice&quot; }</code> - key is <code>name</code> and value is <code>&quot;Alice&quot;</code></li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p>Concepts explained here are following those from Neetcode&rsquo;s roadmap</p>
 <ul>
-<li><code>python3 sherlock [username]</code></li>
+<li><a href="https://neetcode.io/roadmap">https://neetcode.io/roadmap</a></li>
 </ul>
-</li>
-<li>OSINT telegram bot <a href="https://t.me/UniversalSearchBot">https://t.me/UniversalSearchBot</a>
-<ul>
-<li>to search by: Email, Image, Phone, Location, Telegram ID, Domain, VK ID, IP Address</li>
-<li>To find: GAIA ID, Activity on google services (map reviews, calendar, google+, etc.), Instagram, Myspace, Leaks</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Reverse Search
-<ul>
-<li>Search engines (Using dorks) <a href="https://www.google.com">Google</a> <a href="https://www.bing.com/">Bing</a>
-<ul>
-<li>you can use any search engines of your choice</li>
-</ul>
-</li>
-<li>tineye, a reverse image search engine (<a href="https://tineye.com/">Website</a>)</li>
-<li><a href="https://images.google.com">Google Images</a>, <a href="https://lens.google.com">Google Lens</a></li>
-<li><a href="https://archive.org/">The Wayback Machine</a></li>
-</ul>
-</li>
-<li>Personal Details
-<ul>
-<li>epieos, osint tool for email and phone number (<a href="https://epieos.com/">Website</a>)</li>
-<li>theHarvester (<a href="https://www.kali.org/tools/theharvester/">Kali docs</a>) (<a href="https://github.com/laramies/theHarvester">github</a>)</li>
-<li>Guerillamail (create throwaway emails to send &amp; recieve) &lt;www.guerrillamail.com&gt; (as of 4 Jan, the website is unsecure)</li>
-</ul>
-</li>
-<li>Framework
-<ul>
-<li><a href="https://osintframework.com/">OSINT framework</a></li>
-<li><a href="https://shodan.io">Shodan</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="key-concepts">Key Concepts</h2>
-<ul>
-<li>when given USERNAME, run through sherlock/google to find websites where the username turns up. consider <code>inurl:</code></li>
-<li>when given EMAIL
-<ul>
-<li>consider sending an email to the address (with throwaway email) because there might be an automated reply (thanks josh)</li>
-<li>consider running it through a reverse email checker (I haven&rsquo;t found one that works) or obtaining the GAIA ID to check for google activity</li>
-</ul>
-</li>
-</ul>
-<h2 id="heading">.</h2>
+<p>.</p>
 
       </article>
     </div>
@@ -369,7 +333,7 @@ if (!doNotTrack) {
       
       <div class="blog-tags">
         
-        <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+        <a href="https://ctf-journey.github.io/tags/writeup/">writeup</a>
         
       </div>
       
@@ -412,8 +376,8 @@ if (!doNotTrack) {
         
         <li class="list-group-item b-0 p-0">
 
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/penetration-testing/"
-            data-toggle="tooltip" data-placement="top" title="Penetration Testing">&larr;
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/"
+            data-toggle="tooltip" data-placement="top" title="NYP HTB WSS Training">&larr;
             Previous Post</a>
         </li>
         
@@ -421,8 +385,8 @@ if (!doNotTrack) {
 
         
         <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/hardware/"
-            data-toggle="tooltip" data-placement="top" title="Hardware">Next Post
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/web/"
+            data-toggle="tooltip" data-placement="top" title="Web">Next Post
             &rarr;</a>
         </li>
         

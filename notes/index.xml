@@ -8,66 +8,11 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>NYP HTB WSS Training</title>
-      <link>https://ctf-journey.github.io/notes/writeups/2024-nyp-htb-wss-training-ctf/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/2024-nyp-htb-wss-training-ctf/</guid>
-      <description>Here is the Notion link, I&amp;rsquo;m lazy to transfer everything over
-https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8
-.</description>
-    </item>
-    
-    <item>
-      <title>NYP CGC Qualifiers</title>
-      <link>https://ctf-journey.github.io/notes/writeups/2022-nyp-cgc-qualifiers-ctf/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/2022-nyp-cgc-qualifiers-ctf/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit
-.</description>
-    </item>
-    
-    <item>
-      <title>HTB Cyber Apocalypse</title>
-      <link>https://ctf-journey.github.io/notes/writeups/2022-htb-ca-ctf/</link>
-      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/2022-htb-ca-ctf/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/edit
-.</description>
-    </item>
-    
-    <item>
-      <title>NYP InfoSec May</title>
-      <link>https://ctf-journey.github.io/notes/writeups/2022-nyp-infosec-may-ctf/</link>
-      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/2022-nyp-infosec-may-ctf/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/edit
-.</description>
-    </item>
-    
-    <item>
-      <title>Lag N Crash 2.0</title>
-      <link>https://ctf-journey.github.io/notes/writeups/2022-lnc-v2-ctf/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/2022-lnc-v2-ctf/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/edit
-.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Binary Exploitation</title>
       <link>https://ctf-journey.github.io/notes/guides/binary-exploitation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/binary-exploitation/</guid>
       <description>Introduction website website Related Tools Static/Dynamic analysis pwntools GitHub pwndbg GitHub GEF GitHub Key Concepts Stack based Overwrite return address on stack to redirect code execution (Only for x86 binaries) Heap based Use after free Format string vulnerability Putting user input into functions that can take in format specifiers can potentially be exploited . </description>
@@ -76,7 +21,7 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
     <item>
       <title>Blockchain</title>
       <link>https://ctf-journey.github.io/notes/guides/blockchain/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/blockchain/</guid>
       <description>Introduction Related Tools Curated list Github Key Concepts . </description>
@@ -85,7 +30,7 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
     <item>
       <title>Cryptography</title>
       <link>https://ctf-journey.github.io/notes/guides/cryptography/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/cryptography/</guid>
       <description>Introduction Related Tools Online CyberChef (View Strings) Online Tool dCode (Cipher Identifier) Online Tool fernet (Type of encryption) Online Tool Hash-related hash_extender GitHub FeatherDuster GitHub Hashcat GitHub John the Ripper GitHub Encryption/Algorithms RsaCTFTool GitHub XORtool GitHub randcrack (predict Python random numbers) PyPi Orphcrack Key Concepts change of base
@@ -95,7 +40,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     <item>
       <title>Forensics</title>
       <link>https://ctf-journey.github.io/notes/guides/forensics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/forensics/</guid>
       <description>Introduction Related Tools Stegnography Steghide Website Pelock Online Tool Aperisolve Online Tool Strings(CLI tool) Exiftool GitHub binwalk (CLI tool) GitHub stegonline-check bit planes for hidden data Website fotoforensics Online Tool olevba for extracting vba from windows document GitHub Network protocol analysis Wireshark Website GitHub Disk image analysis FTK Imager Website The Sleuth Kit (TSK) Website GitHub Autospy (GUI version) Website GitHub Memory analysis Volatility, supports Windows, MacOS and Linux memory dumps Website GitHub QR code recovery Bruteforce Website Key Concepts Linux memory commands mmls: displays the layout of the partitions in a volume system fls: list file and directory names in a disk image icat: output the contents of a file based on its inode number .</description>
@@ -104,7 +49,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     <item>
       <title>Hardware</title>
       <link>https://ctf-journey.github.io/notes/guides/hardware/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/hardware/</guid>
       <description>Introduction Related Tools Logic Analyser for .sal files Download Site Key Concepts . </description>
@@ -113,7 +58,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     <item>
       <title>OSINT</title>
       <link>https://ctf-journey.github.io/notes/guides/osint/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/osint/</guid>
       <description>Introduction Related Tools Social Media Sherlock GitHub python3 sherlock [username] OSINT telegram bot https://t.me/UniversalSearchBot to search by: Email, Image, Phone, Location, Telegram ID, Domain, VK ID, IP Address To find: GAIA ID, Activity on google services (map reviews, calendar, google+, etc.), Instagram, Myspace, Leaks Reverse Search Search engines (Using dorks) Google Bing you can use any search engines of your choice tineye, a reverse image search engine (Website) Google Images, Google Lens The Wayback Machine Personal Details epieos, osint tool for email and phone number (Website) theHarvester (Kali docs) (github) Guerillamail (create throwaway emails to send &amp;amp; recieve) &amp;lt;www.</description>
@@ -122,7 +67,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     <item>
       <title>Penetration Testing</title>
       <link>https://ctf-journey.github.io/notes/guides/penetration-testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/penetration-testing/</guid>
       <description>Introduction Related tools Nmap Metasploit Exploit Database Website Key concepts Enumeration Gaining access Privillege escalation Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Permission Check binaries for SUID permission bit Kernel explits . </description>
@@ -131,7 +76,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     <item>
       <title>Reverse Engineering</title>
       <link>https://ctf-journey.github.io/notes/guides/reverse-engeineering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/reverse-engeineering/</guid>
       <description>Introduction Related Tools NOTE: Tools may appear more then once if they offer different functionalities Debuggers binary ninja (free/paid) Website Cheat Engine (free) Website GitHub GDB (GNU Project Debugger) (free) Website Ghidra (free) Website GitHub IDA pro (paid) Website Immunity debugger (free) Website OllyDbg (free) Website radare2 (free) GitHub iaito (radare2 frontend) (free) GitHub rizin (fork of radare2) (free) GitHub Cutter (rizin frontend) (free) Website GitHub x64dbg (free) Website GitHub Disassemblers binary ninja (free/paid) Website Cheat Engine (free) Website GitHub Ghidra (free) Website GitHub IDA (free version) Website IDA pro (paid) Website radare2 (free) GitHub iaito (radare2 frontend) (free) GitHub rizin (fork of radare2) (free) GitHub Cutter (rizin frontend) (free) Website GitHub Decompilers Uncompyle6 (for python bytecode) GitHub Dogbolt (online decompiler tool) Website Key Concepts .</description>
@@ -140,10 +85,75 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     <item>
       <title>Web</title>
       <link>https://ctf-journey.github.io/notes/guides/web/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/web/</guid>
       <description>Introduction Related Tools Resources PayloadAllTheThings Github API Testing Postman Insomia Web directory bruteforcers dirb (run dirb on terminal) dirbuster (requires GUI) gobuster (similar tool) dirsearch(faster alternative to dirb) GitHub Web crawlers dirhunt GitHub Packet utils Burp Suite (requires GUI) Website wget Key Concepts XXE (XML external entity) injection Happens when an application parses uses data from XML files which can be modified to be malicious Website LFI (Local File Inclusion) Commonly found in PHP web application (maybe through Wordpress plugins etc) Vulnerable websites can allow you to access local files through directory traversal Look out for ways where you can supply a file path and it is served as a download/printed to the page XSS Stored XSS Website uses external resources that contains malicious code If an SVG with XSS payload is in an iframe or embed of a website, it can be executed Reflected XSS When queries to a website is handled and returned in an unsafe way DOM based XSS Client side attack, browser executes payload that didn&amp;rsquo;t came from the server SQL Injection Testing Try using one (single or double) quote for the input and see if there is any errors If an error is returned, the website might be vulnerable Types of attack Union based attack Application displays the output of the query, allowing you to steal information from the database Error based attack Application returns an error with details about the query, helping you to craft queries to bypass checks Resources Sqlmap GitHub Learn and try using SQL Website Query Selector Injection In MongoDB + NodeJS web apps Query for login details Malicious input {&amp;quot;$gt&amp;quot;: &amp;ldquo;&amp;rdquo;} will result in true, $gt is a query selector which compares with &amp;quot;&amp;quot; Mitigation Make sure input gets sanitised as string Remove $ and .</description>
+    </item>
+    
+    <item>
+      <title>Arrays &amp; Hashing</title>
+      <link>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</guid>
+      <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
+https://neetcode.io/roadmap .</description>
+    </item>
+    
+    <item>
+      <title>NYP HTB WSS Training</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</guid>
+      <description>Here is the Notion link, I&amp;rsquo;m lazy to transfer everything over
+https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8
+.</description>
+    </item>
+    
+    <item>
+      <title>NYP CGC Qualifiers</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>HTB Cyber Apocalypse</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>NYP InfoSec May</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>Lag N Crash 2.0</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/edit
+.</description>
     </item>
     
   </channel>
