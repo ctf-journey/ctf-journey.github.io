@@ -83,15 +83,6 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
     </item>
     
     <item>
-      <title>Contribute</title>
-      <link>https://ctf-journey.github.io/notes/contribute/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/contribute/</guid>
-      <description>Interested in contributing to CTF Journey? CTF Journey only accepts contributions to guides All contributors will be featured on GitHub Steps for new contributors Clone the respository https://github.com/ctf-journey/guide Modify the category markdown file you are interested in Ensure content is easy to understand and not too complex Adhere to the current guides template Name the commit message as &amp;ldquo;[concept/tool] added for [category]&amp;rdquo; Create a pull request and wait for it to be reviewed (less than a week) Collaboration Reach out over email at privacy_mini@pm.</description>
-    </item>
-    
-    <item>
       <title>Cryptography</title>
       <link>https://ctf-journey.github.io/notes/guides/cryptography/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
