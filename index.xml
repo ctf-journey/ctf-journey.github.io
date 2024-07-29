@@ -144,7 +144,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/penetration-testing/</guid>
-      <description>Introduction Related tools Nmap Metasploit Exploit Database Website Key concepts Enumeration Gaining access Privillege escalation Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Permission Check binaries for SUID permission bit Kernel explits . </description>
+      <description>Introduction Related tools Nmap Metasploit Exploit Database Website enum4linux, SMB share enumeration Key concepts Enumeration Port scanning nmap -sC -sV SMB shares smbclient -L target_ip FTP server WinRM Gaining access Web shell Privillege escalation Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Permission Check binaries for SUID permission bit Kernel explits . </description>
     </item>
     
     <item>
