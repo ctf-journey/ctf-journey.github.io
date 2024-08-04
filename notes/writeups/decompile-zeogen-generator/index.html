@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Binary Exploitation - CTF Journey</title>
-<meta name="description" content="from pwntools import *">
+<title>Zeogen Generator - CTF Journey</title>
+<meta name="description" content="decompile everything">
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -45,8 +45,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/ctf-journey.github.io\/notes\/guides\/binary-exploitation\/",
-          "name": "Binary exploitation"
+          "@id": "https:\/\/ctf-journey.github.io\/notes\/writeups\/decompile-zeogen-generator\/",
+          "name": "Zeogen generator"
         }
     }]
 }
@@ -57,15 +57,15 @@
   "author": {
     "name" : "GitHub Contributor Team"
   },
-  "headline": "Binary Exploitation",
-  "description" : "from pwntools import *",
+  "headline": "Zeogen Generator",
+  "description" : "decompile everything",
   "inLanguage" : "en",
-  "wordCount":  54 ,
-  "datePublished" : "0001-01-01T00:00:00",
-  "dateModified" : "0001-01-01T00:00:00",
+  "wordCount":  109 ,
+  "datePublished" : "2024-08-03T00:00:00",
+  "dateModified" : "2024-08-03T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
-  "keywords" : [ "guide" ],
-  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/guides\/binary-exploitation\/",
+  "keywords" : [ "writeup" ],
+  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/writeups\/decompile-zeogen-generator\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/ctf-journey.github.io\/",
@@ -79,9 +79,9 @@
 }
 </script>
 
-<meta property="og:title" content="Binary Exploitation" />
-<meta property="og:description" content="from pwntools import *">
-<meta property="og:url" content="https://ctf-journey.github.io/notes/guides/binary-exploitation/" />
+<meta property="og:title" content="Zeogen Generator" />
+<meta property="og:description" content="decompile everything">
+<meta property="og:url" content="https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
 <link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
@@ -264,7 +264,7 @@ if (!doNotTrack) {
 
               
               <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                Binary Exploitation
+                Zeogen Generator
                 
               </h1>
               
@@ -305,39 +305,26 @@ if (!doNotTrack) {
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h2 id="introduction">Introduction</h2>
+        <h2 id="source-of-executable">Source of executable</h2>
 <ul>
-<li><a href="https://guyinatuxedo.github.io/00-intro/index.html">website</a> <a href="https://vickieli.dev/binary%20exploitation/intro-to-reverse-engineering/">website</a></li>
+<li>Guy send me this EXE file on Discord</li>
+<li>Executable was a supposed Amazon Storecard generator</li>
 </ul>
-<h2 id="related-tools">Related Tools</h2>
+<h2 id="reversing-steps">Reversing steps</h2>
 <ul>
-<li>Static/Dynamic analysis
+<li>Using <code>strings</code>, we can identify PyInstaller was used to convert the PY script to EXE</li>
+<li>Using <code>PyInstxtractor</code>, we can decompile it into the python bytecode files</li>
+<li>Using <code>pycadas</code>, we can decompile python bytecode files into readable instructions!</li>
+<li>Tool appears to be just a RNG and generating fake card details</li>
+<li>The file &ldquo;zeogen.pyc&rdquo; stood out, a quick Google search shows its on GitHub!</li>
+<li>Comparing the sources, seems like it has been rebranded and sold multiple times</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
 <ul>
-<li>pwntools <a href="https://github.com/Gallopsled/pwntools">GitHub</a></li>
-<li>pwndbg <a href="https://github.com/pwndbg/pwndbg">GitHub</a></li>
-<li>GEF <a href="https://github.com/hugsy/gef">GitHub</a></li>
+<li>Don&rsquo;t buy stupid scripts LOL</li>
+<li>Open source is used by scammers too!</li>
 </ul>
-</li>
-</ul>
-<h2 id="key-concepts">Key Concepts</h2>
-<ul>
-<li>Stack based
-<ul>
-<li>Overwrite return address on stack to redirect code execution (Only for x86 binaries)</li>
-</ul>
-</li>
-<li>Heap based
-<ul>
-<li>Use after free</li>
-</ul>
-</li>
-<li>Format string vulnerability
-<ul>
-<li>Putting user input into functions that can take in format specifiers can potentially be exploited</li>
-</ul>
-</li>
-</ul>
-<h2 id="heading">.</h2>
+<p>.</p>
 
       </article>
     </div>
@@ -352,7 +339,7 @@ if (!doNotTrack) {
       
       <div class="blog-tags">
         
-        <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+        <a href="https://ctf-journey.github.io/tags/writeup/">writeup</a>
         
       </div>
       
@@ -395,19 +382,13 @@ if (!doNotTrack) {
         
         <li class="list-group-item b-0 p-0">
 
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/blockchain/"
-            data-toggle="tooltip" data-placement="top" title="Blockchain">&larr;
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/"
+            data-toggle="tooltip" data-placement="top" title="Arrays &amp; Hashing">&larr;
             Previous Post</a>
         </li>
         
 
 
-        
-        <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/"
-            data-toggle="tooltip" data-placement="top" title="Lag N Crash 2.0 CTF">Next Post
-            &rarr;</a>
-        </li>
         
       </ul>
       

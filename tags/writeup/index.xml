@@ -8,19 +8,27 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zeogen Generator</title>
+      <link>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</link>
+      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</guid>
+      <description>Source of executable Guy send me this EXE file on Discord Executable was a supposed Amazon Storecard generator Reversing steps Using strings, we can identify PyInstaller was used to convert the PY script to EXE Using PyInstxtractor, we can decompile it into the python bytecode files Using pycadas, we can decompile python bytecode files into readable instructions! Tool appears to be just a RNG and generating fake card details The file &amp;ldquo;zeogen.</description>
+    </item>
+    
     <item>
       <title>Arrays &amp; Hashing</title>
       <link>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</guid>
-      <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
-https://neetcode.io/roadmap .</description>
+      <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Related examples Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap</description>
     </item>
     
     <item>
-      <title>NYP HTB WSS Training</title>
+      <title>NYP HTB Training CTF</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
@@ -31,7 +39,7 @@ https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da
     </item>
     
     <item>
-      <title>NYP CGC Qualifiers</title>
+      <title>NYP CGC CTF</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</link>
       <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
@@ -42,7 +50,7 @@ https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/
     </item>
     
     <item>
-      <title>HTB Cyber Apocalypse</title>
+      <title>HTB CA CTF</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</link>
       <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
@@ -53,7 +61,7 @@ https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/
     </item>
     
     <item>
-      <title>NYP InfoSec May</title>
+      <title>NYP InfoSec May CTF</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</link>
       <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
@@ -64,7 +72,7 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
     </item>
     
     <item>
-      <title>Lag N Crash 2.0</title>
+      <title>Lag N Crash 2.0 CTF</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</link>
       <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
