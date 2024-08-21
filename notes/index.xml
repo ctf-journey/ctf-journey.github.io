@@ -24,7 +24,7 @@
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</guid>
-      <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Related examples Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap</description>
+      <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Related examples Read my solution to some problems below Contains Duplicate Group Anagrams https://docs.</description>
     </item>
     
     <item>
