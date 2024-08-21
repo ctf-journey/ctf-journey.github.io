@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Sat, 03 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stack</title>
+      <link>https://ctf-journey.github.io/notes/writeups/leetcode-stack/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-stack/</guid>
+      <description>What are Stacks? Stacks are a type of data structure that follows the LIFO (Last In First Out) principle Last element to be added is the first to be removed Related examples Read my solution to some problems below Valid Parentheses Min Stack https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
+https://neetcode.io/roadmap .</description>
+    </item>
+    
     <item>
       <title>Zeogen Generator</title>
       <link>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</link>
