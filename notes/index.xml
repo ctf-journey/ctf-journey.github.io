@@ -8,14 +8,33 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary Search</title>
+      <link>https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/</guid>
+      <description>What is Binary Search? Binary Search is a search algorithm that efficently finds the position of the target value in a sorted array (Must be sorted!!) It works by repeatedly dividing the search interval in half until the target value is found or determined to be not present Time complexity is O(log n), where n is the number of elements in the array This makes binary search very efficient for large datasets Related examples Read my solution to some LeetCode problems below Binary Search Search a 2D Matrix https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Two Pointers</title>
+      <link>https://ctf-journey.github.io/notes/writeups/leetcode-two-pointers/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-two-pointers/</guid>
+      <description>What is Two Pointers? Two Pointers is a technique used to iterate through a data structure, usually an array or linked list These pointers perform tasks such as searching, sorting or finding specific patterns within the data Related examples Read my solution to some LeetCode problems below Valid Palindrome Two Sum II - Input Array Is Sorted https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
+https://neetcode.io/roadmap .</description>
+    </item>
+    
     <item>
       <title>Stack</title>
       <link>https://ctf-journey.github.io/notes/writeups/leetcode-stack/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/writeups/leetcode-stack/</guid>
-      <description>What are Stacks? Stacks are a type of data structure that follows the LIFO (Last In First Out) principle Last element to be added is the first to be removed Related examples Read my solution to some problems below Valid Parentheses Min Stack https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
+      <description>What are Stacks? Stacks are a type of data structure that follows the LIFO (Last In First Out) principle Last element to be added is the first to be removed Related examples Read my solution to some LeetCode problems below Valid Parentheses Min Stack https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
 https://neetcode.io/roadmap .</description>
     </item>
     
@@ -34,7 +53,7 @@ https://neetcode.io/roadmap .</description>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</guid>
-      <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Related examples Read my solution to some problems below Contains Duplicate Group Anagrams https://docs.</description>
+      <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Related examples Read my solution to some LeetCode problems below Contains Duplicate Group Anagrams https://docs.</description>
     </item>
     
     <item>

@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Web - CTF Journey</title>
-<meta name="description" content="find the spider">
+<title>Binary Search - CTF Journey</title>
+<meta name="description" content="grinding leetcode">
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -45,8 +45,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/ctf-journey.github.io\/notes\/guides\/web\/",
-          "name": "Web"
+          "@id": "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-binary-search\/",
+          "name": "Binary search"
         }
     }]
 }
@@ -57,15 +57,15 @@
   "author": {
     "name" : "GitHub Contributor Team"
   },
-  "headline": "Web",
-  "description" : "find the spider",
+  "headline": "Binary Search",
+  "description" : "grinding leetcode",
   "inLanguage" : "en",
-  "wordCount":  440 ,
-  "datePublished" : "0001-01-01T00:00:00",
-  "dateModified" : "0001-01-01T00:00:00",
+  "wordCount":  101 ,
+  "datePublished" : "2024-08-22T00:00:00",
+  "dateModified" : "2024-08-22T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
-  "keywords" : [ "guide" ],
-  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/guides\/web\/",
+  "keywords" : [ "leetcode" ],
+  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-binary-search\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/ctf-journey.github.io\/",
@@ -79,9 +79,9 @@
 }
 </script>
 
-<meta property="og:title" content="Web" />
-<meta property="og:description" content="find the spider">
-<meta property="og:url" content="https://ctf-journey.github.io/notes/guides/web/" />
+<meta property="og:title" content="Binary Search" />
+<meta property="og:description" content="grinding leetcode">
+<meta property="og:url" content="https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
 <link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
@@ -260,7 +260,7 @@ if (!doNotTrack) {
 
               
               <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                Web
+                Binary Search
                 
               </h1>
               
@@ -301,187 +301,29 @@ if (!doNotTrack) {
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h2 id="introduction">Introduction</h2>
-<h2 id="related-tools">Related Tools</h2>
+        <h2 id="what-is-binary-search">What is Binary Search?</h2>
 <ul>
-<li>Resources
+<li>Binary Search is a search algorithm that efficently finds the position of the target value in a sorted array (Must be sorted!!)</li>
+<li>It works by repeatedly dividing the search interval in half until the target value is found or determined to be not present</li>
+<li>Time complexity is O(log n), where n is the number of elements in the array</li>
+<li>This makes binary search very efficient for large datasets</li>
+</ul>
+<h2 id="related-examples">Related examples</h2>
 <ul>
-<li>PayloadAllTheThings <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master">Github</a></li>
+<li>Read my solution to some LeetCode problems below
+<ul>
+<li>Binary Search</li>
+<li>Search a 2D Matrix</li>
 </ul>
 </li>
-<li>API Testing
+<li><a href="https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing">https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing</a></li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p>Concepts explained here are following those from Neetcode&rsquo;s roadmap</p>
 <ul>
-<li>Postman</li>
-<li>Insomia</li>
+<li><a href="https://neetcode.io/roadmap">https://neetcode.io/roadmap</a></li>
 </ul>
-</li>
-<li>Web directory bruteforcers
-<ul>
-<li>dirb (run dirb on terminal)</li>
-<li>dirbuster (requires GUI)</li>
-<li>gobuster (similar tool)</li>
-<li>dirsearch(faster alternative to dirb) <a href="https://github.com/maurosoria/dirsearch">GitHub</a></li>
-</ul>
-</li>
-<li>Web crawlers
-<ul>
-<li>dirhunt <a href="https://github.com/Nekmo/dirhunt">GitHub</a></li>
-</ul>
-</li>
-<li>Packet utils
-<ul>
-<li>Burp Suite (requires GUI) <a href="https://portswigger.net/burp">Website</a></li>
-<li>wget</li>
-</ul>
-</li>
-</ul>
-<h2 id="key-concepts">Key Concepts</h2>
-<ul>
-<li>XXE (XML external entity) injection
-<ul>
-<li>Happens when an application parses uses data from XML files which can be modified to be malicious</li>
-<li><a href="https://portswigger.net/web-security/xxe">Website</a></li>
-</ul>
-</li>
-<li>LFI (Local File Inclusion)
-<ul>
-<li>Commonly found in PHP web application (maybe through Wordpress plugins etc)</li>
-<li>Vulnerable websites can allow you to access local files through directory traversal</li>
-<li>Look out for ways where you can supply a file path and it is served as a download/printed to the page</li>
-</ul>
-</li>
-<li>XSS
-<ul>
-<li>Stored XSS
-<ul>
-<li>Website uses external resources that contains malicious code</li>
-<li>If an SVG with XSS payload is in an iframe or embed of a website, it can be executed</li>
-</ul>
-</li>
-<li>Reflected XSS
-<ul>
-<li>When queries to a website is handled and returned in an unsafe way</li>
-</ul>
-</li>
-<li>DOM based XSS
-<ul>
-<li>Client side attack, browser executes payload that didn&rsquo;t came from the server</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>SQL Injection
-<ul>
-<li>Testing
-<ul>
-<li>Try using one (single or double) quote for the input and see if there is any errors</li>
-<li>If an error is returned, the website might be vulnerable</li>
-</ul>
-</li>
-<li>Types of attack
-<ul>
-<li>Union based attack
-<ul>
-<li>Application displays the output of the query, allowing you to steal information from the database</li>
-</ul>
-</li>
-<li>Error based attack
-<ul>
-<li>Application returns an error with details about the query, helping you to craft queries to bypass checks</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Resources
-<ul>
-<li>Sqlmap <a href="https://github.com/sqlmapproject/">GitHub</a></li>
-<li>Learn and try using SQL <a href="http://mystery.knightlab.com/">Website</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Query Selector Injection
-<ul>
-<li>In MongoDB + NodeJS web apps
-<ul>
-<li>Query for login details</li>
-<li>Malicious input</li>
-<li>{&quot;$gt&quot;: &ldquo;&rdquo;} will result in true, $gt is a query selector which compares with &quot;&quot;</li>
-</ul>
-</li>
-<li>Mitigation
-<ul>
-<li>Make sure input gets sanitised as string</li>
-<li>Remove $ and . to prevent query selectors</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>CSRF</p>
-<ul>
-<li>Steps to test for CSRF <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">Guide</a></li>
-</ul>
-</li>
-<li>
-<p>Broken Authentication</p>
-<ul>
-<li>Steps to test for Broken Authentication <a href="https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication">Guide</a></li>
-</ul>
-</li>
-<li>
-<p>Apache</p>
-<ul>
-<li><code>.htaccess</code> files are configuration files for its directory</li>
-</ul>
-</li>
-<li>
-<p>Practice</p>
-<ul>
-<li>bWAPP, a free and open source deliberately insecure web application <a href="http://www.itsecgames.com/">Website</a></li>
-</ul>
-</li>
-<li>
-<p>Common python applications pitfalls</p>
-<ul>
-<li>Article explainling various common python application pitfalls which can be exploited <a href="https://medium.com/swlh/hacking-python-applications-5d4cd541b3f1">Website</a></li>
-</ul>
-</li>
-<li>
-<p>Common files</p>
-<ul>
-<li><code>robots.txt</code> contains information for crawlers to know which files and directories it has permission to check, this could potentially show hidden files</li>
-<li><code>sitemap.xml</code> contains infomation about the pages a site has to help search engines crawl and index through the website faster</li>
-</ul>
-</li>
-<li>
-<p>AWS configuration flaw</p>
-<ul>
-<li>Pacu, a web exploitation framework for exploiting configuration flaws in AWS servers <a href="https://github.com/RhinoSecurityLabs/pacu">GitHub</a></li>
-</ul>
-</li>
-<li>
-<p>Cookie Attack</p>
-<ul>
-<li>Flask Unsign [Python Tool]](<a href="https://pypi.org/project/flask-unsign/">https://pypi.org/project/flask-unsign/</a>)</li>
-</ul>
-</li>
-<li>
-<p>Server-side Template Injection (SSTI)</p>
-<ul>
-<li>Reference <a href="https://github.com/w181496/Web-CTF-Cheatsheet#ssti">GitHub</a> / <a href="https://github-com.translate.goog/w181496/Web-CTF-Cheatsheet?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=en-US&amp;_x_tr_pto=wapp#ssti">Translated Version</a></li>
-<li>Payload for more languages <a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection">Website</a></li>
-<li>Payload all the things SSTI <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection">Github</a></li>
-</ul>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="heading">.</h2>
+<p>.</p>
 
       </article>
     </div>
@@ -496,7 +338,7 @@ if (!doNotTrack) {
       
       <div class="blog-tags">
         
-        <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+        <a href="https://ctf-journey.github.io/tags/leetcode/">leetcode</a>
         
       </div>
       
@@ -537,14 +379,15 @@ if (!doNotTrack) {
       
       <ul class="list-group list-group-horizontal" style="flex-direction: row">
         
+        <li class="list-group-item b-0 p-0">
 
-
-        
-        <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/reverse-engeineering/"
-            data-toggle="tooltip" data-placement="top" title="Reverse Engineering">Next Post
-            &rarr;</a>
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-two-pointers/"
+            data-toggle="tooltip" data-placement="top" title="Two Pointers">&larr;
+            Previous Post</a>
         </li>
+        
+
+
         
       </ul>
       
