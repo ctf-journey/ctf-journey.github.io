@@ -8,7 +8,25 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linked List</title>
+      <link>https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/</link>
+      <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/</guid>
+      <description>What are Linked List? Linked Lists are a fundamental data structure in computer science They consist of a sequence of nodes, where each node contains data and a pointer to the next node in the sequence Head is the first node and tail is the last node in the linked list This structure allows for dynamic memory allocation and efficient insertion and deletion of elements Related examples Read my solution to some LeetCode problems below Reverse Linked List Reorder List https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Sliding Window</title>
+      <link>https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/</link>
+      <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/</guid>
+      <description>What are Sliding Window? Sliding Window technique is a common algorithm used in various problem-solving scenarios, particularly in computer science It involves maintaining a window of a fixed size that slides over a data structure, typically an array or string As the window moves, calculations or comparisons are made within the current window to find specific patterns, subarrays, or optimal solutions Related examples Read my solution to some LeetCode problems below Best Time to Buy and Sell Stock Longest Substring Without Repeating Characters https://docs.</description>
+    </item>
+    
     <item>
       <title>Binary Search</title>
       <link>https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/</link>

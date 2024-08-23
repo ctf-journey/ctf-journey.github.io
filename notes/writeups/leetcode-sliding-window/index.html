@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>leetcode - CTF Journey</title>
+<title>Sliding Window - CTF Journey</title>
+<meta name="description" content="grinding leetcode">
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -29,9 +30,58 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/ctf-journey.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-sliding-window\/",
+          "name": "Sliding window"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "GitHub Contributor Team"
+  },
+  "headline": "Sliding Window",
+  "description" : "grinding leetcode",
+  "inLanguage" : "en",
+  "wordCount":  96 ,
+  "datePublished" : "2024-08-23T00:00:00",
+  "dateModified" : "2024-08-23T00:00:00",
+  "image" : "https:\/\/ctf-journey.github.io\/",
+  "keywords" : [ "leetcode" ],
+  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-sliding-window\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/ctf-journey.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/ctf-journey.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="leetcode" />
-<meta property="og:url" content="https://ctf-journey.github.io/tags/leetcode/" />
+<meta property="og:title" content="Sliding Window" />
+<meta property="og:description" content="grinding leetcode">
+<meta property="og:url" content="https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
 <link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
@@ -196,15 +246,22 @@ if (!doNotTrack) {
       <div class="row justify-content-center">
 
         
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          
 
           
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             
 
-            <div class="tags-heading">
+            <div class="notes-heading">
               
-              <h1 class="fw-semibold display-5 lh-1 mb-3">
-                #leetcode
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                Sliding Window
+                
               </h1>
               
               
@@ -212,12 +269,7 @@ if (!doNotTrack) {
               
 
               
-
               
-              
-
-              
-
               
             </div>
           </div>
@@ -225,6 +277,8 @@ if (!doNotTrack) {
         </div>
         
         
+      </div>
+      
     </div>
   </div>
 </header>
@@ -234,321 +288,129 @@ if (!doNotTrack) {
     
 <div class="container" role="main">
   <div class="row">
-    <div class="col-md-12">
-      
-      <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
         
-          
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
-    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/">
-        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
-            <div class="card-body">
-                <h3 class="fw-bold post-title">Linked List</h3>
-                
-
-                <p class="post-meta">
-                    <span class="post-meta text-muted">
-  
-  
-
-  August 23, 2024
-
-  
-
-  
-
-  
-
-  
-</span>
-
-                </p>
-                
-
-                <div class="post-entry">
-                    
-                    grinding leetcode
-
-                    
-                </div>
-
-                <div class="read-more-section">
-                    
-                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
-                </div>
-            </div>
-
-            
-
-            
-        </div>
-    </a>
-</div>
-
-
         
-          
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
-    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/">
-        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
-            <div class="card-body">
-                <h3 class="fw-bold post-title">Sliding Window</h3>
-                
-
-                <p class="post-meta">
-                    <span class="post-meta text-muted">
-  
-  
-
-  August 23, 2024
-
-  
-
-  
-
-  
-
-  
-</span>
-
-                </p>
-                
-
-                <div class="post-entry">
-                    
-                    grinding leetcode
-
-                    
-                </div>
-
-                <div class="read-more-section">
-                    
-                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
-                </div>
-            </div>
-
-            
-
-            
-        </div>
-    </a>
-</div>
-
-
-        
-          
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
-    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/">
-        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
-            <div class="card-body">
-                <h3 class="fw-bold post-title">Binary Search</h3>
-                
-
-                <p class="post-meta">
-                    <span class="post-meta text-muted">
-  
-  
-
-  August 22, 2024
-
-  
-
-  
-
-  
-
-  
-</span>
-
-                </p>
-                
-
-                <div class="post-entry">
-                    
-                    grinding leetcode
-
-                    
-                </div>
-
-                <div class="read-more-section">
-                    
-                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
-                </div>
-            </div>
-
-            
-
-            
-        </div>
-    </a>
-</div>
-
-
-        
-          
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
-    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-two-pointers/">
-        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
-            <div class="card-body">
-                <h3 class="fw-bold post-title">Two Pointers</h3>
-                
-
-                <p class="post-meta">
-                    <span class="post-meta text-muted">
-  
-  
-
-  August 22, 2024
-
-  
-
-  
-
-  
-
-  
-</span>
-
-                </p>
-                
-
-                <div class="post-entry">
-                    
-                    grinding leetcode
-
-                    
-                </div>
-
-                <div class="read-more-section">
-                    
-                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
-                </div>
-            </div>
-
-            
-
-            
-        </div>
-    </a>
-</div>
-
-
-        
-          
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
-    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-stack/">
-        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
-            <div class="card-body">
-                <h3 class="fw-bold post-title">Stack</h3>
-                
-
-                <p class="post-meta">
-                    <span class="post-meta text-muted">
-  
-  
-
-  August 21, 2024
-
-  
-
-  
-
-  
-
-  
-</span>
-
-                </p>
-                
-
-                <div class="post-entry">
-                    
-                    grinding leetcode
-
-                    
-                </div>
-
-                <div class="read-more-section">
-                    
-                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
-                </div>
-            </div>
-
-            
-
-            
-        </div>
-    </a>
-</div>
-
-
-        
-          
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
-    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/">
-        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
-            <div class="card-body">
-                <h3 class="fw-bold post-title">Arrays &amp; Hashing</h3>
-                
-
-                <p class="post-meta">
-                    <span class="post-meta text-muted">
-  
-  
-
-  June 1, 2024
-
-  
-
-  
-
-  
-
-  
-</span>
-
-                </p>
-                
-
-                <div class="post-entry">
-                    
-                    grinding leetcode
-
-                    
-                </div>
-
-                <div class="read-more-section">
-                    
-                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
-                </div>
-            </div>
-
-            
-
-            
-        </div>
-    </a>
-</div>
 
 
         
       </div>
     </div>
-  </div>
-</div>
 
-<div class="container">
- <div class="row font-sans">
-   <div class="col-md-12 mt-10">
-      <nav aria-label="Page navigation">
-      <ul class= "pagination justify-content-end">
-      
-      </ul>
-      </nav>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <h2 id="what-are-sliding-window">What are Sliding Window?</h2>
+<ul>
+<li>Sliding Window technique is a common algorithm used in various problem-solving scenarios, particularly in computer science</li>
+<li>It involves maintaining a window of a fixed size that slides over a data structure, typically an array or string</li>
+<li>As the window moves, calculations or comparisons are made within the current window to find specific patterns, subarrays, or optimal solutions</li>
+</ul>
+<h2 id="related-examples">Related examples</h2>
+<ul>
+<li>Read my solution to some LeetCode problems below
+<ul>
+<li>Best Time to Buy and Sell Stock</li>
+<li>Longest Substring Without Repeating Characters</li>
+</ul>
+</li>
+<li><a href="https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing">https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing</a></li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p>Concepts explained here are following those from Neetcode&rsquo;s roadmap</p>
+<ul>
+<li><a href="https://neetcode.io/roadmap">https://neetcode.io/roadmap</a></li>
+</ul>
+<p>.</p>
+
+      </article>
     </div>
   </div>
+
+  
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr class="m-0"/>
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+      
+      <div class="blog-tags">
+        
+        <a href="https://ctf-journey.github.io/tags/leetcode/">leetcode</a>
+        
+      </div>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+    </div>
+
+    
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
+      <div class="card">
+        <div class="row no-gutters">
+
+          
+
+
+          <div class="col-md-10">
+            <div class="card-body p-1.1">
+              <p class="p-0 m-0"><small class="text-muted">Written By</small></p>
+              <p class="card-text fs-5 m-0">
+                 
+                
+                GitHub Contributor Team
+                
+
+              </p>
+
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+      
+      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+        
+        <li class="list-group-item b-0 p-0">
+
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/"
+            data-toggle="tooltip" data-placement="top" title="Binary Search">&larr;
+            Previous Post</a>
+        </li>
+        
+
+
+        
+        <li class="list-group-item ms-auto b-0 p-0">
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/"
+            data-toggle="tooltip" data-placement="top" title="Linked List">Next Post
+            &rarr;</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+    </div>
+  </div>
+  
 </div>
 
+<div class="">
+  
+  
+
+  
+
+</div>
 
     
 
