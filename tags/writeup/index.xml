@@ -8,16 +8,7 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Sat, 03 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Zeogen Generator</title>
-      <link>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</link>
-      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</guid>
-      <description>Source of executable Guy send me this EXE file on Discord Executable was a supposed Amazon Storecard generator Reversing steps Using strings, we can identify PyInstaller was used to convert the PY script to EXE Using PyInstxtractor, we can decompile it into the python bytecode files Using pycadas, we can decompile python bytecode files into readable instructions! Tool appears to be just a RNG and generating fake card details The file &amp;ldquo;zeogen.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NYP HTB Training CTF</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</link>
