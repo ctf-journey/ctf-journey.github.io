@@ -8,63 +8,7 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Trees</title>
-      <link>https://ctf-journey.github.io/notes/writeups/leetcode-trees/</link>
-      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-trees/</guid>
-      <description>What are Trees? Trees are a type of data structure, where each node has two children each (a left and a right node) BST Insert and Remove BST (Binary Search Tree) is a special type of binary tree where the value of each node is &amp;gt;= to the value of its left subtree and &amp;lt;= the value of its right subtree This structure makes it efficient to perform operations like insert and remove Depth-First Search Its a graph traversal algorithm that explores all nodes in one branch before moving on to other branches Breath-First Search Its a graph traversal algorithm that explores all nodes in one depth before moving on to other branches BST Sets and Maps Sets and maps implemented using BST allows for efficient checking and performing operations Iterative DFS Better than using recurssion for performance gains Related examples Read my solution to some LeetCode problems below Invert Binary Tree Kth Smallest Element in a BST https://docs.</description>
-    </item>
-    
-    <item>
-      <title>Linked List</title>
-      <link>https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/</link>
-      <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/</guid>
-      <description>What are Linked List? Linked Lists are a fundamental data structure in computer science They consist of a sequence of nodes, where each node contains data and a pointer to the next node in the sequence Head is the first node and tail is the last node in the linked list This structure allows for dynamic memory allocation and efficient insertion and deletion of elements Related examples Read my solution to some LeetCode problems below Reverse Linked List Reorder List https://docs.</description>
-    </item>
-    
-    <item>
-      <title>Sliding Window</title>
-      <link>https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/</link>
-      <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/</guid>
-      <description>What are Sliding Window? Sliding Window technique is a common algorithm used in various problem-solving scenarios, particularly in computer science It involves maintaining a window of a fixed size that slides over a data structure, typically an array or string As the window moves, calculations or comparisons are made within the current window to find specific patterns, subarrays, or optimal solutions Related examples Read my solution to some LeetCode problems below Best Time to Buy and Sell Stock Longest Substring Without Repeating Characters https://docs.</description>
-    </item>
-    
-    <item>
-      <title>Binary Search</title>
-      <link>https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/</link>
-      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/</guid>
-      <description>What is Binary Search? Binary Search is a search algorithm that efficently finds the position of the target value in a sorted array (Must be sorted!!) It works by repeatedly dividing the search interval in half until the target value is found or determined to be not present Time complexity is O(log n), where n is the number of elements in the array This makes binary search very efficient for large datasets Related examples Read my solution to some LeetCode problems below Binary Search Search a 2D Matrix https://docs.</description>
-    </item>
-    
-    <item>
-      <title>Two Pointers</title>
-      <link>https://ctf-journey.github.io/notes/writeups/leetcode-two-pointers/</link>
-      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-two-pointers/</guid>
-      <description>What is Two Pointers? Two Pointers is a technique used to iterate through a data structure, usually an array or linked list These pointers perform tasks such as searching, sorting or finding specific patterns within the data Related examples Read my solution to some LeetCode problems below Valid Palindrome Two Sum II - Input Array Is Sorted https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
-https://neetcode.io/roadmap .</description>
-    </item>
-    
-    <item>
-      <title>Stack</title>
-      <link>https://ctf-journey.github.io/notes/writeups/leetcode-stack/</link>
-      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/leetcode-stack/</guid>
-      <description>What are Stacks? Stacks are a type of data structure that follows the LIFO (Last In First Out) principle Last element to be added is the first to be removed Related examples Read my solution to some LeetCode problems below Valid Parentheses Min Stack https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing Resources Concepts explained here are following those from Neetcode&amp;rsquo;s roadmap
-https://neetcode.io/roadmap .</description>
-    </item>
-    
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arrays &amp; Hashing</title>
       <link>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</link>

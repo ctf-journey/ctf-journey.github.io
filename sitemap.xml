@@ -5,10 +5,10 @@
     <loc>https://ctf-journey.github.io/</loc>
     <lastmod>2024-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ctf-journey.github.io/tags/leetcode/</loc>
+    <loc>https://ctf-journey.github.io/notes/</loc>
     <lastmod>2024-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/</loc>
+    <loc>https://ctf-journey.github.io/tags/problems/</loc>
     <lastmod>2024-09-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ctf-journey.github.io/tags/</loc>
@@ -36,6 +36,9 @@
     <lastmod>2024-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ctf-journey.github.io/tags/leetcode/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ctf-journey.github.io/tags/ctf/</loc>

@@ -7,8 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Penetration Testing - CTF Journey</title>
-<meta name="description" content="script kiddie">
+<title>problems - CTF Journey</title>
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -30,58 +29,9 @@
   
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@id": "https:\/\/ctf-journey.github.io\/",
-          "name": "home"
-        }
-    },{
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@id": "https:\/\/ctf-journey.github.io\/notes\/guides\/penetration-testing\/",
-          "name": "Penetration testing"
-        }
-    }]
-}
-</script><script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "author": {
-    "name" : "GitHub Contributor Team"
-  },
-  "headline": "Penetration Testing",
-  "description" : "script kiddie",
-  "inLanguage" : "en",
-  "wordCount":  69 ,
-  "datePublished" : "0001-01-01T00:00:00",
-  "dateModified" : "0001-01-01T00:00:00",
-  "image" : "https:\/\/ctf-journey.github.io\/",
-  "keywords" : [ "guide" ],
-  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/guides\/penetration-testing\/",
-  "publisher" : {
-    "@type": "Organization",
-    "name" : "https:\/\/ctf-journey.github.io\/",
-    "logo" : {
-        "@type" : "ImageObject",
-        "url" : "https:\/\/ctf-journey.github.io\/",
-        "height" :  60 ,
-        "width" :  60
-    }
-  }
-}
-</script>
 
-<meta property="og:title" content="Penetration Testing" />
-<meta property="og:description" content="script kiddie">
-<meta property="og:url" content="https://ctf-journey.github.io/notes/guides/penetration-testing/" />
+<meta property="og:title" content="problems" />
+<meta property="og:url" content="https://ctf-journey.github.io/tags/problems/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
 <link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
@@ -246,22 +196,15 @@ if (!doNotTrack) {
       <div class="row justify-content-center">
 
         
-        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-          
 
           
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             
 
-            <div class="notes-heading">
+            <div class="tags-heading">
               
-
-              
-
-              
-              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                Penetration Testing
-                
+              <h1 class="fw-semibold display-5 lh-1 mb-3">
+                #problems
               </h1>
               
               
@@ -269,7 +212,12 @@ if (!doNotTrack) {
               
 
               
+
               
+              
+
+              
+
               
             </div>
           </div>
@@ -277,8 +225,6 @@ if (!doNotTrack) {
         </div>
         
         
-      </div>
-      
     </div>
   </div>
 </header>
@@ -288,156 +234,321 @@ if (!doNotTrack) {
     
 <div class="container" role="main">
   <div class="row">
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
-
-      <div class="card-image card-image-blog p-0">
-        
-        
-
-
-        
-      </div>
-    </div>
-
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
-      <article role="main" class="blog-post">
-        <h2 id="introduction">Introduction</h2>
-<h2 id="related-tools">Related tools</h2>
-<ul>
-<li>Nmap</li>
-<li>Metasploit</li>
-<li>Exploit Database <a href="https://www.exploit-db.com/">Website</a></li>
-<li>enum4linux, SMB share enumeration</li>
-</ul>
-<h2 id="key-concepts">Key concepts</h2>
-<ul>
-<li>Enumeration
-<ul>
-<li>Port scanning
-<ul>
-<li><code>nmap -sC -sV</code></li>
-</ul>
-</li>
-<li>SMB shares
-<ul>
-<li><code>smbclient -L target_ip</code></li>
-</ul>
-</li>
-<li>FTP server</li>
-<li>WinRM</li>
-</ul>
-</li>
-<li>Gaining access
-<ul>
-<li>Web shell</li>
-</ul>
-</li>
-<li>Privillege escalation
-<ul>
-<li>Restricted shell
-<ul>
-<li>Usually done with rbash</li>
-<li>Look for binaries you can execute and check its functionalities to see if you can take advantage of anything</li>
-</ul>
-</li>
-<li>Permission
-<ul>
-<li>Check binaries for SUID permission bit</li>
-</ul>
-</li>
-<li>Kernel explits</li>
-</ul>
-</li>
-</ul>
-<h2 id="heading">.</h2>
-
-      </article>
-    </div>
-  </div>
-
-  
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-      <hr class="m-0"/>
-    </div>
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+    <div class="col-md-12">
       
-      <div class="blog-tags">
+      <div class="row">
         
-        <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
-        
-      </div>
-      
-    </div>
-
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
-      
-    </div>
-
-    
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
-      <div class="card">
-        <div class="row no-gutters">
-
           
-
-
-          <div class="col-md-10">
-            <div class="card-body p-1.1">
-              <p class="p-0 m-0"><small class="text-muted">Written By</small></p>
-              <p class="card-text fs-5 m-0">
-                 
-                
-                GitHub Contributor Team
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-trees/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">Trees</h3>
                 
 
-              </p>
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
 
-               
+  September 10, 2024
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    grinding leetcode
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
+                </div>
             </div>
-          </div>
+
+            
+
+            
         </div>
+    </a>
+</div>
+
+
+        
+          
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">Linked List</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  August 23, 2024
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    grinding leetcode
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+        
+          
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">Sliding Window</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  August 23, 2024
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    grinding leetcode
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+        
+          
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-binary-search/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">Binary Search</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  August 22, 2024
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    grinding leetcode
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+        
+          
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-two-pointers/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">Two Pointers</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  August 22, 2024
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    grinding leetcode
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+        
+          
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <a href="https://ctf-journey.github.io/notes/writeups/leetcode-stack/">
+        <div class="card h-100 single-post-card shadow-effect bg-faded-light border">
+            <div class="card-body">
+                <h3 class="fw-bold post-title">Stack</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta text-muted">
+  
+  
+
+  August 21, 2024
+
+  
+
+  
+
+  
+
+  
+</span>
+
+                </p>
+                
+
+                <div class="post-entry">
+                    
+                    grinding leetcode
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    
+                    <h6 class="text-muted link-underline">Read More <i class="bi bi-arrow-right"></i></h6>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </a>
+</div>
+
+
+        
       </div>
     </div>
-    
+  </div>
+</div>
 
-    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+<div class="container">
+ <div class="row font-sans">
+   <div class="col-md-12 mt-10">
+      <nav aria-label="Page navigation">
+      <ul class= "pagination justify-content-end">
       
-      <ul class="list-group list-group-horizontal" style="flex-direction: row">
-        
-        <li class="list-group-item b-0 p-0">
-
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/reverse-engeineering/"
-            data-toggle="tooltip" data-placement="top" title="Reverse Engineering">&larr;
-            Previous Post</a>
-        </li>
-        
-
-
-        
-        <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/osint/"
-            data-toggle="tooltip" data-placement="top" title="OSINT">Next Post
-            &rarr;</a>
-        </li>
-        
       </ul>
-      
-    </div>
-
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      </nav>
     </div>
   </div>
-  
 </div>
 
-<div class="">
-  
-  
-
-  
-
-</div>
 
     
 
