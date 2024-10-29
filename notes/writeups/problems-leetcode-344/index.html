@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Linked List - CTF Journey</title>
-<meta name="description" content="leetcode concepts">
+<title>Reverse String - CTF Journey</title>
+<meta name="description" content="coding problem">
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -45,8 +45,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-linked-list\/",
-          "name": "Linked list"
+          "@id": "https:\/\/ctf-journey.github.io\/notes\/writeups\/problems-leetcode-344\/",
+          "name": "Reverse string"
         }
     }]
 }
@@ -57,15 +57,15 @@
   "author": {
     "name" : "GitHub Contributor Team"
   },
-  "headline": "Linked List",
-  "description" : "leetcode concepts",
+  "headline": "Reverse String",
+  "description" : "coding problem",
   "inLanguage" : "en",
   "wordCount":  93 ,
-  "datePublished" : "2024-08-23T00:00:00",
-  "dateModified" : "2024-08-23T00:00:00",
+  "datePublished" : "2024-10-29T00:00:00",
+  "dateModified" : "2024-10-29T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
   "keywords" : [ "problems" ],
-  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-linked-list\/",
+  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/writeups\/problems-leetcode-344\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/ctf-journey.github.io\/",
@@ -79,9 +79,9 @@
 }
 </script>
 
-<meta property="og:title" content="Linked List" />
-<meta property="og:description" content="leetcode concepts">
-<meta property="og:url" content="https://ctf-journey.github.io/notes/writeups/leetcode-linked-list/" />
+<meta property="og:title" content="Reverse String" />
+<meta property="og:description" content="coding problem">
+<meta property="og:url" content="https://ctf-journey.github.io/notes/writeups/problems-leetcode-344/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
 <link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
@@ -260,7 +260,7 @@ if (!doNotTrack) {
 
               
               <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                Linked List
+                Reverse String
                 
               </h1>
               
@@ -301,29 +301,29 @@ if (!doNotTrack) {
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h2 id="what-are-linked-list">What are Linked List?</h2>
-<ul>
-<li>Linked Lists are a fundamental data structure in computer science</li>
-<li>They consist of a sequence of nodes, where each node contains data and a pointer to the next node in the sequence</li>
-<li>Head is the first node and tail is the last node in the linked list</li>
-<li>This structure allows for dynamic memory allocation and efficient insertion and deletion of elements</li>
-</ul>
-<h2 id="related-examples">Related examples</h2>
-<ul>
-<li>Read my solution to some LeetCode problems below
-<ul>
-<li>Reverse Linked List</li>
-<li>Reorder List</li>
-</ul>
-</li>
-<li><a href="https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing">https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing</a></li>
-</ul>
-<h2 id="resources">Resources</h2>
-<p>Concepts explained here are following those from Neetcode&rsquo;s roadmap</p>
-<ul>
-<li><a href="https://neetcode.io/roadmap">https://neetcode.io/roadmap</a></li>
-</ul>
-<p>.</p>
+        <h2 id="description">Description</h2>
+<p>Write a function that reverses a string. The input string is given as an array of characters s.</p>
+<p>You must do this by modifying the input array in-place with O(1) extra memory.</p>
+<p>Example 1:
+Input: s = [&ldquo;h&rdquo;,&ldquo;e&rdquo;,&ldquo;l&rdquo;,&ldquo;l&rdquo;,&ldquo;o&rdquo;]
+Output: [&ldquo;o&rdquo;,&ldquo;l&rdquo;,&ldquo;l&rdquo;,&ldquo;e&rdquo;,&ldquo;h&rdquo;]</p>
+<p>Example 2:
+Input: s = [&ldquo;H&rdquo;,&ldquo;a&rdquo;,&ldquo;n&rdquo;,&ldquo;n&rdquo;,&ldquo;a&rdquo;,&ldquo;h&rdquo;]
+Output: [&ldquo;h&rdquo;,&ldquo;a&rdquo;,&ldquo;n&rdquo;,&ldquo;n&rdquo;,&ldquo;a&rdquo;,&ldquo;H&rdquo;]</p>
+<p>Constraints:
+1 &lt;= s.length &lt;= 105
+s[i] is a printable ascii character.</p>
+<h2 id="solution">Solution</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverseString</span>(self, s):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        :type s: List[str]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        :rtype: None Do not return anything, modify s in-place instead.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>):
+</span></span><span style="display:flex;"><span>            x,y <span style="color:#f92672">=</span> s[i],s[<span style="color:#f92672">-</span>(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)]
+</span></span><span style="display:flex;"><span>            s[i],s[<span style="color:#f92672">-</span>(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)] <span style="color:#f92672">=</span> y,x
+</span></span></code></pre></div><p>.</p>
 
       </article>
     </div>
@@ -381,19 +381,13 @@ if (!doNotTrack) {
         
         <li class="list-group-item b-0 p-0">
 
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-sliding-window/"
-            data-toggle="tooltip" data-placement="top" title="Sliding Window">&larr;
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-trees/"
+            data-toggle="tooltip" data-placement="top" title="Trees">&larr;
             Previous Post</a>
         </li>
         
 
 
-        
-        <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-trees/"
-            data-toggle="tooltip" data-placement="top" title="Trees">Next Post
-            &rarr;</a>
-        </li>
         
       </ul>
       

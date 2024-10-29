@@ -250,6 +250,91 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Reverse String</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/writeups/problems-leetcode-344/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  October 29, 2024
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="description">Description</h2>
+<p>Write a function that reverses a string. The input string is given as an array of characters s.</p>
+<p>You must do this by modifying the input array in-place with O(1) extra memory.</p>
+<p>Example 1:
+Input: s = [&ldquo;h&rdquo;,&ldquo;e&rdquo;,&ldquo;l&rdquo;,&ldquo;l&rdquo;,&ldquo;o&rdquo;]
+Output: [&ldquo;o&rdquo;,&ldquo;l&rdquo;,&ldquo;l&rdquo;,&ldquo;e&rdquo;,&ldquo;h&rdquo;]</p>
+<p>Example 2:
+Input: s = [&ldquo;H&rdquo;,&ldquo;a&rdquo;,&ldquo;n&rdquo;,&ldquo;n&rdquo;,&ldquo;a&rdquo;,&ldquo;h&rdquo;]
+Output: [&ldquo;h&rdquo;,&ldquo;a&rdquo;,&ldquo;n&rdquo;,&ldquo;n&rdquo;,&ldquo;a&rdquo;,&ldquo;H&rdquo;]</p>
+<p>Constraints:
+1 &lt;= s.length &lt;= 105
+s[i] is a printable ascii character.</p>
+<h2 id="solution">Solution</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverseString</span>(self, s):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        :type s: List[str]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        :rtype: None Do not return anything, modify s in-place instead.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>):
+</span></span><span style="display:flex;"><span>            x,y <span style="color:#f92672">=</span> s[i],s[<span style="color:#f92672">-</span>(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)]
+</span></span><span style="display:flex;"><span>            s[i],s[<span style="color:#f92672">-</span>(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)] <span style="color:#f92672">=</span> y,x
+</span></span></code></pre></div><p>.</p>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/problems/">problems</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Trees</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -979,73 +1064,6 @@ if (!doNotTrack) {
                 
                 <p>Here is the Notion link, I&rsquo;m lazy to transfer everything over</p>
 <p><a href="https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8">https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8</a></p>
-<p>.</p>
-
-                
-            </div>
-        </div>
-        
-        
-        
-        <div class="card-footer text-muted">
-            <div class="blog-tags">
-                
-                <a href="https://ctf-journey.github.io/tags/writeup/">writeup</a>
-                
-                <a href="https://ctf-journey.github.io/tags/ctf/">ctf</a>
-                
-            </div>
-        </div>
-        
-
-
-
-
-    </div>
-</div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-    
-        <div class="card border mb-3 "> 
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="fw-bold post-title">NYP CGC CTF</h3>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/">
-                        <button type="button" class="btn btn-outline-dark">
-                            Link
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            
-
-            <p class="post-meta">
-                <span class="post-meta text-muted">
-  
-  
-
-  July 17, 2022
-
-  
-
-  
-
-  
-
-  
-</span>
-
-            </p>
-            
-            <div class="post-entry">
-
-                
-                <p>Here is the Google Doc link, I&rsquo;m lazy to transfer everything over</p>
-<p><a href="https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit">https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit</a></p>
 <p>.</p>
 
                 

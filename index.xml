@@ -8,7 +8,21 @@
     <language>en-us</language>
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ctf-journey.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reverse String</title>
+      <link>https://ctf-journey.github.io/notes/writeups/problems-leetcode-344/</link>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/problems-leetcode-344/</guid>
+      <description>Description Write a function that reverses a string. The input string is given as an array of characters s.
+You must do this by modifying the input array in-place with O(1) extra memory.
+Example 1: Input: s = [&amp;ldquo;h&amp;rdquo;,&amp;ldquo;e&amp;rdquo;,&amp;ldquo;l&amp;rdquo;,&amp;ldquo;l&amp;rdquo;,&amp;ldquo;o&amp;rdquo;] Output: [&amp;ldquo;o&amp;rdquo;,&amp;ldquo;l&amp;rdquo;,&amp;ldquo;l&amp;rdquo;,&amp;ldquo;e&amp;rdquo;,&amp;ldquo;h&amp;rdquo;]
+Example 2: Input: s = [&amp;ldquo;H&amp;rdquo;,&amp;ldquo;a&amp;rdquo;,&amp;ldquo;n&amp;rdquo;,&amp;ldquo;n&amp;rdquo;,&amp;ldquo;a&amp;rdquo;,&amp;ldquo;h&amp;rdquo;] Output: [&amp;ldquo;h&amp;rdquo;,&amp;ldquo;a&amp;rdquo;,&amp;ldquo;n&amp;rdquo;,&amp;ldquo;n&amp;rdquo;,&amp;ldquo;a&amp;rdquo;,&amp;ldquo;H&amp;rdquo;]
+Constraints: 1 &amp;lt;= s.length &amp;lt;= 105 s[i] is a printable ascii character.
+Solution class Solution(object): def reverseString(self, s): &amp;#34;&amp;#34;&amp;#34; :type s: List[str] :rtype: None Do not return anything, modify s in-place instead.</description>
+    </item>
+    
     <item>
       <title>Trees</title>
       <link>https://ctf-journey.github.io/notes/writeups/leetcode-trees/</link>
