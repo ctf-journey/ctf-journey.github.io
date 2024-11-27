@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ejpt on CTF Journey</title>
+    <link>https://ctf-journey.github.io/tags/ejpt/</link>
+    <description>Recent content in ejpt on CTF Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
+    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/tags/ejpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Assessment Methodology</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</guid>
+      <description>Information Gathering Active Passive Footprinting &amp;amp; Scanning Enumeration Vulnerability Assessment </description>
+    </item>
+    
+    <item>
+      <title>Exam Review</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-exam-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-exam-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network Audit</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-host-and-networking-auditing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-networking-auditing/</guid>
+      <description>Auditing Fundamentals </description>
+    </item>
+    
+    <item>
+      <title>Network Pentest</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</guid>
+      <description>System/Host Based Attacks Network-Based Attacks Metasploit Framework (MSF) Exploitation Post-Exploitation Social Engineering </description>
+    </item>
+    
+    <item>
+      <title>Web Pentest</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-webapp-pentesting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-webapp-pentesting/</guid>
+      <description>Web &amp;amp; HTTP Protocol </description>
+    </item>
+    
+  </channel>
+</rss>
