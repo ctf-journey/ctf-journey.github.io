@@ -30,18 +30,9 @@
     <item>
       <title>ctf</title>
       <link>https://ctf-journey.github.io/tags/ctf/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/tags/ctf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>writeup</title>
-      <link>https://ctf-journey.github.io/tags/writeup/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/tags/writeup/</guid>
       <description></description>
     </item>
     
@@ -60,6 +51,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/tags/guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writeup</title>
+      <link>https://ctf-journey.github.io/tags/writeup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/tags/writeup/</guid>
       <description></description>
     </item>
     

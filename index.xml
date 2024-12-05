@@ -80,85 +80,12 @@ https://neetcode.io/roadmap .</description>
     </item>
     
     <item>
-      <title>Zeogen Generator</title>
-      <link>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</link>
-      <pubDate>Sat, 03 Aug 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</guid>
-      <description>Source of executable Guy send me this EXE file on Discord Executable was a supposed Amazon Storecard generator Reversing steps Using strings, we can identify PyInstaller was used to convert the PY script to EXE Using PyInstxtractor, we can decompile it into the python bytecode files Using pycadas, we can decompile python bytecode files into readable instructions! Tool appears to be just a RNG and generating fake card details The file &amp;ldquo;zeogen.</description>
-    </item>
-    
-    <item>
       <title>Arrays &amp; Hashing</title>
       <link>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/</guid>
       <description>What are Arrays? Ordered collection of elements Each element has an index, starting from 0 [&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;] - key for a is 0, b is 1 etc What are Hashes? Unordered collection of key-value pairs Each value is retrieved from their corresponding keys Implemented with dictionaries or maps { name: &amp;quot;Alice&amp;quot; } - key is name and value is &amp;quot;Alice&amp;quot; Related examples Read my solution to some LeetCode problems below Contains Duplicate Group Anagrams https://docs.</description>
-    </item>
-    
-    <item>
-      <title>NYP HTB Training CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</guid>
-      <description>Here is the Notion link, I&amp;rsquo;m lazy to transfer everything over
-https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8
-.</description>
-    </item>
-    
-    <item>
-      <title>NYP CGC CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</link>
-      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit
-.</description>
-    </item>
-    
-    <item>
-      <title>HTB CA CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</link>
-      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/edit
-.</description>
-    </item>
-    
-    <item>
-      <title>NYP InfoSec May CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</link>
-      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/edit
-.</description>
-    </item>
-    
-    <item>
-      <title>Lag N Crash 2.0 CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</guid>
-      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
-https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/edit
-.</description>
-    </item>
-    
-    <item>
-      <title>Assessment Methodology</title>
-      <link>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</guid>
-      <description>Information Gathering Active Passive Footprinting &amp;amp; Scanning Enumeration Vulnerability Assessment </description>
     </item>
     
     <item>
@@ -199,12 +126,30 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     </item>
     
     <item>
+      <title>Enumeration</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</guid>
+      <description>Information Gathering Passive: whois, whatweb, dnsrecon, wafw00f, sublist3r, google dorks, theharvester Active: dns zone transfer, nmap Footprinting &amp;amp; Scanning basic osi layer stuff networking nmap commands sn for ping sweep scan common ports first for faster results, like -P22,23,80,443,3389 Firewall detection &amp;amp; IDS evasion using malformed packets fragment packets with -f (MTU) optimising nmap with -T4 nmap output formats sometimes it makes sense to slow down scans, preventing IDS from detecting -D to set decoy ip addresses output -oN normal, -oX xml for metasploit, -oG grepable format Enumeration host discovery using the -sV option import nmap into msf using the db_import and db_nmap msf auxiliary modules using search steps to exploit nmap, scan services, check for msf exploits pivot to another subnet using msf enter shell, use ip addr to look for next subnet use run autoroute -s 192.</description>
+    </item>
+    
+    <item>
       <title>Exam Review</title>
       <link>https://ctf-journey.github.io/notes/cert/ejpt-exam-review/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-exam-review/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Exploitation</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-exploitation-pentesting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-exploitation-pentesting/</guid>
+      <description>Exploitation banner grabber vulnerability scanning with nmap fixing exploits netcat fundamentals bind shells reverse shells msf windows port scanning and enumeration targeting microsoft iis ftp targeting openssh targeting smb targeting mysql database server linux port scanning and enumeration targeting vsftpd targeting php targeting samba </description>
     </item>
     
     <item>
@@ -226,12 +171,34 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     </item>
     
     <item>
-      <title>Network Audit</title>
-      <link>https://ctf-journey.github.io/notes/cert/ejpt-host-and-networking-auditing/</link>
+      <title>HTB CA CTF</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-networking-auditing/</guid>
-      <description>Auditing Fundamentals </description>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>Lag N Crash 2.0 CTF</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>Metasploit</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-metasploit-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-metasploit-framework/</guid>
+      <description>Metasploit Framework (MSF) windows http file server windows java web server vulnerable ftp server vulnerable file sharing service vulnerable ssh server vulnerable smtp server meterpreter basics upgrading shells to meterpreter windows post exploitation uac bypass, msf memory injection exploiting smb with psexec windows enable remote desktop clearing windows event logs pivoting post exploitation lab I privilege escalation, rootkit scanner post exploitation lab II establishing persistence on linux port scanning and enumeration with armitage exploitation and post exploitation with armitage </description>
     </item>
     
     <item>
@@ -240,7 +207,40 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</guid>
-      <description>System/Host Based Attacks Network-Based Attacks Metasploit Framework (MSF) Exploitation Post-Exploitation Social Engineering </description>
+      <description>System/Host Based Attacks webdav metasploit use dirb to find the dav directory dirb demo.ine.local use davtest tool davtest -url http://demo.ine.local/webdav login with davtest davtest -auth bob:password_123321 -url http://demo.ine.local/webdav msf module iis_webdav_upload_asp, set RHOSTS, HttpUsername, HttpPassword and PATH /webdav/metasploit%RAND%.asp smb server psexec msf module to bruteforce auxiliary/scanner/smb/smb_login, set USER_FILE PASS_FILE RHOSTS and VERBOSE msf module to gain access exploit/windows/smb/psexec, set RHOSTS SMBUser and SMBPass insecure rdp service use msf module auxiliary/scanner/rdp/rdp_scanner to detect rdp service use hydra bruteforce hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.</description>
+    </item>
+    
+    <item>
+      <title>NYP CGC CTF</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit
+.</description>
+    </item>
+    
+    <item>
+      <title>NYP HTB Training CTF</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</guid>
+      <description>Here is the Notion link, I&amp;rsquo;m lazy to transfer everything over
+https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8
+.</description>
+    </item>
+    
+    <item>
+      <title>NYP InfoSec May CTF</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</guid>
+      <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
+https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/edit
+.</description>
     </item>
     
     <item>
@@ -259,6 +259,15 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/penetration-testing/</guid>
       <description>Introduction Related tools Nmap Metasploit Exploit Database Website enum4linux, SMB share enumeration Key concepts Enumeration Port scanning nmap -sC -sV SMB shares smbclient -L target_ip FTP server WinRM Gaining access Web shell Privillege escalation Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Permission Check binaries for SUID permission bit Kernel explits . </description>
+    </item>
+    
+    <item>
+      <title>Post Exploitation</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</guid>
+      <description>Post-Exploitation enumerating windows system information enumerating windows users and groups enumerating windows network information enumerating processes and services automating windows local enumeration enumerating linux system information enumerating linux users and groups enumerating linux network information enumerating processes and cronjobs automating linux local enumeration setting up a web server with python transferring files with windows targets transferring files to linux targets upgrading non-interactive shells windows privsec check permissions matter! editing gone wrong maintaining access, persistence service maintaining access, rdp maintaining access I local job scheduling windows ntlm hash cracking linux password cracker pivoting clearing your own tracks on windows clearing your own tracks on linux </description>
     </item>
     
     <item>
@@ -285,7 +294,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-webapp-pentesting/</guid>
-      <description>Web &amp;amp; HTTP Protocol </description>
+      <description>Social Engineering lets go phishing run the gophish.exe application enter the browser dashboard, create a new profile try importing a landing page try setting up an email template setting up users and groups monitor campaign Web &amp;amp; HTTP Protocol HTTP method enumeration curl -X GET/POST/DELETE/OPTIONS, OPTIONS will let you know what you can do curl -I is HEAD request dirb dirb http://demo.ine.local curl post request curl -X POST demo.ine.local/login.php -d &amp;quot;name=john&amp;amp;password=password&amp;quot; -v curl upload file curl demo.</description>
     </item>
     
     <item>
@@ -296,6 +305,15 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
       <guid>https://ctf-journey.github.io/notes/guides/ybn-ctf-2024-guide/</guid>
       <description>Introduction Hello! Welcome to the begineer guide for YBN CTF 2024!
 Category: Web Example challenge Link: https://owasp.org/www-project-juice-shop/ Example writeup link: Google &amp;ldquo;owasp juice app writeup&amp;rdquo; Resources: https://ctf101.org/web-exploitation/sql-injection/what-is-sql-injection/ Category: Crypto Example challenge Link: https://cryptohack.org/challenges/ Example writeup link: Google &amp;ldquo;cryptohack ctf writeup&amp;rdquo; Category: Forensics Example challenge Link: https://tzion0.github.io/ctf/picoctf-for/ Example writeup link: https://tzion0.github.io/ctf/picoctf-for/ Category: OSINT Example challenge Link: https://openguessr.com/ Example writeup link: Use https://maps.google.com Category: Pwn/Reversing Example challenge Link: https://pwn.college/ctf-archive/ Example writeup link: Google &amp;ldquo;pwn college ctf writeup&amp;rdquo; </description>
+    </item>
+    
+    <item>
+      <title>Zeogen Generator</title>
+      <link>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</guid>
+      <description>Source of executable Guy send me this EXE file on Discord Executable was a supposed Amazon Storecard generator Reversing steps Using strings, we can identify PyInstaller was used to convert the PY script to EXE Using PyInstxtractor, we can decompile it into the python bytecode files Using pycadas, we can decompile python bytecode files into readable instructions! Tool appears to be just a RNG and generating fake card details The file &amp;ldquo;zeogen.</description>
     </item>
     
   </channel>

@@ -9,12 +9,12 @@
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/tags/ejpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Assessment Methodology</title>
+      <title>Enumeration</title>
       <link>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/</guid>
-      <description>Information Gathering Active Passive Footprinting &amp;amp; Scanning Enumeration Vulnerability Assessment </description>
+      <description>Information Gathering Passive: whois, whatweb, dnsrecon, wafw00f, sublist3r, google dorks, theharvester Active: dns zone transfer, nmap Footprinting &amp;amp; Scanning basic osi layer stuff networking nmap commands sn for ping sweep scan common ports first for faster results, like -P22,23,80,443,3389 Firewall detection &amp;amp; IDS evasion using malformed packets fragment packets with -f (MTU) optimising nmap with -T4 nmap output formats sometimes it makes sense to slow down scans, preventing IDS from detecting -D to set decoy ip addresses output -oN normal, -oX xml for metasploit, -oG grepable format Enumeration host discovery using the -sV option import nmap into msf using the db_import and db_nmap msf auxiliary modules using search steps to exploit nmap, scan services, check for msf exploits pivot to another subnet using msf enter shell, use ip addr to look for next subnet use run autoroute -s 192.</description>
     </item>
     
     <item>
@@ -27,12 +27,21 @@
     </item>
     
     <item>
-      <title>Network Audit</title>
-      <link>https://ctf-journey.github.io/notes/cert/ejpt-host-and-networking-auditing/</link>
+      <title>Exploitation</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-exploitation-pentesting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-networking-auditing/</guid>
-      <description>Auditing Fundamentals </description>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-exploitation-pentesting/</guid>
+      <description>Exploitation banner grabber vulnerability scanning with nmap fixing exploits netcat fundamentals bind shells reverse shells msf windows port scanning and enumeration targeting microsoft iis ftp targeting openssh targeting smb targeting mysql database server linux port scanning and enumeration targeting vsftpd targeting php targeting samba </description>
+    </item>
+    
+    <item>
+      <title>Metasploit</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-metasploit-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-metasploit-framework/</guid>
+      <description>Metasploit Framework (MSF) windows http file server windows java web server vulnerable ftp server vulnerable file sharing service vulnerable ssh server vulnerable smtp server meterpreter basics upgrading shells to meterpreter windows post exploitation uac bypass, msf memory injection exploiting smb with psexec windows enable remote desktop clearing windows event logs pivoting post exploitation lab I privilege escalation, rootkit scanner post exploitation lab II establishing persistence on linux port scanning and enumeration with armitage exploitation and post exploitation with armitage </description>
     </item>
     
     <item>
@@ -41,7 +50,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</guid>
-      <description>System/Host Based Attacks Network-Based Attacks Metasploit Framework (MSF) Exploitation Post-Exploitation Social Engineering </description>
+      <description>System/Host Based Attacks webdav metasploit use dirb to find the dav directory dirb demo.ine.local use davtest tool davtest -url http://demo.ine.local/webdav login with davtest davtest -auth bob:password_123321 -url http://demo.ine.local/webdav msf module iis_webdav_upload_asp, set RHOSTS, HttpUsername, HttpPassword and PATH /webdav/metasploit%RAND%.asp smb server psexec msf module to bruteforce auxiliary/scanner/smb/smb_login, set USER_FILE PASS_FILE RHOSTS and VERBOSE msf module to gain access exploit/windows/smb/psexec, set RHOSTS SMBUser and SMBPass insecure rdp service use msf module auxiliary/scanner/rdp/rdp_scanner to detect rdp service use hydra bruteforce hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.</description>
+    </item>
+    
+    <item>
+      <title>Post Exploitation</title>
+      <link>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</guid>
+      <description>Post-Exploitation enumerating windows system information enumerating windows users and groups enumerating windows network information enumerating processes and services automating windows local enumeration enumerating linux system information enumerating linux users and groups enumerating linux network information enumerating processes and cronjobs automating linux local enumeration setting up a web server with python transferring files with windows targets transferring files to linux targets upgrading non-interactive shells windows privsec check permissions matter! editing gone wrong maintaining access, persistence service maintaining access, rdp maintaining access I local job scheduling windows ntlm hash cracking linux password cracker pivoting clearing your own tracks on windows clearing your own tracks on linux </description>
     </item>
     
     <item>
@@ -50,7 +68,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-webapp-pentesting/</guid>
-      <description>Web &amp;amp; HTTP Protocol </description>
+      <description>Social Engineering lets go phishing run the gophish.exe application enter the browser dashboard, create a new profile try importing a landing page try setting up an email template setting up users and groups monitor campaign Web &amp;amp; HTTP Protocol HTTP method enumeration curl -X GET/POST/DELETE/OPTIONS, OPTIONS will let you know what you can do curl -I is HEAD request dirb dirb http://demo.ine.local curl post request curl -X POST demo.ine.local/login.php -d &amp;quot;name=john&amp;amp;password=password&amp;quot; -v curl upload file curl demo.</description>
     </item>
     
   </channel>

