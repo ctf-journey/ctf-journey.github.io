@@ -23,7 +23,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-exam-review/</guid>
-      <description></description>
+      <description>Purchasing the exam INE has a black friday sale that usually occurs every year During the sale, the price of the exam will drop from around $299 to $199 (with complementary ICCA Cloud certification) The exam (2 attempts) comes with a course (only for eJPT and ICCA, valid for one year) and the exam within 6 months (3 months after first attempt) Exam format VPN keys for machines will be provided at the start You will be given a set of 35 exam questions, use them as hints and plan how to navigate the machines (only bruteforce when needed) Most are bruteforce and not exploits Use hydra with Unix_users.</description>
     </item>
     
     <item>
