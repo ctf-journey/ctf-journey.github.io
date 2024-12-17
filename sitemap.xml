@@ -49,6 +49,8 @@
   </url><url>
     <loc>https://ctf-journey.github.io/contribute/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/tags/cpts/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/cryptography/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/tags/ctf/</loc>
@@ -63,6 +65,8 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/forensics/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/tags/guide/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/hardware/</loc>
@@ -75,6 +79,8 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</loc>
@@ -84,6 +90,8 @@
     <loc>https://ctf-journey.github.io/notes/guides/osint/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/penetration-testing/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</loc>
   </url><url>

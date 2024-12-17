@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpts on CTF Journey</title>
+    <link>https://ctf-journey.github.io/tags/cpts/</link>
+    <description>Recent content in cpts on CTF Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
+    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/tags/cpts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nmap Enumeration</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pentesting Process</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

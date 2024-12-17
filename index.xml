@@ -162,6 +162,15 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     </item>
     
     <item>
+      <title>Getting Started</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hardware</title>
       <link>https://ctf-journey.github.io/notes/guides/hardware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -208,6 +217,15 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</guid>
       <description>System/Host Based Attacks webdav metasploit use dirb to find the dav directory dirb demo.ine.local use davtest tool davtest -url http://demo.ine.local/webdav login with davtest davtest -auth bob:password_123321 -url http://demo.ine.local/webdav msf module iis_webdav_upload_asp, set RHOSTS, HttpUsername, HttpPassword and PATH /webdav/metasploit%RAND%.asp smb server psexec msf module to bruteforce auxiliary/scanner/smb/smb_login, set USER_FILE PASS_FILE RHOSTS and VERBOSE msf module to gain access exploit/windows/smb/psexec, set RHOSTS SMBUser and SMBPass insecure rdp service use msf module auxiliary/scanner/rdp/rdp_scanner to detect rdp service use hydra bruteforce hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.</description>
+    </item>
+    
+    <item>
+      <title>Nmap Enumeration</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -259,6 +277,15 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/penetration-testing/</guid>
       <description>Introduction Related tools Nmap Metasploit Exploit Database Website enum4linux, SMB share enumeration Key concepts Enumeration Port scanning nmap -sC -sV SMB shares smbclient -L target_ip FTP server WinRM Gaining access Web shell Privillege escalation Restricted shell Usually done with rbash Look for binaries you can execute and check its functionalities to see if you can take advantage of anything Permission Check binaries for SUID permission bit Kernel explits . </description>
+    </item>
+    
+    <item>
+      <title>Pentesting Process</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</guid>
+      <description></description>
     </item>
     
     <item>
