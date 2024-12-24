@@ -14,7 +14,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</guid>
-      <description></description>
+      <description>Pentesting basics Common terms shell, port, web server Basic tools ssh, netcat, tmux, vim Service scanning nmap, nmap scripts, banner grabbing, ftp, smb+shares, snmp (community string - get network info and creds) Web enumeration gobuster (with seclists), banner grabbing, Whatweb, Certificates, Robots.txt, Source Code public exploits searchsploit, metasploit types of shells reverse shell bind shell Web Shell upgrade a shell with python -c &#39;import pty; pty.spawn(&amp;quot;/bin/bash&amp;quot;)&#39; privilege escalation enumeration scripts (Linux enumeration scripts include LinEnum and linuxprivchecker, and for Windows include Seatbelt and JAWS), or Privilege Escalation Awesome Scripts SUITE (PEASS) for both Kernel Exploits Vulnerable Software User Privileges Scheduled Tasks Exposed Credentials SSH Keys (user2 : user2) NOPASSWD: /bin/bash as user1 means sudo -u user2 /bin/bash works transfering files wget, SCP, Base64 Attacking Your First Box nibbles, enumeration nmap -sV --open &amp;lt;IP&amp;gt; nibbles, web footprinting whatweb, gobuster dir -u http://10.</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</guid>
-      <description></description>
+      <description>Introduction enumeration intro to nmap host enum host discovery host and port scanning saving the results service enumeration nmap scripting engine performance bypass security measures firewall and ids/ips evasion easy lab medium lab hard lab </description>
     </item>
     
     <item>
@@ -32,7 +32,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</guid>
-      <description></description>
+      <description>Stages of pentesting Pre-Engagement Information Gathering Vulnerability Assessment Exploitation/Post-Exploitation Lateral Movement Proof-of-Concept </description>
     </item>
     
   </channel>

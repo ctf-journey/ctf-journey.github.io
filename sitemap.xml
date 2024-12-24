@@ -41,6 +41,8 @@
     <loc>https://ctf-journey.github.io/tags/leetcode/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/binary-exploitation/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/blockchain/</loc>
@@ -71,9 +73,9 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/hardware/</loc>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</loc>
+    <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-htb-ca/</loc>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</loc>
+    <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-metasploit-framework/</loc>
   </url><url>
@@ -81,11 +83,11 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</loc>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</loc>
+    <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-cgc-qualifiers/</loc>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</loc>
+    <loc>https://ctf-journey.github.io/notes/backup/ctf-2024-nyp-htb-wss-training/</loc>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</loc>
+    <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-infosec-may/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/osint/</loc>
   </url><url>
@@ -105,6 +107,6 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/ybn-ctf-2024-guide/</loc>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</loc>
+    <loc>https://ctf-journey.github.io/notes/backup/decompile-zeogen-generator/</loc>
   </url>
 </urlset>

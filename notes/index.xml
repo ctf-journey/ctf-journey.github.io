@@ -89,6 +89,15 @@ https://neetcode.io/roadmap .</description>
     </item>
     
     <item>
+      <title>Advent of CTF 2024</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</guid>
+      <description>Day 1 - Logical Exclusivity Convert to Hex and using magic/XOR in CyberChef to get kal{pCu8t3_8391Vv1V95_858L48}, bruteforce with rot13 for flag Day 2 - screaming Day 3 - ElfTV </description>
+    </item>
+    
+    <item>
       <title>Binary Exploitation</title>
       <link>https://ctf-journey.github.io/notes/guides/binary-exploitation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -158,7 +167,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</guid>
-      <description></description>
+      <description>Pentesting basics Common terms shell, port, web server Basic tools ssh, netcat, tmux, vim Service scanning nmap, nmap scripts, banner grabbing, ftp, smb+shares, snmp (community string - get network info and creds) Web enumeration gobuster (with seclists), banner grabbing, Whatweb, Certificates, Robots.txt, Source Code public exploits searchsploit, metasploit types of shells reverse shell bind shell Web Shell upgrade a shell with python -c &#39;import pty; pty.spawn(&amp;quot;/bin/bash&amp;quot;)&#39; privilege escalation enumeration scripts (Linux enumeration scripts include LinEnum and linuxprivchecker, and for Windows include Seatbelt and JAWS), or Privilege Escalation Awesome Scripts SUITE (PEASS) for both Kernel Exploits Vulnerable Software User Privileges Scheduled Tasks Exposed Credentials SSH Keys (user2 : user2) NOPASSWD: /bin/bash as user1 means sudo -u user2 /bin/bash works transfering files wget, SCP, Base64 Attacking Your First Box nibbles, enumeration nmap -sV --open &amp;lt;IP&amp;gt; nibbles, web footprinting whatweb, gobuster dir -u http://10.</description>
     </item>
     
     <item>
@@ -172,10 +181,10 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     
     <item>
       <title>HTB CA CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-htb-ca/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-htb-ca/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/edit
 .</description>
@@ -183,10 +192,10 @@ https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/
     
     <item>
       <title>Lag N Crash 2.0 CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/edit
 .</description>
@@ -216,15 +225,15 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</guid>
-      <description></description>
+      <description>Introduction enumeration intro to nmap host enum host discovery host and port scanning saving the results service enumeration nmap scripting engine performance bypass security measures firewall and ids/ips evasion easy lab medium lab hard lab </description>
     </item>
     
     <item>
       <title>NYP CGC CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-cgc-qualifiers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-cgc-qualifiers/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit
 .</description>
@@ -232,10 +241,10 @@ https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/
     
     <item>
       <title>NYP HTB Training CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2024-nyp-htb-wss-training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2024-nyp-htb-wss-training/</guid>
       <description>Here is the Notion link, I&amp;rsquo;m lazy to transfer everything over
 https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8
 .</description>
@@ -243,10 +252,10 @@ https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da
     
     <item>
       <title>NYP InfoSec May CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-infosec-may/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-infosec-may/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/edit
 .</description>
@@ -276,7 +285,7 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</guid>
-      <description></description>
+      <description>Stages of pentesting Pre-Engagement Information Gathering Vulnerability Assessment Exploitation/Post-Exploitation Lateral Movement Proof-of-Concept </description>
     </item>
     
     <item>
@@ -327,10 +336,10 @@ Category: Web Example challenge Link: https://owasp.org/www-project-juice-shop/ 
     
     <item>
       <title>Zeogen Generator</title>
-      <link>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</link>
+      <link>https://ctf-journey.github.io/notes/backup/decompile-zeogen-generator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/decompile-zeogen-generator/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/decompile-zeogen-generator/</guid>
       <description>Source of executable Guy send me this EXE file on Discord Executable was a supposed Amazon Storecard generator Reversing steps Using strings, we can identify PyInstaller was used to convert the PY script to EXE Using PyInstxtractor, we can decompile it into the python bytecode files Using pycadas, we can decompile python bytecode files into readable instructions! Tool appears to be just a RNG and generating fake card details The file &amp;ldquo;zeogen.</description>
     </item>
     

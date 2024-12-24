@@ -9,11 +9,20 @@
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/tags/writeup/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HTB CA CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</link>
+      <title>Advent of CTF 2024</title>
+      <link>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-htb-ca/</guid>
+      <guid>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</guid>
+      <description>Day 1 - Logical Exclusivity Convert to Hex and using magic/XOR in CyberChef to get kal{pCu8t3_8391Vv1V95_858L48}, bruteforce with rot13 for flag Day 2 - screaming Day 3 - ElfTV </description>
+    </item>
+    
+    <item>
+      <title>HTB CA CTF</title>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-htb-ca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-htb-ca/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/edit
 .</description>
@@ -21,10 +30,10 @@ https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/
     
     <item>
       <title>Lag N Crash 2.0 CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-lnc-v2/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/edit
 .</description>
@@ -32,10 +41,10 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
     
     <item>
       <title>NYP CGC CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-cgc-qualifiers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-cgc-qualifiers/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-cgc-qualifiers/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/edit
 .</description>
@@ -43,10 +52,10 @@ https://docs.google.com/document/d/1YJmK1r556HBVAHHHFT1MDBTWidgEgZptgOEEHzFJDOM/
     
     <item>
       <title>NYP HTB Training CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2024-nyp-htb-wss-training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2024-nyp-htb-wss-training/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2024-nyp-htb-wss-training/</guid>
       <description>Here is the Notion link, I&amp;rsquo;m lazy to transfer everything over
 https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da7623eec1d0d8
 .</description>
@@ -54,10 +63,10 @@ https://tar-oxygen-85d.notion.site/HTB-WSS-NYP-Training-CTF-97feda963668473ea7da
     
     <item>
       <title>NYP InfoSec May CTF</title>
-      <link>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</link>
+      <link>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-infosec-may/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/writeups/ctf-2022-nyp-infosec-may/</guid>
+      <guid>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-infosec-may/</guid>
       <description>Here is the Google Doc link, I&amp;rsquo;m lazy to transfer everything over
 https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/edit
 .</description>

