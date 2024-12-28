@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Footprinting - CTF Journey</title>
+<meta name="description" content="Footprinting">
+
+<meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "CTF Journey",
+    
+    "url": "https:\/\/ctf-journey.github.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/ctf-journey.github.io\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/ctf-journey.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/ctf-journey.github.io\/notes\/cert\/cpts-footprinting\/",
+          "name": "Footprinting"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "GitHub Contributor Team"
+  },
+  "headline": "Footprinting",
+  "description" : "Footprinting",
+  "inLanguage" : "en",
+  "wordCount":  878 ,
+  "datePublished" : "0001-01-01T00:00:00",
+  "dateModified" : "0001-01-01T00:00:00",
+  "image" : "https:\/\/ctf-journey.github.io\/",
+  "keywords" : [ "cpts" ],
+  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/cert\/cpts-footprinting\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/ctf-journey.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/ctf-journey.github.io\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Footprinting" />
+<meta property="og:description" content="Footprinting">
+<meta property="og:url" content="https://ctf-journey.github.io/notes/cert/cpts-footprinting/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="CTF Journey" />
+<link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ctf-journey.github.io/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ctf-journey.github.io/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.118.2">
+<link rel="alternate" href="https://ctf-journey.github.io/index.xml" type="application/rss+xml" title="CTF Journey">
+<script src="https://ctf-journey.github.io/js/dark-mode.js"></script>
+<link rel="stylesheet" href="/style.min.css">
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2HQ2EEX3LD"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-2HQ2EEX3LD', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+  </head>
+  <body>
+    
+<div class="container fixed-top mw-100">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+
+          <a class="navbar-brand fw-bold" href="https://ctf-journey.github.io/">CTF Journey</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-baseline">
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Home"
+                  href="/"> Home</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Guides"
+                  href="/tags/guide"> Guides</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Problems"
+                  href="/tags/problems/"> Problems</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="eJPT"
+                  href="/tags/ejpt"> eJPT</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="CPTS"
+                  href="/tags/cpts"> CPTS</a>
+              </li>
+
+              
+              
+
+              <li class="nav-item nav-link">
+                <a id="dark-mode-toggle" class="bi bi-moon-stars" role="button"></a>
+              </li>
+
+              
+            </ul>
+
+            
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="notes-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                Footprinting
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
+        
+        
+
+
+        
+      </div>
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <h2 id="infrastructure-based-enumeration">Infrastructure Based Enumeration</h2>
+<ul>
+<li>domain information
+<ul>
+<li>dns records <code>dig any inlanefreight.com</code></li>
+</ul>
+</li>
+<li>cloud resources
+<ul>
+<li>check hosted servers <code>for i in $(cat subdomainlist);do host $i | grep &quot;has address&quot; | grep inlanefreight.com | cut -d&quot; &quot; -f1,4;done</code></li>
+</ul>
+</li>
+<li>staff
+<ul>
+<li>linkedin and github</li>
+</ul>
+</li>
+</ul>
+<h2 id="host-based-enumeration">Host Based Enumeration</h2>
+<ul>
+<li>ftp
+<ul>
+<li>download all ftp files <code>wget -m --no-passive ftp://anonymous:anonymous@10.129.14.136</code></li>
+<li>nmap scripts <code>sudo nmap --script-updatedb</code> , <code>find / -type f -name ftp* 2&gt;/dev/null | grep scripts</code></li>
+<li>connect normally <code>ftp &lt;ip&gt; &lt;port&gt;</code></li>
+</ul>
+</li>
+<li>smb
+<ul>
+<li>connect to share <code>smbclient -N -L //10.129.14.128</code></li>
+<li>rpcclient to get info <code>rpcclient -U &quot;&quot; 10.129.14.128</code></li>
+<li>rpcclient commands <code>querydominfo</code></li>
+<li>bruteforce user ids <code>for i in $(seq 500 1100);do rpcclient -N -U &quot;&quot; 10.129.14.128 -c &quot;queryuser 0x$(printf '%x\n' $i)&quot; | grep &quot;User Name\|user_rid\|group_rid&quot; &amp;&amp; echo &quot;&quot;;done</code></li>
+<li>impacket <code>samrdump.py 10.129.14.128</code></li>
+<li>smbmap <code>smbmap -H 10.129.14.128</code></li>
+<li>crackmapexec <code>crackmapexec smb 10.129.14.128 --shares -u '' -p ''</code></li>
+<li>enum4linux <code>./enum4linux-ng.py 10.129.14.128 -A</code></li>
+</ul>
+</li>
+<li>nfs
+<ul>
+<li><code>/etc/exports </code> contains default configuration for nfs</li>
+<li>adding new config <code>echo '/mnt/nfs  10.129.14.0/24(sync,no_subtree_check)' &gt;&gt; /etc/exports</code>, <code>systemctl restart nfs-kernel-server </code>, <code>exportfs</code></li>
+<li>ports used are tcp 111 and 2049</li>
+<li>nmap <code>--script nfs*</code></li>
+<li>show available shares <code>showmount -e 10.129.14.128</code></li>
+<li>mounting a share <code>sudo mount -t nfs 10.129.14.128:/ ./target-NFS/ -o nolock</code></li>
+<li><code>root_squash</code> permission for privilege escalation</li>
+</ul>
+</li>
+<li>dns
+<ul>
+<li>SOA records <code>dig soa www.inlanefreight.com</code></li>
+<li>local dns config <code>cat /etc/bind/named.conf.local</code></li>
+<li>bind9 dns server might have vulns like <code>https://www.exploit-db.com/exploits/6122</code> dns poison</li>
+<li>check NS query <code>dig ns inlanefreight.htb @10.129.14.128</code></li>
+<li>version query <code>dig CH TXT version.bind 10.129.120.85</code></li>
+<li>any query <code>dig any inlanefreight.htb @10.129.63.9</code></li>
+<li>zone transfer, if <code>allow-transfer</code> is enabled, <code>dig axfr inlanefreight.htb @10.129.14.128</code></li>
+<li>subdomain bruteforce <code>for sub in $(cat /opt/useful/seclists/Discovery/DNS/subdomains-top1million-110000.txt);do dig $sub.inlanefreight.htb @10.129.14.128 | grep -v ';\|SOA' | sed -r '/^\s*$/d' | grep $sub | tee -a subdomains.txt;done</code>, dnsenum <code>dnsenum --dnsserver 10.129.14.128 --enum -p 0 -s 0 -o subdomains.txt -f /opt/useful/seclists/Discovery/DNS/subdomains-top1million-110000.txt inlanefreight.htb</code></li>
+<li>might need to check the records of subdomains too</li>
+<li>bruteforce <code>dnsenum --dnsserver 10.129.63.9 --enum -p 0 -s 0 -o subdomains.txt -f /usr/share/seclists/Discovery/DNS/fierce-hostlist.txt dev.inlanefreight.htb</code></li>
+</ul>
+</li>
+<li>smtp
+<ul>
+<li>port 25 and 587</li>
+<li>sending email process: client (MUA) -&gt; submission agent (MSA) -&gt; open relay (MTA) -&gt; mail deliver</li>
+<li>smtp config <code>cat /etc/postfix/main.cf | grep -v &quot;#&quot; | sed -r &quot;/^\s*$/d&quot;</code></li>
+<li>using telnet to interact with mailserver <code>telnet 10.129.14.128 25</code></li>
+<li>using nmap <code>sudo nmap 10.129.14.128 -sC -sV -p25</code></li>
+<li>open relay script <code>sudo nmap 10.129.14.128 -p25 --script smtp-open-relay -v</code></li>
+<li>username bruteforce <code>https://github.com/Pusher91/SMTP-VRFY-Bruteforce</code></li>
+<li>msf module <code>smtp_enum</code></li>
+</ul>
+</li>
+<li>imap / pop3
+<ul>
+<li>ports pop3 is 110, 995 and imap is 143, 993</li>
+<li>nmap scan is <code>sudo nmap 10.129.14.128 -sV -p110,143,993,995 -sC</code></li>
+<li>login <code>curl -k 'imaps://10.129.14.128' --user user:p4ssw0rd</code></li>
+<li>pop3 login <code>openssl s_client -connect 10.129.14.128:pop3s</code></li>
+<li>imap login <code>openssl s_client -connect 10.129.14.128:imaps</code></li>
+<li>getting imap contents <code>login username pass</code> , <code>. select INBOX</code>, <code>. search all</code>, <code>. fetch 1 (BODY[TEXT])</code>, <code>. fetch 1 (BODY[HEADER.FIELDS (FROM TO SUBJECT DATE)] BODY[TEXT])</code>, <code>1 FETCH 1 BODY[]</code></li>
+<li>pain as hell <code>https://forum.hackthebox.com/t/footprinting-imap-pop3/250254/94?page=2</code> using IMAP commands</li>
+<li>another resource <code>https://www.atmail.com/blog/imap-commands/</code></li>
+</ul>
+</li>
+<li>snmp
+<ul>
+<li>config file <code>cat /etc/snmp/snmpd.conf | grep -v &quot;#&quot; | sed -r '/^\s*$/d'</code></li>
+<li>footprint with snmpwalk, onesixtyone and braa</li>
+<li>snmpwalk get OID info <code>snmpwalk -v2c -c public 10.129.14.128</code></li>
+<li>onesixtyone bruteforce community strings <code>onesixtyone -c /opt/useful/seclists/Discovery/SNMP/snmp.txt 10.129.14.128</code></li>
+<li>after getting community string, use braa <code>braa &lt;community string&gt;@&lt;IP&gt;:.1.3.6.*</code></li>
+<li>wordlist generator crunch <code>https://secf00tprint.github.io/blog/passwords/crunch/advanced/en</code></li>
+<li>nmap udp scan with <code>-sU</code></li>
+</ul>
+</li>
+<li>mysql
+<ul>
+<li>config file <code>cat /etc/mysql/mysql.conf.d/mysqld.cnf | grep -v &quot;#&quot; | sed -r '/^\s*$/d'</code></li>
+<li>nmap scan <code>sudo nmap 10.129.14.128 -sV -sC -p3306 --script mysql*</code></li>
+<li>connect with pass <code>mysql -u robin -p robin -h 10.129.197.210</code></li>
+<li>common commands <code>show databases;</code>, <code>use &lt;database&gt;;</code>, <code>show tables;</code>, <code>show columns from &lt;table&gt;;</code>, <code>select * from &lt;table&gt;;</code>, <code>select * from &lt;table&gt; where &lt;column&gt; = &quot;&lt;string&gt;&quot;;</code></li>
+</ul>
+</li>
+<li>mssql
+<ul>
+<li>ms sql server can be managed with SSMS (sql server management studio), <code>locate mssqlclient</code></li>
+<li>permission is usually <code>NT SERVICE\MSSQLSERVER</code></li>
+<li>nmap scan <code>sudo nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 10.129.201.248</code></li>
+<li>msf module <code>scanner/mssql/mssql_ping</code></li>
+<li>connect with <code>python3 mssqlclient.py Administrator@10.129.201.248 -windows-auth</code></li>
+</ul>
+</li>
+<li>oracle tns
+<ul>
+<li>config files <code>tnsnames.ora and listener.ora</code> are in <code>$ORACLE_HOME/network/admin</code></li>
+<li>oracle tools <code>https://github.com/quentinhardy/odat</code></li>
+<li>test odat <code>odat.py -h</code></li>
+<li>nmap scan <code>sudo nmap -p1521 -sV 10.129.204.235 --open</code></li>
+<li>SID bruteforce <code>sudo nmap -p1521 -sV 10.129.204.235 --open --script oracle-sid-brute</code></li>
+<li>enum all <code>odat.py all -s 10.129.204.235</code></li>
+<li>connect sqlplus <code>sqlplus scott/tiger@10.129.204.235/XE</code></li>
+<li>commands <code>select table_name from all_tables;</code>, <code>sqlplus scott/tiger@10.129.204.235/XE as sysdba</code></li>
+<li>extract password hash <code>select name, password from sys.user$;</code></li>
+<li>upload file <code>./odat.py utlfile -s 10.129.204.235 -d XE -U scott -P tiger --sysdba --putFile C:\\inetpub\\wwwroot testing.txt ./testing.txt</code></li>
+</ul>
+</li>
+<li>ipmi
+<ul>
+<li>its host management software</li>
+<li>nmap scan <code>sudo nmap -sU --script ipmi-version -p 623 ilo.inlanfreight.local</code></li>
+<li>msf modules like <code>ipmi_version</code> and <code>ipmi_dumphashes</code>, can set <code>PASS_FILE</code> too to crack without hashcat ez</li>
+<li>not important, but hacking bmc using intercepted hash <code>hashcat -m 7300 ipmi.txt -a 3 ?1?1?1?1?1?1?1?1 -1 ?d?u</code></li>
+<li>hashcat need the <code>--username</code> flag if hash has a username</li>
+</ul>
+</li>
+</ul>
+<h2 id="remote-management-protocols">Remote Management Protocols</h2>
+<ul>
+<li>linux remote management protocols
+<ul>
+<li>ssh, public key <code>cat /etc/ssh/sshd_config  | grep -v &quot;#&quot; | sed -r '/^\s*$/d'</code></li>
+<li>ssh-audit <code>https://github.com/jtesta/ssh-audit</code></li>
+<li>bruteforce ssh with prefer password <code>ssh -v cry0l1t3@10.129.14.132 -o PreferredAuthentications=password</code></li>
+<li>rsync <code>rsync -av --list-only rsync://127.0.0.1/dev</code></li>
+<li>all r-commands <code>https://en.wikipedia.org/wiki/Berkeley_r-commands</code></li>
+<li>trusted hosts/users <code>cat /etc/hosts.equiv</code> and <code>cat .rhosts</code></li>
+<li>scan r-services <code>sudo nmap -sV -p 512,513,514 10.0.17.2</code></li>
+<li>using rlogin <code>rlogin 10.0.17.2 -l htb-student</code></li>
+<li>using <code>rwho</code> to see users, <code>rusers</code> to provide who is logged in</li>
+</ul>
+</li>
+<li>windows remote management protocols
+<ul>
+<li>rdp, nmap scan <code>nmap -sV -sC 10.129.201.248 -p3389 --script rdp*</code></li>
+<li>rdp check setting, developed by cisco <code>https://github.com/CiscoCXSecurity/rdp-sec-check</code></li>
+<li>rdp connect with <code>xfreerdp</code> or <code>rdesktop</code> like <code>xfreerdp /u:cry0l1t3 /p:&quot;P455w0rd!&quot; /v:10.129.201.248</code></li>
+<li>winrm, nmap scan <code>nmap -sV -sC 10.129.201.248 -p5985,5986 --disable-arp-ping -n</code></li>
+<li>winrm connect <code>evil-winrm -i 10.129.201.248 -u Cry0l1t3 -p P455w0rD!</code></li>
+<li>wmi, connect with impacket <code>/usr/share/doc/python3-impacket/examples/wmiexec.py Cry0l1t3:&quot;P455w0rD!&quot;@10.129.201.248 &quot;hostname&quot;</code></li>
+<li>wmi is on port 135 and move to random port after connecting</li>
+</ul>
+</li>
+</ul>
+
+      </article>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr class="m-0"/>
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+      
+      <div class="blog-tags">
+        
+        <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
+        
+      </div>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+    </div>
+
+    
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
+      <div class="card">
+        <div class="row no-gutters">
+
+          
+
+
+          <div class="col-md-10">
+            <div class="card-body p-1.1">
+              <p class="p-0 m-0"><small class="text-muted">Written By</small></p>
+              <p class="card-text fs-5 m-0">
+                 
+                
+                GitHub Contributor Team
+                
+
+              </p>
+
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+      
+      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+        
+        <li class="list-group-item b-0 p-0">
+
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/forensics/"
+            data-toggle="tooltip" data-placement="top" title="Forensics">&larr;
+            Previous Post</a>
+        </li>
+        
+
+
+        
+        <li class="list-group-item ms-auto b-0 p-0">
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/cert/cpts-file-transfers/"
+            data-toggle="tooltip" data-placement="top" title="File Transfers">Next Post
+            &rarr;</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+    </div>
+  </div>
+  
+</div>
+
+<div class="">
+  
+  
+
+  
+
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          <li>
+            <a href="mailto:privacy_mini@gmail.com" title="Email me" target="_blank">
+              <span class="mx-2">
+                <i class="bi bi-envelope"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ctf-journey" title="GitHub" target="_blank">
+              <span class="mx-2">
+                <i class="bi bi-github"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+          
+          <a href="https://github.com/Mini-Ware/CTF-Journey/graphs/contributors">GitHub Contributor Team</a>
+          
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+          2024
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://ctf-journey.github.io/">CTF Journey</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          Powered by <a href="https://gohugo.io">Hugo</a> & <a href="https://github.com/binokochumolvarghese/lightbi-hugo">Lightbi.
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
+

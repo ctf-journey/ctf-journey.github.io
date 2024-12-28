@@ -9,6 +9,24 @@
     <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
     <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/tags/cpts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>File Transfers</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-file-transfers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-file-transfers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Footprinting</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-footprinting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-footprinting/</guid>
+      <description>Infrastructure Based Enumeration domain information dns records dig any inlanefreight.com cloud resources check hosted servers for i in $(cat subdomainlist);do host $i | grep &amp;quot;has address&amp;quot; | grep inlanefreight.com | cut -d&amp;quot; &amp;quot; -f1,4;done staff linkedin and github Host Based Enumeration ftp download all ftp files wget -m --no-passive ftp://anonymous:anonymous@10.129.14.136 nmap scripts sudo nmap --script-updatedb , find / -type f -name ftp* 2&amp;gt;/dev/null | grep scripts connect normally ftp &amp;lt;ip&amp;gt; &amp;lt;port&amp;gt; smb connect to share smbclient -N -L //10.</description>
+    </item>
+    
+    <item>
       <title>Getting Started</title>
       <link>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -18,12 +36,21 @@
     </item>
     
     <item>
+      <title>Metasploit Framework</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-metasploit-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-metasploit-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Nmap Enumeration</title>
       <link>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</guid>
-      <description>Introduction enumeration intro to nmap host enum host discovery host and port scanning saving the results service enumeration nmap scripting engine performance bypass security measures firewall and ids/ips evasion easy lab medium lab hard lab </description>
+      <description>host enum host discovery scan network range sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d&amp;quot; &amp;quot; -f5 official nmap guide https://nmap.org/book/host-discovery-strategies.html host and port scanning top 10 ports sudo nmap 10.129.2.28 --top-ports=10 trace the packets sudo nmap 10.129.2.28 -p 21 --packet-trace -Pn -n --disable-arp-ping tcp connect sudo nmap 10.129.2.28 -p 443 --packet-trace --disable-arp-ping -Pn -n --reason -sT open udp ports sudo nmap 10.129.2.28 -F -sU saving the results save results in all formats sudo nmap 10.</description>
     </item>
     
     <item>
@@ -33,6 +60,24 @@
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</guid>
       <description>Stages of pentesting Pre-Engagement Information Gathering Vulnerability Assessment Exploitation/Post-Exploitation Lateral Movement Proof-of-Concept </description>
+    </item>
+    
+    <item>
+      <title>Vuln Assessment</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</guid>
+      <description>security assessments security assessments vulnerability assessment assessment standards vulnerability scoring and reporting common vulnerability scoring system (CVSS) common vulnerability and exposures (CVE) nessus vulnerability scanning overview getting started with nessus nessus scan advaced settings working with nessus scan output scanning issues nessus skills assessment openvas getting started with openvas openvas scan exporting the results openvas skills assessment reporting reporting executive summary overview of assessment scope vulnerability and recommendations </description>
+    </item>
+    
+    <item>
+      <title>Web Info Gathering</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-web-info-gathering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-web-info-gathering/</guid>
+      <description>whois whois dns digging dns dig &amp;lt;ip&amp;gt; &amp;lt;type&amp;gt; subdomain bruteforcing dnsenum dnsenum --enum inlanefreight.com -f /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt dns zone transfers zone transfer domain dig axfr @nsztm1.digi.ninja zonetransfer.me zone transfer ip dig axfr inlanefreight.htb @10.129.63.9 virtual hosts multiple application, same ip vhost fuzzing or hosts file to discover non-public subdomains types of vhost include name-based (using http header), ip based, port based tools include gobuster, Feroxbuster, ffuf gobuster sudo gobuster vhost -u http://inlanefreight.</description>
     </item>
     
   </channel>

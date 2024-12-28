@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Arrays &amp; Hashing - CTF Journey</title>
-<meta name="description" content="leetcode concepts">
+<title>Web Info Gathering - CTF Journey</title>
+<meta name="description" content="Web Info Gathering">
 
 <meta name="author" content="GitHub Contributor Team"><script type="application/ld+json">
 {
@@ -45,8 +45,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-array-hashing\/",
-          "name": "Arrays \u0026 hashing"
+          "@id": "https:\/\/ctf-journey.github.io\/notes\/cert\/cpts-web-info-gathering\/",
+          "name": "Web info gathering"
         }
     }]
 }
@@ -57,15 +57,15 @@
   "author": {
     "name" : "GitHub Contributor Team"
   },
-  "headline": "Arrays \u0026 Hashing",
-  "description" : "leetcode concepts",
+  "headline": "Web Info Gathering",
+  "description" : "Web Info Gathering",
   "inLanguage" : "en",
-  "wordCount":  86 ,
-  "datePublished" : "2024-06-01T00:00:00",
-  "dateModified" : "2024-06-01T00:00:00",
+  "wordCount":  205 ,
+  "datePublished" : "0001-01-01T00:00:00",
+  "dateModified" : "0001-01-01T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
-  "keywords" : [ "leetcode" ],
-  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/writeups\/leetcode-array-hashing\/",
+  "keywords" : [ "cpts" ],
+  "mainEntityOfPage" : "https:\/\/ctf-journey.github.io\/notes\/cert\/cpts-web-info-gathering\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/ctf-journey.github.io\/",
@@ -79,9 +79,9 @@
 }
 </script>
 
-<meta property="og:title" content="Arrays &amp; Hashing" />
-<meta property="og:description" content="leetcode concepts">
-<meta property="og:url" content="https://ctf-journey.github.io/notes/writeups/leetcode-array-hashing/" />
+<meta property="og:title" content="Web Info Gathering" />
+<meta property="og:description" content="Web Info Gathering">
+<meta property="og:url" content="https://ctf-journey.github.io/notes/cert/cpts-web-info-gathering/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="CTF Journey" />
 <link rel="apple-touch-icon" sizes="180x180" href=" https://ctf-journey.github.io/favicon/apple-touch-icon.png">
@@ -260,7 +260,7 @@ if (!doNotTrack) {
 
               
               <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                Arrays &amp; Hashing
+                Web Info Gathering
                 
               </h1>
               
@@ -301,35 +301,93 @@ if (!doNotTrack) {
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h2 id="what-are-arrays">What are Arrays?</h2>
+        <h2 id="whois">whois</h2>
 <ul>
-<li>Ordered collection of elements</li>
-<li>Each element has an index, starting from 0</li>
-<li><code>[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</code> - key for <code>a</code> is <code>0</code>, <code>b</code> is <code>1</code> etc</li>
+<li>whois</li>
 </ul>
-<h2 id="what-are-hashes">What are Hashes?</h2>
+<h2 id="dns">dns</h2>
 <ul>
-<li>Unordered collection of key-value pairs</li>
-<li>Each value is retrieved from their corresponding keys</li>
-<li>Implemented with dictionaries or maps</li>
-<li><code>{ name: &quot;Alice&quot; }</code> - key is <code>name</code> and value is <code>&quot;Alice&quot;</code></li>
-</ul>
-<h2 id="related-examples">Related examples</h2>
+<li>digging dns
 <ul>
-<li>Read my solution to some LeetCode problems below
-<ul>
-<li>Contains Duplicate</li>
-<li>Group Anagrams</li>
+<li><code>dig &lt;ip&gt; &lt;type&gt;</code></li>
 </ul>
 </li>
-<li><a href="https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing">https://docs.google.com/document/d/1OiEYxC6jXoZMtXaA2dt_krmBJ3YsWWykUzuC_4D4DXg/edit?usp=sharing</a></li>
-</ul>
-<h2 id="resources">Resources</h2>
-<p>Concepts explained here are following those from Neetcode&rsquo;s roadmap</p>
+<li>subdomain bruteforcing
 <ul>
-<li><a href="https://neetcode.io/roadmap">https://neetcode.io/roadmap</a></li>
+<li>dnsenum <code>dnsenum --enum inlanefreight.com -f  /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt </code></li>
 </ul>
-<p>.</p>
+</li>
+<li>dns zone transfers
+<ul>
+<li>zone transfer domain <code>dig axfr @nsztm1.digi.ninja zonetransfer.me</code></li>
+<li>zone transfer ip <code>dig axfr inlanefreight.htb @10.129.63.9</code></li>
+</ul>
+</li>
+<li>virtual hosts
+<ul>
+<li>multiple application, same ip</li>
+<li>vhost fuzzing or hosts file to discover non-public subdomains</li>
+<li>types of vhost include <code>name-based</code> (using http header), <code>ip based</code>, <code>port based</code></li>
+<li>tools include <code>gobuster</code>, <code>Feroxbuster</code>, <code>ffuf</code></li>
+<li>gobuster <code>sudo gobuster vhost -u http://inlanefreight.htb:55676/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -t 50 --append-domain</code></li>
+<li>PLEASE add the IP into <code>sudo nano /etc/hosts</code> first!</li>
+</ul>
+</li>
+<li>ct logs
+<ul>
+<li>ct logs <code>curl -s &quot;https://crt.sh/?q=%25.example.com&amp;output=json&quot; | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="fingerprinting">fingerprinting</h2>
+<ul>
+<li>fingerprinting
+<ul>
+<li>waf <code>pip3 install git+https://github.com/EnableSecurity/wafw00f</code>, <code>wafw00f inlanefreight.com</code></li>
+<li>nikto scanner <code>sudo apt update &amp;&amp; sudo apt install -y perl</code>, <code>git clone https://github.com/sullo/nikto</code>, <code>cd nikto/program</code>, <code>chmod +x ./nikto.pl</code></li>
+<li>nikto usage <code>nikto -h inlanefreight.com -Tuning b</code></li>
+<li>PLEASE add the IP into <code>sudo nano /etc/hosts</code> first! (including subdomains)</li>
+</ul>
+</li>
+</ul>
+<h2 id="crawling">crawling</h2>
+<ul>
+<li>crawling</li>
+<li>robots.txt</li>
+<li>.well-known uris</li>
+<li>creepy crawlies
+<ul>
+<li>scrapy <code>pip3 install scrapy</code></li>
+<li>scrapy spider ReconSpider <code>wget -O ReconSpider.zip https://academy.hackthebox.com/storage/modules/144/ReconSpider.v1.2.zip</code></li>
+<li>usage <code>python3 ReconSpider.py http://inlanefreight.com</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="search-engine-discovery">search engine discovery</h2>
+<ul>
+<li>search engine discovery</li>
+</ul>
+<h2 id="web-archives">web archives</h2>
+<ul>
+<li>web archives
+<ul>
+<li>wayback machine</li>
+</ul>
+</li>
+</ul>
+<h2 id="automating-recon">automating recon</h2>
+<ul>
+<li>automating recon</li>
+</ul>
+<h2 id="skills-assessment">skills assessment</h2>
+<ul>
+<li>test
+<ul>
+<li><code>sudo sh -c 'echo &quot;94.237.61.84 inlanefreight.htb&quot; &gt;&gt; /etc/hosts'</code></li>
+<li>fuzz <code>ffuf -u http://web1337.inlanefreight.htb:46881/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt:FUZZ -e .html -v</code></li>
+</ul>
+</li>
+</ul>
 
       </article>
     </div>
@@ -344,7 +402,7 @@ if (!doNotTrack) {
       
       <div class="blog-tags">
         
-        <a href="https://ctf-journey.github.io/tags/leetcode/">leetcode</a>
+        <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
         
       </div>
       
@@ -387,8 +445,8 @@ if (!doNotTrack) {
         
         <li class="list-group-item b-0 p-0">
 
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/"
-            data-toggle="tooltip" data-placement="top" title="">&larr;
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/cert/ejpt-webapp-pentesting/"
+            data-toggle="tooltip" data-placement="top" title="Web Pentest">&larr;
             Previous Post</a>
         </li>
         
@@ -396,8 +454,8 @@ if (!doNotTrack) {
 
         
         <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/writeups/leetcode-stack/"
-            data-toggle="tooltip" data-placement="top" title="Stack">Next Post
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/web/"
+            data-toggle="tooltip" data-placement="top" title="Web">Next Post
             &rarr;</a>
         </li>
         

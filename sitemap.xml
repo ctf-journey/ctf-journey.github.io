@@ -41,6 +41,8 @@
     <loc>https://ctf-journey.github.io/tags/leetcode/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/binary-exploitation/</loc>
@@ -65,6 +67,10 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-exploitation-pentesting/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-file-transfers/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-footprinting/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/forensics/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/cpts-getting-started/</loc>
@@ -78,6 +84,8 @@
     <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-metasploit-framework/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-metasploit-framework/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</loc>
   </url><url>
@@ -99,7 +107,11 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/reverse-engeineering/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/web/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-web-info-gathering/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-webapp-pentesting/</loc>
   </url><url>

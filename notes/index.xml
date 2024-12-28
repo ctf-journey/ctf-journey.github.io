@@ -89,6 +89,15 @@ https://neetcode.io/roadmap .</description>
     </item>
     
     <item>
+      <title></title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Advent of CTF 2024</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -153,6 +162,24 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
     </item>
     
     <item>
+      <title>File Transfers</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-file-transfers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-file-transfers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Footprinting</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-footprinting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-footprinting/</guid>
+      <description>Infrastructure Based Enumeration domain information dns records dig any inlanefreight.com cloud resources check hosted servers for i in $(cat subdomainlist);do host $i | grep &amp;quot;has address&amp;quot; | grep inlanefreight.com | cut -d&amp;quot; &amp;quot; -f1,4;done staff linkedin and github Host Based Enumeration ftp download all ftp files wget -m --no-passive ftp://anonymous:anonymous@10.129.14.136 nmap scripts sudo nmap --script-updatedb , find / -type f -name ftp* 2&amp;gt;/dev/null | grep scripts connect normally ftp &amp;lt;ip&amp;gt; &amp;lt;port&amp;gt; smb connect to share smbclient -N -L //10.</description>
+    </item>
+    
+    <item>
       <title>Forensics</title>
       <link>https://ctf-journey.github.io/notes/guides/forensics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -211,6 +238,15 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
     </item>
     
     <item>
+      <title>Metasploit Framework</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-metasploit-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-metasploit-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Network Pentest</title>
       <link>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -225,7 +261,7 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</guid>
-      <description>Introduction enumeration intro to nmap host enum host discovery host and port scanning saving the results service enumeration nmap scripting engine performance bypass security measures firewall and ids/ips evasion easy lab medium lab hard lab </description>
+      <description>host enum host discovery scan network range sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d&amp;quot; &amp;quot; -f5 official nmap guide https://nmap.org/book/host-discovery-strategies.html host and port scanning top 10 ports sudo nmap 10.129.2.28 --top-ports=10 trace the packets sudo nmap 10.129.2.28 -p 21 --packet-trace -Pn -n --disable-arp-ping tcp connect sudo nmap 10.129.2.28 -p 443 --packet-trace --disable-arp-ping -Pn -n --reason -sT open udp ports sudo nmap 10.129.2.28 -F -sU saving the results save results in all formats sudo nmap 10.</description>
     </item>
     
     <item>
@@ -307,12 +343,30 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
     </item>
     
     <item>
+      <title>Vuln Assessment</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</guid>
+      <description>security assessments security assessments vulnerability assessment assessment standards vulnerability scoring and reporting common vulnerability scoring system (CVSS) common vulnerability and exposures (CVE) nessus vulnerability scanning overview getting started with nessus nessus scan advaced settings working with nessus scan output scanning issues nessus skills assessment openvas getting started with openvas openvas scan exporting the results openvas skills assessment reporting reporting executive summary overview of assessment scope vulnerability and recommendations </description>
+    </item>
+    
+    <item>
       <title>Web</title>
       <link>https://ctf-journey.github.io/notes/guides/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/guides/web/</guid>
       <description>Introduction Related Tools Resources PayloadAllTheThings Github API Testing Postman Insomia Web directory bruteforcers dirb (run dirb on terminal) dirbuster (requires GUI) gobuster (similar tool) dirsearch(faster alternative to dirb) GitHub Web crawlers dirhunt GitHub Packet utils Burp Suite (requires GUI) Website wget Key Concepts XXE (XML external entity) injection Happens when an application parses uses data from XML files which can be modified to be malicious Website LFI (Local File Inclusion) Commonly found in PHP web application (maybe through Wordpress plugins etc) Vulnerable websites can allow you to access local files through directory traversal Look out for ways where you can supply a file path and it is served as a download/printed to the page XSS Stored XSS Website uses external resources that contains malicious code If an SVG with XSS payload is in an iframe or embed of a website, it can be executed Reflected XSS When queries to a website is handled and returned in an unsafe way DOM based XSS Client side attack, browser executes payload that didn&amp;rsquo;t came from the server SQL Injection Testing Try using one (single or double) quote for the input and see if there is any errors If an error is returned, the website might be vulnerable Types of attack Union based attack Application displays the output of the query, allowing you to steal information from the database Error based attack Application returns an error with details about the query, helping you to craft queries to bypass checks Resources Sqlmap GitHub Learn and try using SQL Website Query Selector Injection In MongoDB + NodeJS web apps Query for login details Malicious input {&amp;quot;$gt&amp;quot;: &amp;ldquo;&amp;rdquo;} will result in true, $gt is a query selector which compares with &amp;quot;&amp;quot; Mitigation Make sure input gets sanitised as string Remove $ and .</description>
+    </item>
+    
+    <item>
+      <title>Web Info Gathering</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-web-info-gathering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-web-info-gathering/</guid>
+      <description>whois whois dns digging dns dig &amp;lt;ip&amp;gt; &amp;lt;type&amp;gt; subdomain bruteforcing dnsenum dnsenum --enum inlanefreight.com -f /usr/share/seclists/Discovery/DNS/subdomains-top1million-20000.txt dns zone transfers zone transfer domain dig axfr @nsztm1.digi.ninja zonetransfer.me zone transfer ip dig axfr inlanefreight.htb @10.129.63.9 virtual hosts multiple application, same ip vhost fuzzing or hosts file to discover non-public subdomains types of vhost include name-based (using http header), ip based, port based tools include gobuster, Feroxbuster, ffuf gobuster sudo gobuster vhost -u http://inlanefreight.</description>
     </item>
     
     <item>
