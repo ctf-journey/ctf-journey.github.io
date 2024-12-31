@@ -41,8 +41,6 @@
     <loc>https://ctf-journey.github.io/tags/leetcode/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</loc>
-  </url><url>
     <loc>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/binary-exploitation/</loc>
@@ -106,6 +104,8 @@
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/reverse-engeineering/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</loc>
   </url><url>

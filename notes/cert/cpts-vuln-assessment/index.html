@@ -60,7 +60,7 @@
   "headline": "Vuln Assessment",
   "description" : "Vuln Assessment",
   "inLanguage" : "en",
-  "wordCount":  68 ,
+  "wordCount":  99 ,
   "datePublished" : "0001-01-01T00:00:00",
   "dateModified" : "0001-01-01T00:00:00",
   "image" : "https:\/\/ctf-journey.github.io\/",
@@ -320,14 +320,26 @@ if (!doNotTrack) {
 <li>advaced settings</li>
 <li>working with nessus scan output</li>
 <li>scanning issues</li>
-<li>nessus skills assessment</li>
+<li>nessus skills assessment
+<ul>
+<li>download from <code>https://www.tenable.com/downloads/nessus?loginAttempted=true</code></li>
+<li>install using <code>dpkg -i Nessus-8.15.1-ubuntu910_amd64.deb</code></li>
+<li>start the service <code>sudo systemctl start nessusd.service</code></li>
+<li>find the webpage from <code>https://localhost:8834</code></li>
+</ul>
+</li>
 </ul>
 <h2 id="openvas">openvas</h2>
 <ul>
 <li>getting started with openvas</li>
 <li>openvas scan</li>
 <li>exporting the results</li>
-<li>openvas skills assessment</li>
+<li>openvas skills assessment
+<ul>
+<li>install <code>sudo apt-get install gvm &amp;&amp; openvas</code></li>
+<li>setup the thing <code>gvm-setup</code>,<code>gvm-start</code></li>
+</ul>
+</li>
 </ul>
 <h2 id="reporting">reporting</h2>
 <ul>
@@ -406,8 +418,8 @@ if (!doNotTrack) {
 
         
         <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/guides/reverse-engeineering/"
-            data-toggle="tooltip" data-placement="top" title="Reverse Engineering">Next Post
+          <a type="button" class="btn btn-dark" role="button" href="https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/"
+            data-toggle="tooltip" data-placement="top" title="Shells &amp; Payloads">Next Post
             &rarr;</a>
         </li>
         

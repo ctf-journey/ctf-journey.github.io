@@ -89,15 +89,6 @@ https://neetcode.io/roadmap .</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
-      <guid>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Advent of CTF 2024</title>
       <link>https://ctf-journey.github.io/notes/writeups/ctf-advent-of-ctf-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -176,7 +167,7 @@ there are many types of bases, base2, base8, base10, base16, base64 and more! ba
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-file-transfers/</guid>
-      <description></description>
+      <description>introduction file transfers file transfer methods windows file transfer linux file transfer transferring files with code misc file transfer methods protected file transfers catching files over http/s living off the land detect or be detected detection evading detection </description>
     </item>
     
     <item>
@@ -252,7 +243,7 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-metasploit-framework/</guid>
-      <description></description>
+      <description>msf components modules targets payloads encoders databases plugins &amp;amp; mixins msf sessions sessions &amp;amp; jobs meterpreter </description>
     </item>
     
     <item>
@@ -352,12 +343,21 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
     </item>
     
     <item>
+      <title>Shells &amp; Payloads</title>
+      <link>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</guid>
+      <description>introduction shells jack us in, payloads deliver us shell cat5 security&amp;rsquo;s engagement preparation shell basics anatomy of a shell bind shell reverse shell payloads introduction to payloads automating payloads &amp;amp; delivery with metasploit crafting payloads with msfvenom windows shells infiltrating windows nix shells infiltrating unix/linux spawning interactive shells web shells introduction to web shells laudanum, one webshell to rule them all antak webshell php web shells </description>
+    </item>
+    
+    <item>
       <title>Vuln Assessment</title>
       <link>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</guid>
-      <description>security assessments security assessments vulnerability assessment assessment standards vulnerability scoring and reporting common vulnerability scoring system (CVSS) common vulnerability and exposures (CVE) nessus vulnerability scanning overview getting started with nessus nessus scan advaced settings working with nessus scan output scanning issues nessus skills assessment openvas getting started with openvas openvas scan exporting the results openvas skills assessment reporting reporting executive summary overview of assessment scope vulnerability and recommendations </description>
+      <description>security assessments security assessments vulnerability assessment assessment standards vulnerability scoring and reporting common vulnerability scoring system (CVSS) common vulnerability and exposures (CVE) nessus vulnerability scanning overview getting started with nessus nessus scan advaced settings working with nessus scan output scanning issues nessus skills assessment download from https://www.tenable.com/downloads/nessus?loginAttempted=true install using dpkg -i Nessus-8.15.1-ubuntu910_amd64.deb start the service sudo systemctl start nessusd.service find the webpage from https://localhost:8834 openvas getting started with openvas openvas scan exporting the results openvas skills assessment install sudo apt-get install gvm &amp;amp;&amp;amp; openvas setup the thing gvm-setup,gvm-start reporting reporting executive summary overview of assessment scope vulnerability and recommendations </description>
     </item>
     
     <item>

@@ -250,123 +250,6 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
-                    <h3 class="fw-bold post-title">OSINT</h3>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end">
-                    <a href="https://ctf-journey.github.io/notes/guides/osint/">
-                        <button type="button" class="btn btn-outline-dark">
-                            Link
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            
-
-            <p class="post-meta">
-                <span class="post-meta text-muted">
-  
-  
-
-  January 1, 0001
-
-  
-
-  
-
-  
-
-  
-</span>
-
-            </p>
-            
-            <div class="post-entry">
-
-                
-                <h2 id="introduction">Introduction</h2>
-<h2 id="related-tools">Related Tools</h2>
-<ul>
-<li>Social Media
-<ul>
-<li>Sherlock <a href="https://github.com/sherlock-project/sherlock">GitHub</a>
-<ul>
-<li><code>python3 sherlock [username]</code></li>
-</ul>
-</li>
-<li>OSINT telegram bot <a href="https://t.me/UniversalSearchBot">https://t.me/UniversalSearchBot</a>
-<ul>
-<li>to search by: Email, Image, Phone, Location, Telegram ID, Domain, VK ID, IP Address</li>
-<li>To find: GAIA ID, Activity on google services (map reviews, calendar, google+, etc.), Instagram, Myspace, Leaks</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Reverse Search
-<ul>
-<li>Search engines (Using dorks) <a href="https://www.google.com">Google</a> <a href="https://www.bing.com/">Bing</a>
-<ul>
-<li>you can use any search engines of your choice</li>
-</ul>
-</li>
-<li>tineye, a reverse image search engine (<a href="https://tineye.com/">Website</a>)</li>
-<li><a href="https://images.google.com">Google Images</a>, <a href="https://lens.google.com">Google Lens</a></li>
-<li><a href="https://archive.org/">The Wayback Machine</a></li>
-</ul>
-</li>
-<li>Personal Details
-<ul>
-<li>epieos, osint tool for email and phone number (<a href="https://epieos.com/">Website</a>)</li>
-<li>theHarvester (<a href="https://www.kali.org/tools/theharvester/">Kali docs</a>) (<a href="https://github.com/laramies/theHarvester">github</a>)</li>
-<li>Guerillamail (create throwaway emails to send &amp; recieve) &lt;www.guerrillamail.com&gt; (as of 4 Jan, the website is unsecure)</li>
-</ul>
-</li>
-<li>Framework
-<ul>
-<li><a href="https://osintframework.com/">OSINT framework</a></li>
-<li><a href="https://shodan.io">Shodan</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="key-concepts">Key Concepts</h2>
-<ul>
-<li>when given USERNAME, run through sherlock/google to find websites where the username turns up. consider <code>inurl:</code></li>
-<li>when given EMAIL
-<ul>
-<li>consider sending an email to the address (with throwaway email) because there might be an automated reply (thanks josh)</li>
-<li>consider running it through a reverse email checker (I haven&rsquo;t found one that works) or obtaining the GAIA ID to check for google activity</li>
-</ul>
-</li>
-</ul>
-<h2 id="heading">.</h2>
-
-                
-            </div>
-        </div>
-        
-        
-        
-        <div class="card-footer text-muted">
-            <div class="blog-tags">
-                
-                <a href="https://ctf-journey.github.io/tags/guide/">guide</a>
-                
-            </div>
-        </div>
-        
-
-
-
-
-    </div>
-</div>
-    
-    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-    
-        <div class="card border mb-3 "> 
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Penetration Testing</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -885,6 +768,101 @@ if (!doNotTrack) {
         <div class="card-body">
             <div class="row">
                 <div class="col-md-10">
+                    <h3 class="fw-bold post-title">Shells &amp; Payloads</h3>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <a href="https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/">
+                        <button type="button" class="btn btn-outline-dark">
+                            Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            <p class="post-meta">
+                <span class="post-meta text-muted">
+  
+  
+
+  January 1, 0001
+
+  
+
+  
+
+  
+
+  
+</span>
+
+            </p>
+            
+            <div class="post-entry">
+
+                
+                <h2 id="introduction">introduction</h2>
+<ul>
+<li>shells jack us in, payloads deliver us shell</li>
+<li>cat5 security&rsquo;s engagement preparation</li>
+</ul>
+<h2 id="shell-basics">shell basics</h2>
+<ul>
+<li>anatomy of a shell</li>
+<li>bind shell</li>
+<li>reverse shell</li>
+</ul>
+<h2 id="payloads">payloads</h2>
+<ul>
+<li>introduction to payloads</li>
+<li>automating payloads &amp; delivery with metasploit</li>
+<li>crafting payloads with msfvenom</li>
+</ul>
+<h2 id="windows-shells">windows shells</h2>
+<ul>
+<li>infiltrating windows</li>
+</ul>
+<h2 id="nix-shells">nix shells</h2>
+<ul>
+<li>infiltrating unix/linux</li>
+<li>spawning interactive shells</li>
+</ul>
+<h2 id="web-shells">web shells</h2>
+<ul>
+<li>introduction to web shells</li>
+<li>laudanum, one webshell to rule them all</li>
+<li>antak webshell</li>
+<li>php web shells</li>
+</ul>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="card-footer text-muted">
+            <div class="blog-tags">
+                
+                <a href="https://ctf-journey.github.io/tags/cpts/">cpts</a>
+                
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+</div>
+    
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+    
+        <div class="card border mb-3 "> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-10">
                     <h3 class="fw-bold post-title">Vuln Assessment</h3>
                 </div>
                 <div class="col-md-2 d-flex justify-content-end">
@@ -938,14 +916,26 @@ if (!doNotTrack) {
 <li>advaced settings</li>
 <li>working with nessus scan output</li>
 <li>scanning issues</li>
-<li>nessus skills assessment</li>
+<li>nessus skills assessment
+<ul>
+<li>download from <code>https://www.tenable.com/downloads/nessus?loginAttempted=true</code></li>
+<li>install using <code>dpkg -i Nessus-8.15.1-ubuntu910_amd64.deb</code></li>
+<li>start the service <code>sudo systemctl start nessusd.service</code></li>
+<li>find the webpage from <code>https://localhost:8834</code></li>
+</ul>
+</li>
 </ul>
 <h2 id="openvas">openvas</h2>
 <ul>
 <li>getting started with openvas</li>
 <li>openvas scan</li>
 <li>exporting the results</li>
-<li>openvas skills assessment</li>
+<li>openvas skills assessment
+<ul>
+<li>install <code>sudo apt-get install gvm &amp;&amp; openvas</code></li>
+<li>setup the thing <code>gvm-setup</code>,<code>gvm-start</code></li>
+</ul>
+</li>
 </ul>
 <h2 id="reporting">reporting</h2>
 <ul>
