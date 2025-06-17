@@ -47,6 +47,8 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/blockchain/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/tags/boxes/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/categories/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/contribute/</loc>
@@ -77,7 +79,11 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/hardware/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/tags/htb/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-htb-ca/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/boxes/boxes-htb-knife/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</loc>
   </url><url>
@@ -87,6 +93,8 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/boxes/boxes-htb-nibbles/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/cpts-nmap-enumeration/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-cgc-qualifiers/</loc>
@@ -95,17 +103,27 @@
   </url><url>
     <loc>https://ctf-journey.github.io/notes/backup/ctf-2022-nyp-infosec-may/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/tags/oscp/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/cert/oscp-tools/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/osint/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/penetration-testing/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/cpts-pentesting-process/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/boxes/boxes-htb-poison/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/guides/reverse-engeineering/</loc>
   </url><url>
+    <loc>https://ctf-journey.github.io/notes/boxes/boxes-htb-sea/</loc>
+  </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</loc>
+  </url><url>
+    <loc>https://ctf-journey.github.io/notes/boxes/boxes-htb-solidstate/</loc>
   </url><url>
     <loc>https://ctf-journey.github.io/notes/cert/cpts-vuln-assessment/</loc>
   </url><url>

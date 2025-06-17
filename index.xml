@@ -218,6 +218,15 @@ https://docs.google.com/document/d/1GgI8G868M7G2nSvaWpoh-nD3ZOP9bobqMoym4TVxG4M/
     </item>
     
     <item>
+      <title>Knife</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-knife/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-knife/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Lag N Crash 2.0 CTF</title>
       <link>https://ctf-journey.github.io/notes/backup/ctf-2022-lnc-v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -253,6 +262,16 @@ https://docs.google.com/document/d/1SdBsi0fQ01DT5iBu8PPeba3_Pai7r0Ul7Ih5SkfF2sw/
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/ejpt-host-and-network-pentesting/</guid>
       <description>System/Host Based Attacks webdav metasploit use dirb to find the dav directory dirb demo.ine.local use davtest tool davtest -url http://demo.ine.local/webdav login with davtest davtest -auth bob:password_123321 -url http://demo.ine.local/webdav msf module iis_webdav_upload_asp, set RHOSTS, HttpUsername, HttpPassword and PATH /webdav/metasploit%RAND%.asp smb server psexec msf module to bruteforce auxiliary/scanner/smb/smb_login, set USER_FILE PASS_FILE RHOSTS and VERBOSE msf module to gain access exploit/windows/smb/psexec, set RHOSTS SMBUser and SMBPass insecure rdp service use msf module auxiliary/scanner/rdp/rdp_scanner to detect rdp service use hydra bruteforce hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.</description>
+    </item>
+    
+    <item>
+      <title>Nibbles</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-nibbles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-nibbles/</guid>
+      <description>Steps nmap port 22, ssh port 80, web recon port 80 go to /nibbleblog gobuster Resources used https://benheater.com/hackthebox-sea/ https://nvd.nist.gov/vuln/detail/CVE-2023-41425 https://github.com/insomnia-jacob/CVE-2023-41425
+Walkthough used https://www.youtube.com/watch?v=eXTQ3z7esjQ</description>
     </item>
     
     <item>
@@ -298,6 +317,15 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
     </item>
     
     <item>
+      <title>OSCP Tools</title>
+      <link>https://ctf-journey.github.io/notes/cert/oscp-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/cert/oscp-tools/</guid>
+      <description>Linux Windows AD </description>
+    </item>
+    
+    <item>
       <title>OSINT</title>
       <link>https://ctf-journey.github.io/notes/guides/osint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -325,6 +353,15 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
     </item>
     
     <item>
+      <title>Poison</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-poison/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-poison/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Post Exploitation</title>
       <link>https://ctf-journey.github.io/notes/cert/ejpt-post-exploitation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -343,12 +380,30 @@ https://docs.google.com/document/d/1BWIxufb4YA67Hldb2vvzFAiyv7XtdShwSqaOK_BNGBQ/
     </item>
     
     <item>
+      <title>Sea</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-sea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-sea/</guid>
+      <description>Steps nmap scan port 22 ssh port 80 web web enum contact page -&amp;gt; robots page figuring out server software -&amp;gt; file name points to WonderCMS figuring out software version searching the cve -&amp;gt; CVE-2023-41425 post exploit interesting files -&amp;gt; database.js crack the hash lateral to amay user port forwarding -&amp;gt; web servers on 56903 and 8080 port 8080 has a vulnerable log reader, shell injection to root Resources used https://benheater.</description>
+    </item>
+    
+    <item>
       <title>Shells &amp; Payloads</title>
       <link>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
       <guid>https://ctf-journey.github.io/notes/cert/cpts-shells-payloads/</guid>
       <description>introduction shells jack us in, payloads deliver us shell cat5 security&amp;rsquo;s engagement preparation shell basics anatomy of a shell bind shell reverse shell payloads introduction to payloads automating payloads &amp;amp; delivery with metasploit crafting payloads with msfvenom windows shells infiltrating windows nix shells infiltrating unix/linux spawning interactive shells web shells introduction to web shells laudanum, one webshell to rule them all antak webshell php web shells </description>
+    </item>
+    
+    <item>
+      <title>Solidstate</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-solidstate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-solidstate/</guid>
+      <description></description>
     </item>
     
     <item>

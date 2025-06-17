@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>boxes on CTF Journey</title>
+    <link>https://ctf-journey.github.io/tags/boxes/</link>
+    <description>Recent content in boxes on CTF Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
+    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/tags/boxes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knife</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-knife/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-knife/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nibbles</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-nibbles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-nibbles/</guid>
+      <description>Steps nmap port 22, ssh port 80, web recon port 80 go to /nibbleblog gobuster Resources used https://benheater.com/hackthebox-sea/ https://nvd.nist.gov/vuln/detail/CVE-2023-41425 https://github.com/insomnia-jacob/CVE-2023-41425
+Walkthough used https://www.youtube.com/watch?v=eXTQ3z7esjQ</description>
+    </item>
+    
+    <item>
+      <title>Poison</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-poison/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-poison/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sea</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-sea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-sea/</guid>
+      <description>Steps nmap scan port 22 ssh port 80 web web enum contact page -&amp;gt; robots page figuring out server software -&amp;gt; file name points to WonderCMS figuring out software version searching the cve -&amp;gt; CVE-2023-41425 post exploit interesting files -&amp;gt; database.js crack the hash lateral to amay user port forwarding -&amp;gt; web servers on 56903 and 8080 port 8080 has a vulnerable log reader, shell injection to root Resources used https://benheater.</description>
+    </item>
+    
+    <item>
+      <title>Solidstate</title>
+      <link>https://ctf-journey.github.io/notes/boxes/boxes-htb-solidstate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/boxes/boxes-htb-solidstate/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
