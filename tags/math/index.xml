@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on CTF Journey</title>
+    <link>https://ctf-journey.github.io/tags/math/</link>
+    <description>Recent content in math on CTF Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>privacy_mini@gmail.com (GitHub Contributor Team)</managingEditor>
+    <webMaster>privacy_mini@gmail.com (GitHub Contributor Team)</webMaster><atom:link href="https://ctf-journey.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Khan Calculus 1</title>
+      <link>https://ctf-journey.github.io/notes/math/khan-calculus-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/math/khan-calculus-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Khan Calculus 2</title>
+      <link>https://ctf-journey.github.io/notes/math/khan-calculus-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>privacy_mini@gmail.com (GitHub Contributor Team)</author>
+      <guid>https://ctf-journey.github.io/notes/math/khan-calculus-2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
